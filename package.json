@@ -1,0 +1,24 @@
+{
+  "name": "Doudou",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.html",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/assets/styles/main.tw.css -o ./src/assets/styles/main.css --watch",
+    "build": "npx tailwindcss -i ./src/assets/styles/main.tw.css -o ./src/assets/styles/main.css --minify"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@preline/collapse": "^2.0.2",
+    "preline": "^2.0.3"
+  }
+}
