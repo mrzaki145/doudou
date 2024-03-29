@@ -122,7 +122,7 @@
 
           <div class="navbar_desktop">
             <img
-              src="./assets/images/logo.svg"
+              src="./assets/images/logo.png"
               class="w-48 shrink-0 lg:w-60"
               alt=""
             />
@@ -287,20 +287,20 @@
                     <div class="divide-y divide-primary">
                       <div class="px-4 py-3">
                         <div
-                          class="hs-dropdown relative flex h-full [--strategy:absolute] [--auto-close:outside] [--offset:5]"
+                          class="hs-dropdown relative flex h-full [--auto-close:outside] [--offset:5] [--strategy:absolute]"
                         >
                           <button
                             type="button"
                             class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap text-start"
                           >
-                            <svg class="size-6 text-primary shrink-0">
+                            <svg class="size-6 shrink-0 text-primary">
                               <use
                                 href="./assets/images/icons/sprite.svg#hotel"
                               ></use>
                             </svg>
                             <p class="flex-1">High Luxury 5 Stars</p>
                             <svg
-                              class="accordion-arrow ms-auto hs-dropdown-open:rotate-180 shrink-0"
+                              class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
                               height="24"
@@ -365,7 +365,7 @@
                         </div>
                       </div>
                       <div class="flex flex-1 items-center gap-3 px-4 py-3">
-                        <svg class="size-6 text-primary shrink-0">
+                        <svg class="size-6 shrink-0 text-primary">
                           <use
                             href="./assets/images/icons/sprite.svg#calender"
                           ></use>
@@ -377,7 +377,7 @@
                           placeholder="Check in date - Check out date"
                         />
                         <svg
-                          class="accordion-arrow ms-auto hs-dropdown-open:rotate-180 shrink-0"
+                          class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
@@ -393,20 +393,20 @@
                       </div>
                       <div class="px-4 py-3">
                         <div
-                          class="hs-dropdown relative flex h-full w-full [--strategy:absolute] [--auto-close:inside] [--offset:5]"
+                          class="hs-dropdown relative flex h-full w-full [--offset:5] [--strategy:absolute] [--auto-close:inside]"
                         >
                           <button
                             type="button"
                             class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap text-start"
                           >
-                            <svg class="size-6 text-primary shrink-0">
+                            <svg class="size-6 shrink-0 text-primary">
                               <use
                                 href="./assets/images/icons/sprite.svg#subscription-cashflow"
                               ></use>
                             </svg>
                             <p class="flex-1">Budget From - to</p>
                             <svg
-                              class="accordion-arrow ms-auto hs-dropdown-open:rotate-180 shrink-0"
+                              class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
                               height="24"
@@ -440,7 +440,7 @@
                     </div>
                     <button
                       type="button"
-                      class="inline-block w-full bg-primary rounded-bl-xl rounded-br-xl px-5 py-3 text-white transition-colors hover:bg-opacity-80"
+                      class="inline-block w-full rounded-bl-xl rounded-br-xl bg-primary px-5 py-3 text-white transition-colors hover:bg-opacity-80"
                     >
                       Search
                     </button>
@@ -2887,10 +2887,12 @@
               </div>
             </div>
 
-          <img src="./assets/images/section-divider.png" class="pointer-events-none mx-auto mt-5 lg:mt-10 lg:w-4/5" alt="">
-
+            <img
+              src="./assets/images/section-divider.png"
+              class="pointer-events-none mx-auto mt-5 lg:mt-10 lg:w-4/5"
+              alt=""
+            />
           </div>
-
         </section>
 
         <!-- ---------- -->
@@ -2901,7 +2903,7 @@
               class="section_header flex flex-col justify-between gap-6 lg:flex-row lg:items-center"
             >
               <h2 class="section_heading text-primary">
-                <span>Read</span>  Before You Go
+                <span>Read</span> Before You Go
               </h2>
 
               <div class="flex items-center gap-4 max-lg:ms-auto">
@@ -3103,7 +3105,7 @@
           </div>
         </section>
 
-                <section id="recommended-tours">
+        <section id="recommended-tours">
           <div class="container">
             <header
               class="section_header flex flex-col justify-between gap-6 lg:flex-row lg:items-center"
@@ -5450,79 +5452,80 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       // video-thumbs
-      // const sliderThumbs = new Swiper(".thumbs", {
-      //   direction: "vertical",
-      //   slidesPerView: 1,
-      //   spaceBetween: 24,
-      //   freeMode: false,
-      //   breakpoints: {
-      //     0: {
-      //       slidesPerView: 3,
-      //       spaceBetween: 10,
-      //       direction: "horizontal",
-      //     },
-      //     768: {
-      //       direction: "vertical",
-      //       slidesPerView: 4,
-      //       spaceBetween: 24,
-      //     },
-      //   },
-      // });
-      // new Swiper(".swiper.gallery", {
-      //   direction: "vertical",
-      //   slidesPerView: 1,
-      //   spaceBetween: 32,
-      //   mousewheel: false,
-      //   grabCursor: false,
-      //   thumbs: {
-      //     swiper: sliderThumbs,
-      //   },
-      //   breakpoints: {
-      //     0: {
-      //       direction: "horizontal",
-      //     },
-      //     768: {
-      //       direction: "vertical",
-      //     },
-      //   },
-      // });
+      new Swiper(".swiper.thumbs", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 24,
+        freeMode: false,
+        breakpoints: {
+          0: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            direction: "horizontal",
+          },
+          768: {
+            direction: "vertical",
+            slidesPerView: 4,
+            spaceBetween: 24,
+          },
+        },
+      });
+      new Swiper(".swiper.gallery", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 32,
+        mousewheel: false,
+        grabCursor: false,
+        thumbs: {
+          swiper: ".swiper.thumbs",
+        },
+        breakpoints: {
+          0: {
+            direction: "horizontal",
+          },
+          768: {
+            direction: "vertical",
+          },
+        },
+      });
 
-      // const sliderThumbs2 = new Swiper(".thumbs-2", {
-      //   direction: "vertical",
-      //   slidesPerView: 1,
-      //   spaceBetween: 24,
-      //   freeMode: false,
-      //   breakpoints: {
-      //     0: {
-      //       slidesPerView: 3,
-      //       spaceBetween: 10,
-      //       direction: "horizontal",
-      //     },
-      //     768: {
-      //       direction: "vertical",
-      //       slidesPerView: 3,
-      //       spaceBetween: 24,
-      //     },
-      //   },
-      // });
-      // new Swiper(".swiper.gallery-2", {
-      //   direction: "vertical",
-      //   slidesPerView: 1,
-      //   spaceBetween: 32,
-      //   mousewheel: false,
-      //   grabCursor: false,
-      //   thumbs: {
-      //     swiper: sliderThumbs2,
-      //   },
-      //   breakpoints: {
-      //     0: {
-      //       direction: "horizontal",
-      //     },
-      //     768: {
-      //       direction: "vertical",
-      //     },
-      //   },
-      // });
+      // gallery-2
+      new Swiper(".swiper.thumbs-2", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 24,
+        freeMode: false,
+        breakpoints: {
+          0: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            direction: "horizontal",
+          },
+          768: {
+            direction: "vertical",
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+        },
+      });
+      new Swiper(".swiper.gallery-2", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 32,
+        mousewheel: false,
+        grabCursor: false,
+        thumbs: {
+          swiper: ".swiper.thumbs-2",
+        },
+        breakpoints: {
+          0: {
+            direction: "horizontal",
+          },
+          768: {
+            direction: "vertical",
+          },
+        },
+      });
 
       // blog
       new Swiper("#blog .swiper", {
@@ -5539,8 +5542,8 @@
           },
         },
         navigation: {
-          nextEl: "#blog header .next",
-          prevEl: "#blog header .prev",
+          nextEl: "#blog .next",
+          prevEl: "#blog .prev",
         },
       });
 
@@ -5574,8 +5577,6 @@
           },
         });
       });
-
-
 
       // video-thumbs
       const videosThumbs = new Swiper("#videos .swiper.thumbs", {
