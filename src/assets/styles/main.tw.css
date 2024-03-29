@@ -91,7 +91,7 @@
   }
 
   .navbar_desktop {
-    @apply container flex items-center justify-between gap-6 max-lg:hidden;
+    @apply container py-4 flex items-center justify-between gap-6 max-lg:hidden;
   }
   .navbar_mobile {
     @apply fixed inset-x-0 top-0 flex items-center justify-between bg-primary/60 px-4 py-2 lg:hidden;

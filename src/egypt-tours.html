@@ -140,7 +140,7 @@
             </div>
           </nav>
 
-          <div class="navbar_desktop py-4">
+          <div class="navbar_desktop">
             <img
               src="./assets/images/logo.png"
               class="w-48 shrink-0 lg:w-60"
@@ -164,7 +164,7 @@
                       </svg>
                       <p>High Luxury 5 Stars</p>
                       <svg
-                        class="accordion-arrow ms-auto hs-dropdown-open:rotate-180 shrink-0"
+                        class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -229,7 +229,7 @@
                   </div>
                 </div>
                 <div class="flex flex-1 items-center gap-3 px-4">
-                  <svg class="size-6 text-primary shrink-0">
+                  <svg class="size-6 shrink-0 text-primary">
                     <use href="./assets/images/icons/sprite.svg#calender"></use>
                   </svg>
                   <input
@@ -239,7 +239,7 @@
                     placeholder="Check in date - Check out date"
                   />
                   <svg
-                    class="accordion-arrow ms-auto hs-dropdown-open:rotate-180 shrink-0"
+                    class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -261,14 +261,14 @@
                       type="button"
                       class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap px-4"
                     >
-                      <svg class="size-6 text-primary shrink-0">
+                      <svg class="size-6 shrink-0 text-primary">
                         <use
                           href="./assets/images/icons/sprite.svg#subscription-cashflow"
                         ></use>
                       </svg>
                       Budget From - to
                       <svg
-                        class="accordion-arrow ms-auto hs-dropdown-open:rotate-180 shrink-0"
+                        class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -329,7 +329,7 @@
                 </button>
 
                 <div
-                  class="hs-dropdown-menu z-50 duration hidden min-w-72 opacity-0 transition-opacity hs-dropdown-open:opacity-100"
+                  class="hs-dropdown-menu duration z-50 hidden min-w-72 opacity-0 transition-opacity hs-dropdown-open:opacity-100"
                   style="height: calc(100vh - 45px)"
                 >
                   <div
@@ -484,14 +484,14 @@
                             type="button"
                             class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap text-start"
                           >
-                            <svg class="size-6 text-primary shrink-0">
+                            <svg class="size-6 shrink-0 text-primary">
                               <use
                                 href="./assets/images/icons/sprite.svg#hotel"
                               ></use>
                             </svg>
                             <p class="flex-1">High Luxury 5 Stars</p>
                             <svg
-                              class="accordion-arrow ms-auto hs-dropdown-open:rotate-180 shrink-0"
+                              class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
                               height="24"
@@ -556,7 +556,7 @@
                         </div>
                       </div>
                       <div class="flex flex-1 items-center gap-3 px-4 py-3">
-                        <svg class="size-6 text-primary shrink-0">
+                        <svg class="size-6 shrink-0 text-primary">
                           <use
                             href="./assets/images/icons/sprite.svg#calender"
                           ></use>
@@ -568,7 +568,7 @@
                           placeholder="Check in date - Check out date"
                         />
                         <svg
-                          class="accordion-arrow ms-auto hs-dropdown-open:rotate-180 shrink-0"
+                          class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
@@ -590,14 +590,14 @@
                             type="button"
                             class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap text-start"
                           >
-                            <svg class="size-6 text-primary shrink-0">
+                            <svg class="size-6 shrink-0 text-primary">
                               <use
                                 href="./assets/images/icons/sprite.svg#subscription-cashflow"
                               ></use>
                             </svg>
                             <p class="flex-1">Budget From - to</p>
                             <svg
-                              class="accordion-arrow ms-auto hs-dropdown-open:rotate-180 shrink-0"
+                              class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
                               height="24"
@@ -631,7 +631,7 @@
                     </div>
                     <button
                       type="button"
-                      class="inline-block w-full bg-primary rounded-bl-xl rounded-br-xl px-5 py-3 text-white transition-colors hover:bg-opacity-80"
+                      class="inline-block w-full rounded-bl-xl rounded-br-xl bg-primary px-5 py-3 text-white transition-colors hover:bg-opacity-80"
                     >
                       Search
                     </button>
@@ -2717,7 +2717,7 @@
           </div>
         </section>
 
-                <section id="recommended-tours">
+        <section id="recommended-tours">
           <div class="container">
             <header
               class="section_header flex flex-col justify-between gap-6 lg:flex-row lg:items-center"
@@ -5079,8 +5079,6 @@
           },
         });
       });
-
-
 
       // video-thumbs
       const videosThumbs = new Swiper("#videos .swiper.thumbs", {

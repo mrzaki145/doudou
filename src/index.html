@@ -139,7 +139,7 @@
             </div>
           </div>
 
-          <div class="navbar_desktop  py-4">
+          <div class="navbar_desktop">
             <img
               src="./assets/images/logo.png"
               class="w-48 shrink-0 lg:w-60"
@@ -234,7 +234,7 @@
                   <input
                     id="range"
                     type="text"
-                    class="flatpickr flatpickr-input text-black placeholder:text-black flex-1 bg-transparent outline-none"
+                    class="flatpickr flatpickr-input flex-1 bg-transparent text-black outline-none placeholder:text-black"
                     placeholder="Check in date - Check out date"
                   />
                   <svg
@@ -483,14 +483,14 @@
                             type="button"
                             class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap text-start"
                           >
-                            <svg class="size-6 text-primary shrink-0">
+                            <svg class="size-6 shrink-0 text-primary">
                               <use
                                 href="./assets/images/icons/sprite.svg#hotel"
                               ></use>
                             </svg>
                             <p class="flex-1">High Luxury 5 Stars</p>
                             <svg
-                              class="accordion-arrow ms-auto hs-dropdown-open:rotate-180 shrink-0"
+                              class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
                               height="24"
@@ -555,7 +555,7 @@
                         </div>
                       </div>
                       <div class="flex flex-1 items-center gap-3 px-4 py-3">
-                        <svg class="size-6 text-primary shrink-0">
+                        <svg class="size-6 shrink-0 text-primary">
                           <use
                             href="./assets/images/icons/sprite.svg#calender"
                           ></use>
@@ -567,7 +567,7 @@
                           placeholder="Check in date - Check out date"
                         />
                         <svg
-                          class="accordion-arrow ms-auto hs-dropdown-open:rotate-180 shrink-0"
+                          class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
@@ -589,14 +589,14 @@
                             type="button"
                             class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap text-start"
                           >
-                            <svg class="size-6 text-primary shrink-0">
+                            <svg class="size-6 shrink-0 text-primary">
                               <use
                                 href="./assets/images/icons/sprite.svg#subscription-cashflow"
                               ></use>
                             </svg>
                             <p class="flex-1">Budget From - to</p>
                             <svg
-                              class="accordion-arrow ms-auto hs-dropdown-open:rotate-180 shrink-0"
+                              class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
                               height="24"
@@ -630,7 +630,7 @@
                     </div>
                     <button
                       type="button"
-                      class="inline-block w-full bg-primary rounded-bl-xl rounded-br-xl px-5 py-3 text-white transition-colors hover:bg-opacity-80"
+                      class="inline-block w-full rounded-bl-xl rounded-br-xl bg-primary px-5 py-3 text-white transition-colors hover:bg-opacity-80"
                     >
                       Search
                     </button>
@@ -3620,7 +3620,7 @@
     <script>
       function budgetSlider(el) {
         const sliderWrapper = document.querySelector(el);
-        const slider = sliderWrapper.querySelector('.slider');
+        const slider = sliderWrapper.querySelector(".slider");
         const minEl = sliderWrapper.querySelector(".slider-min");
         const maxEl = sliderWrapper.querySelector(".slider-max");
         noUiSlider.create(slider, {
@@ -3636,9 +3636,9 @@
           maxEl.textContent = Math.round(values[1]);
         });
       }
-      budgetSlider('#slider-1')
-      budgetSlider('#slider-2')
-      budgetSlider('#slider-3')
+      budgetSlider("#slider-1");
+      budgetSlider("#slider-2");
+      budgetSlider("#slider-3");
     </script>
 
     <!-- https://flatpickr.js.org/getting-started/ -->
