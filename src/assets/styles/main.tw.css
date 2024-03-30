@@ -6,11 +6,10 @@
 @tailwind utilities;
 
 @layer base {
-  html,
+  /* html,
   body {
-    @apply h-full overflow-x-hidden
-  }
-
+  } */
+  
   body {
     @apply  bg-white font-poppins font-medium text-black;
   }
@@ -18,6 +17,7 @@
     --sb-size: 10px;
     --sb-track-color: #fff;
     --sb-thumb-color: theme(colors.primary.DEFAULT);
+    @apply h-full overflow-x-hidden;
   }
 
   body::-webkit-scrollbar {
@@ -544,6 +544,7 @@
 /* datepicker */
 .flatpickr-calendar {
   @apply p-3;
+  width: 329.875px;
 }
 
 /* spotlight */
