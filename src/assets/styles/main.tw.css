@@ -376,13 +376,21 @@
 }
 /* filters */
 @layer components {
-  /* .filters {
-    @apply 
-  } */
   .filters button {
     @apply rounded-lg border border-primary px-4 py-1.5 text-lg text-black transition-colors hover:bg-primary hover:text-white aria-pressed:bg-primary aria-pressed:text-white lg:px-6 lg:py-2;
   }
 }
+
+/* tags */
+@layer components {
+  .tags {
+    @apply flex flex-wrap gap-2;
+  }
+  .tags button {
+    @apply border border-primary rounded px-4 py-1 text-primary text-sm aria-pressed:bg-primary aria-pressed:text-white hover:bg-primary hover:text-white transition-colors
+  }
+}
+
 /* Breadcrumb */
 @layer components {
   .breadcrumb {
@@ -392,12 +400,13 @@
     @apply inline-flex items-center gap-1 text-lg aria-[current]:text-primary lg:text-xl;
   }
   .breadcrumb a {
-    @apply flex items-center  text-gray hover:text-primary;
+    @apply flex items-center  text-gray/70 hover:text-primary;
   }
   .breadcrumb svg {
-    @apply mx-2 size-4 flex-shrink-0 overflow-visible text-gray lg:size-6;
+    @apply mx-2 size-4 flex-shrink-0 overflow-visible text-gray/70 lg:size-6;
   }
 }
+
 /* Pagination  */
 @layer components {
   .pagination {
@@ -433,7 +442,7 @@
     @apply inline-flex w-full items-center gap-x-2 rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg;
   }
   .accordion-icon {
-    @apply size-6 text-primary;
+    @apply shrink-0 size-6 text-primary;
   }
   .accordion-arrow {
     @apply block size-4 transition-transform;
