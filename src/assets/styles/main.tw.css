@@ -9,9 +9,9 @@
   /* html,
   body {
   } */
-  
+
   body {
-    @apply  bg-white font-poppins font-medium text-black;
+    @apply bg-white font-poppins font-medium text-black;
   }
   body {
     --sb-size: 10px;
@@ -91,7 +91,7 @@
   }
 
   .navbar_desktop {
-    @apply container py-4 flex items-center justify-between gap-6 max-lg:hidden;
+    @apply container flex items-center justify-between gap-6 py-4 max-lg:hidden;
   }
   .navbar_mobile {
     @apply fixed inset-x-0 top-0 flex items-center justify-between bg-primary/60 px-4 py-2 lg:hidden;
@@ -387,7 +387,7 @@
     @apply flex flex-wrap gap-2;
   }
   .tags button {
-    @apply border border-primary rounded px-4 py-1 text-primary text-sm aria-pressed:bg-primary aria-pressed:text-white hover:bg-primary hover:text-white transition-colors
+    @apply rounded border border-primary px-4 py-1 text-sm text-primary transition-colors hover:bg-primary hover:text-white aria-pressed:bg-primary aria-pressed:text-white;
   }
 }
 
@@ -442,7 +442,7 @@
     @apply inline-flex w-full items-center gap-x-2 rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg;
   }
   .accordion-icon {
-    @apply shrink-0 size-6 text-primary;
+    @apply size-6 shrink-0 text-primary;
   }
   .accordion-arrow {
     @apply block size-4 transition-transform;
@@ -490,7 +490,7 @@
   }
 
   .flatpickr::placeholder {
-    @apply text-black
+    @apply text-black;
   }
 }
 
@@ -532,6 +532,22 @@
 }
 .btn:hover .content-bg {
   @apply scale-x-100 opacity-100 delay-0;
+}
+
+input,
+textarea select {
+  @apply placeholder:text-gray-400 !important;
+}
+
+select:not([size]) {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6'%3E%3Cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4'/%3E%3C/svg%3E");
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 0.75em 0.75em;
+  padding-right: 2.5rem;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 /* noUiSlider */
