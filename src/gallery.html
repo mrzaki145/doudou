@@ -74,7 +74,7 @@
             <div class="container">
               <ul class="navbar_list">
                 <li>
-                  <a href="./index.html" class="navbar_link">Home</a>
+                  <a href="./index.html" class="navbar_link" aria-current="page">Home</a>
                 </li>
                 <li>
                   <a href="./egypt-tours.html" class="navbar_link">Egypt Tours</a>
@@ -86,13 +86,13 @@
                   <a href="./services.html" class="navbar_link">Services</a>
                 </li>
                 <li>
-                  <a href="./blogs.html" class="navbar_link" >Blogs</a>
+                  <a href="./blogs.html" class="navbar_link" aria-current="page">Blogs</a>
                 </li>
                 <li>
                   <a href="./about.html" class="navbar_link">About us</a>
                 </li>
                 <li>
-                  <a href="./loyalty-program.html" class="navbar_link" aria-current="page">Loyalty Program</a>
+                  <a href="./loyalty-program.html" class="navbar_link">Loyalty Program</a>
                 </li>
                 <li>
                   <a href="./careers.html" class="navbar_link">Careers</a>
@@ -450,29 +450,69 @@
           </div>
         </div>
 
-        <div class="hero justify-center p-0">
+        <div class="hero">
           <div class="container">
             <div class="hero_content">
-              <h1 class="txt-shadow">Loyalty Program</h1>
+              <h1 class="txt-shadow">Doudou Customer Gallery</h1>
+              <p class="txt-shadow">
+                Provide everyone with the finest vacation accompanied by the
+                highest level of safety, luxury and affordable prices
+              </p>
             </div>
           </div>
         </div>
 
         <img
-          src="./assets/images/loyalty-program.jpeg"
+          src="./assets/images/gallery-bg.jpeg"
           class="page-header__bg"
           alt=""
         />
       </header>
 
-      <main class="relative space-y-12 lg:space-y-16">
-        <section class="pt-8">
-          <div class="pt-8">
-            <div class="container">
-              <ol class="breadcrumb mb-8" aria-label="Breadcrumb">
-                <li>
-                  <a href="#"> Home </a>
+      <main class="relative space-y-8 lg:space-y-10">
+        <section class="pt-12">
+          <div class="container">
+            <ol class="breadcrumb mb-8" aria-label="Breadcrumb">
+              <li>
+                <a href="#"> Home </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </li>
+              <li aria-current="page">Doudou Customer Gallery</li>
+            </ol>
+
+            <div
+              class="mb-12 flex flex-col items-start gap-4 lg:flex-row lg:items-center lg:justify-between"
+            >
+              <p class="text-xl font-semibold lg:text-2xl">
+                <span class="text-primary"
+                  ><span class="text-secondary">Doudou</span> Customer
+                  Gallery</span
+                >: 1240 Uploaded Photos
+              </p>
+
+              <div class="hs-dropdown relative [--strategy:absolute]">
+                <button
+                  type="button"
+                  class="hs-dropdown-toggle inline-flex items-center gap-2 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
+                >
+                  <svg class="size-6 text-primary">
+                    <use href="./assets/images/icons/sprite.svg#sort"></use>
+                  </svg>
+                  <span>Sort by: Latest Uploads</span>
                   <svg
+                    class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -483,320 +523,419 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
-                    <path d="m9 18 6-6-6-6" />
+                    <path d="m6 9 6 6 6-6" />
                   </svg>
-                </li>
-                <li aria-current="page">Loyalty Program</li>
-              </ol>
+                </button>
 
-              <div class="mb-12">
-                <h2 class="mb-6 text-xl font-semibold text-primary lg:text-2xl">
-                  <span class="text-secondary">Loyalty </span> Program
-                </h2>
-
-                <div class="flex flex-col gap-8 lg:flex-row lg:gap-14">
-                  <div
-                    class="w-full flex-1 rounded-xl border border-primary p-12 text-center max-xl:order-2"
+                <div
+                  class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden min-w-72 space-y-3 rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                >
+                  <button
+                    type="button"
+                    class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                    aria-pressed="true"
                   >
-                    <p class="mb-4 text-lg text-primary lg:text-xl">
-                      We Are Not Done Yet!... Have You Had A Tour With Us
-                      Before?
-                    </p>
-                    <p class="mb-2 text-lg text-secondary lg:text-xl">
-                      IF YES!
-                    </p>
-
-                    <div class="flex flex-col gap-6 lg:flex-row">
-                      <div class="w-full lg:w-1/2">
-                        <div
-                          class="mx-auto mb-4 flex size-8 items-center justify-center rounded-full bg-secondary text-white"
-                        >
-                          A
-                        </div>
-                        <div
-                          class="mx-auto mb-4 flex size-35.5 items-center justify-center rounded-full border-2 border-primary/45"
-                        >
-                          <img
-                            src="./assets/images/icons/discount.svg"
-                            class="size-24"
-                            alt=""
-                          />
-                        </div>
-                        <p
-                          class="mb-1 text-lg font-semibold text-secondary lg:text-xl"
-                        >
-                          5% Discount
-                        </p>
-                        <p class="lg:text-lg">
-                          When you come back via us on any package of your
-                          choice, maybe you will see Egypt this time differently
-                        </p>
-                      </div>
-                      <div class="w-full lg:w-1/2">
-                        <div
-                          class="mx-auto mb-4 flex size-8 items-center justify-center rounded-full bg-secondary text-white"
-                        >
-                          B
-                        </div>
-                        <div
-                          class="mx-auto mb-4 flex size-35.5 items-center justify-center rounded-full border-2 border-primary/45"
-                        >
-                          <img
-                            src="./assets/images/icons/cash.svg"
-                            class="size-24"
-                            alt=""
-                          />
-                        </div>
-                        <p
-                          class="mb-1 text-lg font-semibold text-secondary lg:text-xl"
-                        >
-                          3% Cash Back
-                        </p>
-                        <p class="lg:text-lg">
-                          On paid tour once you get a friend/ relative to
-                          confirm a tour with us and also he get 3% Discount
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="w-full max-w-[385px] max-xl:order-1">
-                    <img
-                      src="./assets/images/special-offer.png"
-                      class="mx-auto"
-                      alt=""
-                    />
-                  </div>
+                    Our Top Picks
+                  </button>
+                  <button
+                    type="button"
+                    class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                  >
+                    Traveler Rating
+                  </button>
+                  <button
+                    type="button"
+                    class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                  >
+                    Price (Low to High)
+                  </button>
+                  <button
+                    type="button"
+                    class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                  >
+                    Price (High to Low)
+                  </button>
+                  <button
+                    type="button"
+                    class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                  >
+                    Duration (Low to High)
+                  </button>
+                  <button
+                    type="button"
+                    class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                  >
+                    Duration (High to Low)
+                  </button>
+                  <button
+                    type="button"
+                    class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                  >
+                    Most Popular First
+                  </button>
                 </div>
               </div>
-
-              <p
-                class="mx-auto mb-6 max-w-6xl text-balance text-center text-lg lg:text-xl"
-              >
-                Please let us know which option you will go for to send you the
-                voucher accordingly
-                <span class="text-secondary">A</span> or
-                <span class="text-secondary">B</span>
-                Once the condition to be applied is that the new tour must
-                exceed 6 nights (for you or for the one from your side)
-                <br />
-                <span class="text-primary"
-                  >The Offer is Valid Till The End of The Year!...Book Your Tour
-                  Today And Start Your Adventure.!</span
-                >
-              </p>
-
-              <div class="rounded-xl border border-primary p-8 lg:p-12">
-                <p class="mb-8">
-                  Please send us a massage and we’ll respond as soon as possible
-                </p>
-
-                <form>
-                  <div
-                    class="flex flex-col gap-8 lg:grid-cols-2 lg:flex-row lg:gap-16"
-                  >
-                    <div class="w-full space-y-6 lg:w-1/2">
-                      <div class="flex gap-4">
-                        <div class="relative max-w-[80px] shrink-0">
-                          <label
-                            for="title"
-                            class="absolute start-4 top-0 -translate-y-1/2 bg-white px-1 text-sm text-primary lg:text-base"
-                            >Title</label
-                          >
-                          <select
-                            id="title"
-                            type="text"
-                            class="rounded-xl border border-primary bg-transparent px-4 py-3 text-black outline-none placeholder:text-gray"
-                            placeholder="Your Name"
-                          >
-                            <option value="mr">Mr.</option>
-                            <option value="ms">Ms.</option>
-                          </select>
-                        </div>
-                        <div class="relative flex-1">
-                          <label
-                            for="name"
-                            class="absolute start-4 top-0 -translate-y-1/2 bg-white px-1 text-sm text-primary lg:text-base"
-                            >Name</label
-                          >
-                          <input
-                            id="name"
-                            type="text"
-                            class="w-full rounded-xl border border-primary px-4 py-3 text-black outline-none placeholder:text-gray"
-                            placeholder="Your Name"
-                          />
-                        </div>
-                      </div>
-
-                      <div
-                        class="relative flex-1 rounded-xl border border-primary px-4 py-3"
-                      >
-                        <label
-                          for="tel"
-                          class="absolute start-4 top-0 -translate-y-1/2 bg-white px-1 text-sm text-primary lg:text-base"
-                          >Phone Number</label
-                        >
-                        <div class="flex items-center gap-3">
-                          <select
-                            name="countries"
-                            class="block border-e-2 border-gray bg-transparent text-center"
-                          >
-                            <option value="NL">🇳🇱</option>
-                            <option value="DE">🇩🇪</option>
-                            <option value="FR">🇫🇷</option>
-                            <option value="ES">🇪🇸</option>
-                          </select>
-
-                          <input
-                            id="tel"
-                            type="text"
-                            class="block w-full flex-1 text-black outline-none placeholder:text-gray"
-                            placeholder="Enter your phone number"
-                          />
-                        </div>
-                      </div>
-
-                      <div>
-                        <p class="mb-2 text-center text-sm">
-                          Do you face any issue sending a Request?
-                          <span class="text-primary"
-                            >Please contact directly by</span
-                          >
-                        </p>
-                        <div
-                          class="mb-6 flex flex-col items-center justify-center gap-x-4 gap-y-2 lg:flex-row"
-                        >
-                          <a
-                            href="tel:010993322110"
-                            class="flex items-center gap-1 text-sm"
-                          >
-                            <svg class="size-5 text-primary">
-                              <use
-                                href="./assets/images/icons/sprite.svg#whatsapp"
-                              ></use>
-                            </svg>
-                            010993322110
-                          </a>
-                          <a
-                            href="mailto:sherif2024@gmail.com"
-                            class="flex items-center gap-1 text-sm"
-                          >
-                            <svg class="size-5 text-primary">
-                              <use
-                                href="./assets/images/icons/sprite.svg#mail"
-                              ></use>
-                            </svg>
-                            sherif2024@gmail.com
-                          </a>
-                        </div>
-
-                        <ul class="social-list primary justify-center">
-                          <li>
-                            <a href="#">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#facebook"
-                                ></use>
-                              </svg>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#linkedin"
-                                ></use>
-                              </svg>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#youtube"
-                                ></use>
-                              </svg>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#instagram"
-                                ></use>
-                              </svg>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="w-full space-y-6 lg:w-1/2">
-                      <div class="relative flex-1">
-                        <label
-                          for="email"
-                          class="absolute start-4 top-0 -translate-y-1/2 bg-white px-1 text-sm text-primary lg:text-base"
-                          >Email</label
-                        >
-                        <input
-                          id="email"
-                          type="email"
-                          class="w-full rounded-xl border border-primary px-4 py-3 text-black outline-none placeholder:text-gray"
-                          placeholder="Your Email"
-                        />
-                      </div>
-
-                      <div class="relative flex-1">
-                        <label
-                          for="nationality"
-                          class="absolute start-4 top-0 -translate-y-1/2 bg-white px-1 text-sm text-primary lg:text-base"
-                          >Nationality</label
-                        >
-                        <select
-                          id="nationality"
-                          type="text"
-                          class="w-full rounded-xl border border-primary bg-transparent px-4 py-3 text-gray outline-none placeholder:text-gray"
-                          placeholder="Your Nationality"
-                        >
-                          <option hidden>Your City</option>
-                        </select>
-                      </div>
-
-                      <div class="relative flex-1">
-                        <label
-                          for="message"
-                          class="absolute start-4 top-0 -translate-y-1/2 bg-white px-1 text-sm text-primary lg:text-base"
-                          >Message</label
-                        >
-                        <textarea
-                          id="message"
-                          class="w-full rounded-xl border border-primary px-4 py-3 text-black outline-none placeholder:text-gray"
-                          placeholder="Write your Message here..."
-                        ></textarea>
-                      </div>
-
-                      <button
-                        type="button"
-                        data-hs-overlay="#data-sent"
-                        class="ms-auto block w-fit rounded-xl bg-primary px-6 py-3 text-lg text-white transition-colors hover:bg-secondary"
-                      >
-                        Send
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-
-              <img
-                src="./assets/images/section-divider.png"
-                class="pointer-events-none mx-auto mt-5 lg:mt-10 lg:w-4/5"
-                alt=""
-              />
             </div>
+
+            <div
+              class="grid gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4"
+            >
+              <div class="min-h-60 overflow-hidden rounded-2xl shadow">
+                <img
+                  src="./assets/images/dest-1.jpeg"
+                  class="spotlight cursor-pointer size-full object-cover object-center"
+                  alt=""
+                />
+              </div>
+              <div class="min-h-60 overflow-hidden rounded-2xl shadow">
+                <img
+                  src="./assets/images/dest-2.jpeg"
+                  class="spotlight cursor-pointer size-full object-cover object-center"
+                  alt=""
+                />
+              </div>
+              <div class="min-h-60 overflow-hidden rounded-2xl shadow">
+                <img
+                  src="./assets/images/dest-3.jpeg"
+                  class="spotlight cursor-pointer size-full object-cover object-center"
+                  alt=""
+                />
+              </div>
+              <div class="min-h-60 overflow-hidden rounded-2xl shadow">
+                <img
+                  src="./assets/images/tour-1.jpeg"
+                  class="spotlight cursor-pointer size-full object-cover object-center"
+                  alt=""
+                />
+              </div>
+              <div class="min-h-60 overflow-hidden rounded-2xl shadow">
+                <img
+                  src="./assets/images/tour-2.jpeg"
+                  class="spotlight cursor-pointer size-full object-cover object-center"
+                  alt=""
+                />
+              </div>
+              <div class="min-h-60 overflow-hidden rounded-2xl shadow">
+                <img
+                  src="./assets/images/tour-4.jpeg"
+                  class="spotlight cursor-pointer size-full object-cover object-center"
+                  alt=""
+                />
+              </div>
+              <div class="min-h-60 overflow-hidden rounded-2xl shadow">
+                <img
+                  src="./assets/images/tip-1.jpeg"
+                  class="spotlight cursor-pointer size-full object-cover object-center"
+                  alt=""
+                />
+              </div>
+              <div class="min-h-60 overflow-hidden rounded-2xl shadow">
+                <img
+                  src="./assets/images/tip-2.jpeg"
+                  class="spotlight cursor-pointer size-full object-cover object-center"
+                  alt=""
+                />
+              </div>
+            </div>
+
+                          <!-- Pagination -->
+              <nav class="pagination">
+                <button type="button" class="pagination__arrow" disabled>
+                  <svg
+                    class="pagination__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                  <span aria-hidden="true" class="sr-only">Previous</span>
+                </button>
+                <div class="pagination__numbers">
+                  <button
+                    type="button"
+                    class="pagination__number"
+                    aria-pressed="true"
+                  >
+                    1
+                  </button>
+                  <button type="button" class="pagination__number">2</button>
+                  <button type="button" class="pagination__number">3</button>
+                </div>
+                <button type="button" class="pagination__arrow">
+                  <span aria-hidden="true" class="sr-only">Next</span>
+                  <svg
+                    class="pagination__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+                </button>
+              </nav>
           </div>
         </section>
 
         <!-- ---------- -->
+
+        <section id="reviews" class="bg-secondary pt-12 text-white lg:pt-20">
+          <div class="container">
+            <div class="grid gap-12 lg:grid-cols-3">
+              <header class="lg:col-span-1">
+                <h2 class="txt-shadow mb-4 text-3xl">
+                  How Good is Egypt Doudou Travel?
+                </h2>
+                <p class="mb-6 lg:mb-8">
+                  DOUDOU is about meeting others. You can get to know people
+                  online through the website or meet them in real life...
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex h-10 items-center justify-center rounded-xl bg-primary px-5 text-center text-sm text-white transition-colors hover:bg-opacity-80"
+                  >Explore All</a
+                >
+              </header>
+
+              <div class="flex min-w-0 items-center gap-4 lg:col-span-2">
+                <span class="rounded-full bg-white/70">
+                  <button type="button" class="swiper-btn prev shrink-0">
+                    <svg>
+                      <use
+                        href="./assets/images/icons/sprite.svg#arrow-left"
+                      ></use>
+                    </svg>
+                  </button>
+                </span>
+
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="rounded-3xl bg-white p-6 shadow-xl">
+                        <div class="mb-3 flex items-center gap-2">
+                          <div
+                            class="size-8 shrink-0 overflow-hidden rounded-full lg:size-10"
+                          >
+                            <img
+                              src="./assets/images/avatar.jpeg"
+                              class="h-full w-full object-cover object-center"
+                              alt=""
+                            />
+                          </div>
+
+                          <div>
+                            <p class="mb-1 text-sm text-black">
+                              Mai Hussien
+                              <span class="text-gray">10 Feb 2024</span>
+                            </p>
+                            <div class="flex items-center gap-x-px">
+                              <svg class="size-3 text-secondary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                              <svg class="size-3 text-secondary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                              <svg class="size-3 text-secondary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                              <svg class="size-3 text-secondary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                              <svg class="size-3 text-gray-200">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p
+                          class="line-clamp-4 font-normal leading-relaxed text-gray"
+                        >
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum lpa qui
+                          officia deserunt mollit anim id est laborum...
+                        </p>
+                        <a href="#" class="text-primary hover:underline"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="rounded-3xl bg-white p-6 shadow-xl">
+                        <div class="mb-3 flex items-center gap-2">
+                          <div
+                            class="size-8 shrink-0 overflow-hidden rounded-full lg:size-10"
+                          >
+                            <img
+                              src="./assets/images/avatar.jpeg"
+                              class="h-full w-full object-cover object-center"
+                              alt=""
+                            />
+                          </div>
+
+                          <div>
+                            <p class="mb-1 text-sm text-black">
+                              Mai Hussien
+                              <span class="text-gray">10 Feb 2024</span>
+                            </p>
+                            <div class="flex items-center gap-x-px">
+                              <svg class="size-3 text-secondary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                              <svg class="size-3 text-secondary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                              <svg class="size-3 text-secondary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                              <svg class="size-3 text-secondary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                              <svg class="size-3 text-gray-200">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p
+                          class="line-clamp-4 font-normal leading-relaxed text-gray"
+                        >
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum lpa qui
+                          officia deserunt mollit anim id est laborum...
+                        </p>
+                        <a href="#" class="text-primary hover:underline"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="rounded-3xl bg-white p-6 shadow-xl">
+                        <div class="mb-3 flex items-center gap-2">
+                          <div
+                            class="size-8 shrink-0 overflow-hidden rounded-full lg:size-10"
+                          >
+                            <img
+                              src="./assets/images/avatar.jpeg"
+                              class="h-full w-full object-cover object-center"
+                              alt=""
+                            />
+                          </div>
+
+                          <div>
+                            <p class="mb-1 text-sm text-black">
+                              Mai Hussien
+                              <span class="text-gray">10 Feb 2024</span>
+                            </p>
+                            <div class="flex items-center gap-x-px">
+                              <svg class="size-3 text-secondary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                              <svg class="size-3 text-secondary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                              <svg class="size-3 text-secondary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                              <svg class="size-3 text-secondary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                              <svg class="size-3 text-gray-200">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#star"
+                                ></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p
+                          class="line-clamp-4 font-normal leading-relaxed text-gray"
+                        >
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum lpa qui
+                          officia deserunt mollit anim id est laborum...
+                        </p>
+                        <a href="#" class="text-primary hover:underline"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <span class="rounded-full bg-white/70">
+                  <button type="button" class="swiper-btn next shrink-0">
+                    <svg>
+                      <use
+                        href="./assets/images/icons/sprite.svg#arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/section-decoration.png"
+            class="mt-6 w-full lg:mt-14"
+            alt=""
+          />
+        </section>
 
         <section>
           <div class="container">
@@ -1307,103 +1446,6 @@
       </div>
     </div>
 
-    <!-- modals -->
-    <div
-      id="data-sent"
-      class="hs-overlay fixed start-0 top-0 z-[100] hidden size-full overflow-y-auto overflow-x-hidden hs-overlay-backdrop-open:bg-black/50"
-    >
-      <div
-        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-[550px]"
-      >
-        <div class="flex w-full flex-col overflow-hidden rounded-3xl bg-white">
-          <div
-            class="flex items-center justify-between bg-primary px-6 py-5"
-            style="background: linear-gradient(90deg, #005690 0%, #0071bd 100%)"
-          >
-            <h3 class="text-lg font-semibold text-white lg:text-xl">
-              Your Message Received
-            </h3>
-            <button
-              type="button"
-              class="flex size-7 items-center justify-center rounded-full border-2 border-white"
-              data-hs-overlay="#data-sent"
-            >
-              <span class="sr-only">Close</span>
-              <svg
-                class="size-5 shrink-0 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M18 6 6 18" />
-                <path d="m6 6 12 12" />
-              </svg>
-            </button>
-          </div>
-
-          <div class="px-6 py-8 text-center">
-            <img
-              src="./assets/images/icons/approve.png"
-              class="mx-auto mb-4 max-w-40"
-              alt=""
-            />
-            <p class="mb-3 text-2xl text-primary lg:text-3xl">
-              Message Received Successfully
-            </p>
-            <p class="mb-7 lg:mb-10 lg:text-lg">
-              Your message has been sent to us successfully, We will contact you
-              soon Have a nice day
-            </p>
-
-            <ul class="social-list primary justify-center">
-              <li>
-                <a href="#">
-                  <svg>
-                    <use href="./assets/images/icons/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg>
-                    <use href="./assets/images/icons/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg>
-                    <use href="./assets/images/icons/sprite.svg#youtube"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg>
-                    <use
-                      href="./assets/images/icons/sprite.svg#instagram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <img
-            src="./assets/images/icons/model-decoration.png"
-            class="w-full"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -1452,5 +1494,6 @@
         },
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/spotlight.js@0.7.8/dist/spotlight.bundle.min.js"></script>
   </body>
 </html>

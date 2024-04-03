@@ -74,7 +74,10 @@
     @apply pb-3 pt-6 max-lg:hidden;
   }
   .navbar_nav {
-    @apply relative bg-primary/20 max-lg:hidden;
+    @apply relative bg-primary bg-opacity-20 max-lg:hidden;
+  }
+  .navbar_nav.primary {
+    @apply bg-opacity-100
   }
   .navbar_nav::before {
     content: "";
@@ -82,13 +85,26 @@
     background: linear-gradient(
       90deg,
       rgba(255, 255, 255, 0) 0%,
-      theme(colors.white) 50%,
+      rgba(255, 255, 255, 0) 50%,
       rgba(255, 255, 255, 0) 100%
     );
   }
   .navbar_link {
-    @apply inline-block px-4 py-3 text-center text-white transition-colors hover:bg-primary aria-[current]:bg-primary;
+    @apply inline-block px-4 py-3 text-center text-white transition-colors ;
   }
+  .navbar_nav:not(.primary) .navbar_link {
+    @apply hover:bg-primary aria-[current]:bg-primary
+  }
+  .navbar_nav.primary .navbar_link {
+    @apply hover:bg-secondary  aria-[current]:bg-secondary;
+  }
+
+  /* .navbar_link:hover {
+    @apply bg-primary
+  } */
+  /* .navbar_nav:not(.bg-primary) .navbar_link {
+    @apply hover:bg-primary aria-[current]:bg-primary;
+  } */
 
   .navbar_desktop {
     @apply container flex items-center justify-between gap-6 py-4 max-lg:hidden;
@@ -371,7 +387,7 @@
     @apply mb-6 flex items-center justify-between gap-6 overflow-auto max-lg:pb-2;
   }
   .tab {
-    @apply text-nowrap border-b-4 border-transparent pb-3 text-lg font-semibold text-gray transition-colors hover:border-primary aria-pressed:border-primary aria-pressed:text-primary lg:text-xl;
+    @apply inline-block text-nowrap border-b-4 border-transparent pb-3 text-lg font-semibold text-gray transition-colors hover:border-primary aria-pressed:border-primary aria-pressed:text-primary aria-[current]:border-primary aria-[current]:text-primary lg:text-xl;
   }
 }
 /* filters */
@@ -567,6 +583,9 @@ select:not([size]) {
 }
 
 /* datepicker */
+.flatpickr-input {
+  @apply placeholder:text-black !important
+}
 .flatpickr-calendar {
   @apply p-3;
   width: 329.875px;
