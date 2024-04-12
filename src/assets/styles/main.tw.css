@@ -6,18 +6,14 @@
 @tailwind utilities;
 
 @layer base {
-  /* html,
   body {
-  } */
-
-  body {
-    @apply bg-white font-poppins font-medium text-black;
+    @apply w-screen bg-white font-poppins font-medium text-black;
   }
   body {
     --sb-size: 10px;
     --sb-track-color: #fff;
     --sb-thumb-color: theme(colors.primary.DEFAULT);
-    @apply h-full overflow-x-hidden;
+    @apply relative h-full overflow-x-hidden;
   }
 
   body::-webkit-scrollbar {
@@ -59,6 +55,14 @@
   .lenis.lenis-scrolling iframe {
     pointer-events: none;
   }
+
+  .app {
+    @apply relative;
+  }
+
+  section {
+    @apply w-full overflow-hidden !important;
+  }
 }
 
 /* navbar */
@@ -77,7 +81,8 @@
     @apply relative bg-primary bg-opacity-20 max-lg:hidden;
   }
   .navbar_nav.primary {
-    @apply bg-opacity-100
+    @apply bg-opacity-100;
+    /* @apply sticky top-0 z-50 !important; */
   }
   .navbar_nav::before {
     content: "";
@@ -90,27 +95,23 @@
     );
   }
   .navbar_link {
-    @apply inline-block px-4 py-3 text-center text-white transition-colors ;
+    @apply inline-block px-4 py-3 text-center text-white transition-colors;
   }
   .navbar_nav:not(.primary) .navbar_link {
-    @apply hover:bg-primary aria-[current]:bg-primary
+    @apply hover:bg-primary aria-[current]:bg-primary;
   }
   .navbar_nav.primary .navbar_link {
     @apply hover:bg-secondary  aria-[current]:bg-secondary;
   }
-
-  /* .navbar_link:hover {
-    @apply bg-primary
-  } */
-  /* .navbar_nav:not(.bg-primary) .navbar_link {
-    @apply hover:bg-primary aria-[current]:bg-primary;
-  } */
 
   .navbar_desktop {
     @apply container flex items-center justify-between gap-6 py-4 max-lg:hidden;
   }
   .navbar_mobile {
     @apply fixed inset-x-0 top-0 flex items-center justify-between bg-primary/60 px-4 py-2 lg:hidden;
+  }
+  .mobile-sidebar {
+    height: calc(100dvh - 45px);
   }
 }
 
@@ -153,7 +154,7 @@
 /* card */
 @layer components {
   .card {
-    @apply relative block overflow-hidden transition-transform duration-300;
+    @apply relative block h-full overflow-hidden transition-transform duration-300;
     box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.1);
     filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
     border-radius: 20px;
@@ -584,7 +585,7 @@ select:not([size]) {
 
 /* datepicker */
 .flatpickr-input {
-  @apply placeholder:text-black !important
+  @apply placeholder:text-black !important;
 }
 .flatpickr-calendar {
   @apply p-3;

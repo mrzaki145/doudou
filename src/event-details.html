@@ -69,10 +69,17 @@
                   <a href="./index.html" class="navbar_link">Home</a>
                 </li>
                 <li>
-                  <a href="./egypt-tours.html" class="navbar_link">Egypt Tours</a>
+                  <a href="./egypt-tours.html" class="navbar_link"
+                    >Egypt Tours</a
+                  >
                 </li>
                 <li>
-                  <a href="./events.html" class="navbar_link" aria-current="page">Events</a>
+                  <a
+                    href="./events.html"
+                    class="navbar_link"
+                    aria-current="page"
+                    >Events</a
+                  >
                 </li>
                 <li>
                   <a href="./services.html" class="navbar_link">Services</a>
@@ -84,16 +91,22 @@
                   <a href="./about.html" class="navbar_link">About us</a>
                 </li>
                 <li>
-                  <a href="./loyalty-program.html" class="navbar_link">Loyalty Program</a>
+                  <a href="./loyalty-program.html" class="navbar_link"
+                    >Loyalty Program</a
+                  >
                 </li>
                 <li>
                   <a href="./careers.html" class="navbar_link">Careers</a>
                 </li>
                 <li>
-                  <a href="./how-it-works.html" class="navbar_link">How it works?</a>
+                  <a href="./how-it-works.html" class="navbar_link"
+                    >How it works?</a
+                  >
                 </li>
                 <li>
-                  <a href="./partner.html" class="navbar_link">Become our Partner</a>
+                  <a href="./partner.html" class="navbar_link"
+                    >Become our Partner</a
+                  >
                 </li>
               </ul>
             </div>
@@ -117,8 +130,7 @@
                 </button>
 
                 <div
-                  class="hs-dropdown-menu duration hidden min-w-72 opacity-0 transition-opacity hs-dropdown-open:opacity-100"
-                  style="height: calc(100vh - 45px)"
+                  class="mobile-sidebar hs-dropdown-menu duration hidden min-w-72 opacity-0 transition-opacity hs-dropdown-open:opacity-100"
                 >
                   <div
                     class="bg-gradient -ms-4 flex h-full flex-col justify-between px-4 pb-14 pt-10"
@@ -447,19 +459,21 @@
             <div class="hero_content">
               <h1 class="txt-shadow">Famous Egypt Events 2024</h1>
               <div class="flex items-end gap-4 text-white">
-                <svg class="text-white size-14 lg:size-24">
+                <svg class="size-14 text-white lg:size-24">
                   <use href="./assets/images/icons/sprite.svg#sand-clock"></use>
                 </svg>
 
                 <div class="w-fit">
-                  <div class="flex text-center gap-2 mb-2 w-full">
+                  <div class="mb-2 flex w-full gap-2 text-center">
                     <span class="flex-1">Days</span>
                     <span class="flex-1">Hours</span>
                     <span class="flex-1">Minutes</span>
                     <span class="flex-1">Seconds</span>
                   </div>
-                  <div class="flex text-5xl lg:text-8xl font-semibold text-center w-full">
-                    <span id="days" class=" flex-1">12</span>
+                  <div
+                    class="flex w-full text-center text-5xl font-semibold lg:text-8xl"
+                  >
+                    <span id="days" class="flex-1">12</span>
                     <span>:</span>
                     <span id="hours" class="min-w-[2ch] flex-1">34</span>
                     <span>:</span>
@@ -467,7 +481,7 @@
                     <span>:</span>
                     <span id="seconds" class="min-w-[2ch] flex-1">24</span>
                   </div>
-                </div c>
+                </div>
               </div>
             </div>
           </div>
@@ -521,7 +535,7 @@
               <li aria-current="page">Egypt Christmas Event 2024</li>
             </ol>
 
-            <p class="section_heading mb-6 lg:mb-10 text-primary">
+            <p class="section_heading mb-6 text-primary lg:mb-10">
               <span>Egypt</span> Christmas Event 2024
             </p>
 
@@ -1788,7 +1802,8 @@
                         class="hs-accordion-toggle flex w-full items-center justify-between p-4 text-start text-lg font-semibold text-primary lg:p-6 lg:text-xl"
                       >
                         <span>
-                          <span class="text-secondary">Useful </span> Information
+                          <span class="text-secondary">Useful </span>
+                          Information
                         </span>
 
                         <svg
@@ -3482,7 +3497,8 @@
               Your Ticket Reserved
             </p>
             <p class="mb-7 lg:mb-10 lg:text-lg">
-              Your ticket has been successfully reserved We look forward to contact you very soon!
+              Your ticket has been successfully reserved We look forward to
+              contact you very soon!
             </p>
 
             <ul class="social-list primary justify-center">
@@ -3532,34 +3548,35 @@
     <!-- js -->
     <script>
       // Set the date we're counting down to
-var countDownDate = new Date("Dec 31, 2024 15:37:25").getTime();
+      var countDownDate = new Date("Dec 31, 2024 15:37:25").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get todays date and time
+        var now = new Date().getTime();
 
-  // Get todays date and time
-  var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  document.querySelector("#days").innerHTML = days;
-  document.querySelector("#hours").innerHTML = hours;
-  document.querySelector("#minutes").innerHTML = minutes;
-  document.querySelector("#seconds").innerHTML = seconds;
+        document.querySelector("#days").innerHTML = days;
+        document.querySelector("#hours").innerHTML = hours;
+        document.querySelector("#minutes").innerHTML = minutes;
+        document.querySelector("#seconds").innerHTML = seconds;
 
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>

@@ -6,6 +6,16 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
+// const headroom = new Headroom(document.querySelector("#headroom"), {
+//   tolerance: 5,
+//   classes: {
+//     initial: "navbar",
+//     pinned: "navbar-pinned",
+//     unpinned: "navbar-unpinned",
+//   },
+// });
+// headroom.init();
+
 const time = document.querySelector("#time");
 time.textContent = getCurrentTime();
 
