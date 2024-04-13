@@ -55,14 +55,6 @@
   .lenis.lenis-scrolling iframe {
     pointer-events: none;
   }
-
-  .app {
-    @apply relative;
-  }
-
-  section {
-    @apply w-full !important;
-  }
 }
 
 /* navbar */
@@ -154,7 +146,7 @@
 /* card */
 @layer components {
   .card {
-    @apply relative block h-full overflow-hidden transition-transform duration-300 ;
+    @apply relative block h-full overflow-hidden transition-transform duration-300;
     /* box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.1); */
     /* filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2)); */
     border-radius: 20px;
