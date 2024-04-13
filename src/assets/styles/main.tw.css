@@ -61,14 +61,14 @@
   }
 
   section {
-    @apply w-full overflow-hidden !important;
+    @apply w-full !important;
   }
 }
 
 /* navbar */
 @layer components {
   .navbar {
-    @apply absolute inset-x-0 z-50;
+    @apply absolute inset-x-0 z-50 h-auto;
   }
   .navbar_top,
   .navbar_list {
@@ -108,7 +108,7 @@
     @apply container flex items-center justify-between gap-6 py-4 max-lg:hidden;
   }
   .navbar_mobile {
-    @apply fixed inset-x-0 top-0 flex items-center justify-between bg-primary/60 px-4 py-2 lg:hidden;
+    @apply fixed inset-x-0 top-0 flex w-screen items-center justify-between bg-primary/60 px-4 py-2 lg:hidden;
   }
   .mobile-sidebar {
     height: calc(100dvh - 45px);
@@ -154,9 +154,9 @@
 /* card */
 @layer components {
   .card {
-    @apply relative block h-full overflow-hidden transition-transform duration-300;
-    box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.1);
-    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
+    @apply relative block h-full overflow-hidden transition-transform duration-300 ;
+    /* box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.1); */
+    /* filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2)); */
     border-radius: 20px;
   }
   .card:hover {
@@ -210,10 +210,10 @@
 /* tour-card */
 @layer components {
   .tour-card {
-    @apply overflow-hidden rounded-3xl bg-white;
-    box-shadow:
+    @apply overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-sm;
+    /* box-shadow:
       0px 0px 25px 4px rgba(0, 0, 0, 0.1),
-      0px 2px 5px rgba(0, 0, 0, 0.2);
+      0px 2px 5px rgba(0, 0, 0, 0.2); */
   }
 
   .tour-card__thumbnail {
@@ -473,8 +473,15 @@
 }
 
 @layer utilities {
-  .swiper.overflow-visible {
-    overflow: visible !important;
+  @media (min-width: 1024px) {
+    .swiper.overflow-visible {
+      overflow: visible;
+    }
+  }
+  @media not all and (min-width: 1024px) {
+    .swiper.overflow-visible {
+      overflow: hidden;
+    }
   }
 
   .swiper-btn {
