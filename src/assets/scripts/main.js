@@ -6,15 +6,26 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
-// const headroom = new Headroom(document.querySelector("#headroom"), {
-//   tolerance: 5,
-//   classes: {
-//     initial: "navbar",
-//     pinned: "navbar-pinned",
-//     unpinned: "navbar-unpinned",
-//   },
-// });
-// headroom.init();
+try {
+  const headroomEl = document.querySelector("#headroom");
+  const headroom = new Headroom(headroomEl, {
+    tolerance: 5,
+    offset: 200,
+    classes: {
+      initial: "headroom",
+      pinned: "headroom-pinned",
+      unpinned: "headroom-unpinned",
+    },
+  });
+  headroom.init();
+  
+  setTimeout(() => {
+    headroomEl.classList.remove("hidden");
+  }, 100);
+
+} catch (e) {
+  // console.log(e);
+}
 
 const time = document.querySelector("#time");
 time.textContent = getCurrentTime();

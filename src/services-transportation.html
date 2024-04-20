@@ -25,6 +25,10 @@
     ></script>
     <script
       defer
+      src="https://cdn.jsdelivr.net/npm/headroom.js@0.12.0/dist/headroom.min.js"
+    ></script>
+    <script
+      defer
       src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"
     ></script>
     <script defer src="./assets/scripts/main.js"></script>
@@ -32,6 +36,51 @@
 
   <body>
     <div class="app">
+      <nav id="headroom" class="navbar_nav primary hidden">
+        <div class="container">
+          <ul class="navbar_list">
+            <li>
+              <a href="./index.html" class="navbar_link">Home</a>
+            </li>
+            <li>
+              <a href="./egypt-tours.html" class="navbar_link">Egypt Tours</a>
+            </li>
+            <li>
+              <a href="./events.html" class="navbar_link">Events</a>
+            </li>
+            <li>
+              <a href="./services.html" class="navbar_link" aria-current="page"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="./blogs.html" class="navbar_link">Blogs</a>
+            </li>
+            <li>
+              <a href="./about.html" class="navbar_link">About us</a>
+            </li>
+            <li>
+              <a href="./loyalty-program.html" class="navbar_link"
+                >Loyalty Program</a
+              >
+            </li>
+            <li>
+              <a href="./careers.html" class="navbar_link">Careers</a>
+            </li>
+            <li>
+              <a href="./how-it-works.html" class="navbar_link"
+                >How it works?</a
+              >
+            </li>
+            <li>
+              <a href="./partner.html" class="navbar_link"
+                >Become our Partner</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
       <header class="page-header">
         <div class="navbar">
           <div class="container">
@@ -128,7 +177,7 @@
             />
           </div>
 
-          <div class="navbar_mobile static">
+          <div class="navbar_mobile" style="position: static !important">
             <div class="flex items-center gap-2">
               <div class="hs-dropdown relative inline-flex">
                 <button type="button">
@@ -579,7 +628,7 @@
       <main class="space-y-12 lg:space-y-16">
         <section>
           <div class="relative pt-8">
-            <div class="sticky top-0 z-40 mb-8 bg-white py-4">
+            <div class="sticky top-0 z-40 mb-4 bg-white py-4 lg:mb-8">
               <div class="container">
                 <menu class="tabs mb-0">
                   <li>
@@ -614,36 +663,36 @@
 
             <div class="container">
               <div
-                class="mb-6 flex flex-nowrap items-center gap-2 overflow-y-auto"
+                class="mb-6 flex flex-nowrap items-center gap-2 overflow-y-auto max-lg:pb-2"
               >
                 <button
                   type="button"
                   aria-pressed="true"
-                  class="rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-opacity-75 aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
+                  class="text-nowrap rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-opacity-75 aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
                 >
                   Cairo Transfer
                 </button>
                 <button
                   type="button"
-                  class="rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-opacity-75 aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
+                  class="text-nowrap rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-opacity-75 aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
                 >
                   Hurghada Transfer
                 </button>
                 <button
                   type="button"
-                  class="rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-opacity-75 aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
+                  class="text-nowrap rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-opacity-75 aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
                 >
                   Luxor Transfer
                 </button>
                 <button
                   type="button"
-                  class="rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-opacity-75 aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
+                  class="text-nowrap rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-opacity-75 aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
                 >
                   Sharm El-Sheik Transfer
                 </button>
                 <button
                   type="button"
-                  class="rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-opacity-75 aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
+                  class="text-nowrap rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-opacity-75 aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
                 >
                   Marsa-Alam Transfer
                 </button>
@@ -721,380 +770,464 @@
                     Customize Your Transfer
                   </button>
 
-                  <div
-                    class="hs-accordion-group mb-2 space-y-2"
-                    data-hs-accordion-always-open
-                  >
-                    <div class="hs-accordion active accordion-filter">
-                      <button
-                        class="hs-accordion-toggle accordion-btn"
-                        aria-controls="category"
+                  <div class="flex items-center gap-3 lg:hidden">
+                    <button
+                      type="button"
+                      data-hs-overlay="#filter-sidebar"
+                      class="flex items-center gap-2 rounded-lg border border-primary px-4 py-2"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-5 text-primary"
                       >
-                        <svg class="accordion-icon">
-                          <use
-                            href="./assets/images/icons/sprite.svg#category"
-                          ></use>
-                        </svg>
-                        Category
-                        <svg
-                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
+                        <path
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                        >
-                          <path d="m6 9 6 6 6-6" />
-                        </svg>
-                      </button>
-                      <div
-                        id="category"
-                        class="hs-accordion-content accordion-content-wrapper"
-                      >
-                        <div class="accordion-content">
-                          <menu class="space-y-2">
-                            <li>
-                              <button
-                                type="button"
-                                aria-pressed="true"
-                                class="font-normal text-black aria-pressed:font-semibold"
-                              >
-                                Cairo Transfer
-                              </button>
-                            </li>
-                            <li>
-                              <button
-                                type="button"
-                                class="font-normal text-black aria-pressed:font-semibold"
-                              >
-                                Hurghada Transfer
-                              </button>
-                            </li>
-                            <li>
-                              <button
-                                type="button"
-                                class="font-normal text-black aria-pressed:font-semibold"
-                              >
-                                Hurghada Transfer
-                              </button>
-                            </li>
-                            <li>
-                              <button
-                                type="button"
-                                class="font-normal text-black aria-pressed:font-semibold"
-                              >
-                                Hurghada Transfer
-                              </button>
-                            </li>
-                            <li>
-                              <button
-                                type="button"
-                                class="font-normal text-black aria-pressed:font-semibold"
-                              >
-                                Hurghada Transfer
-                              </button>
-                            </li>
-                          </menu>
-                        </div>
-                      </div>
-                    </div>
+                          d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
+                        />
+                      </svg>
 
-                    <div class="hs-accordion active accordion-filter">
-                      <button
-                        class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
-                        aria-controls="type"
-                      >
-                        <svg class="accordion-icon">
-                          <use
-                            href="./assets/images/icons/sprite.svg#bus-card"
-                          ></use>
-                        </svg>
-                        Transfer Type
-                        <svg
-                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path d="m6 9 6 6 6-6" />
-                        </svg>
-                      </button>
-                      <div
-                        id="type"
-                        class="hs-accordion-content accordion-content-wrapper"
-                      >
-                        <div class="accordion-content">
-                          <div class="mb-3 space-y-2">
-                            <label class="flex items-center gap-4 font-normal">
-                              <input
-                                type="checkbox"
-                                name="type"
-                                class="size-3.5 rounded-none accent-primary"
-                              />
-                              Any
-                            </label>
-                            <label class="flex items-center gap-4 font-normal">
-                              <input
-                                type="checkbox"
-                                name="type"
-                                class="size-3.5 rounded-none accent-primary"
-                              />
-                              Jeep
-                            </label>
-                            <label class="flex items-center gap-4 font-normal">
-                              <input
-                                type="checkbox"
-                                name="type"
-                                class="size-3.5 rounded-none accent-primary"
-                              />
-                              Mini Bus
-                            </label>
-                            <label class="flex items-center gap-4 font-normal">
-                              <input
-                                type="checkbox"
-                                name="type"
-                                class="size-3.5 rounded-none accent-primary"
-                              />
-                              Micro Bus
-                            </label>
-                            <label class="flex items-center gap-4 font-normal">
-                              <input
-                                type="checkbox"
-                                name="type"
-                                class="size-3.5 rounded-none accent-primary"
-                              />
-                              Super Jet
-                            </label>
-                          </div>
+                      Filter
+                    </button>
 
-                          <button
-                            type="button"
-                            class="text-secondary underline"
-                          >
-                            Show +25
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+                    <button
+                      type="button"
+                      data-hs-overlay="#sort-sidebar"
+                      class="flex items-center gap-2 rounded-lg border border-primary px-4 py-2"
+                    >
+                      <svg class="size-6 text-primary">
+                        <use href="./assets/images/icons/sprite.svg#sort"></use>
+                      </svg>
 
-                    <div class="hs-accordion active accordion-filter">
-                      <button
-                        class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
-                        aria-controls="available"
-                      >
-                        <svg class="accordion-icon">
-                          <use
-                            href="./assets/images/icons/sprite.svg#event-available"
-                          ></use>
-                        </svg>
-                        Availability
-                        <svg
-                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path d="m6 9 6 6 6-6" />
-                        </svg>
-                      </button>
-                      <div
-                        id="available"
-                        class="hs-accordion-content accordion-content-wrapper"
-                      >
-                        <div class="accordion-content">
-                          <div class="space-y-2">
-                            <label class="flex items-center gap-4 font-normal">
-                              <input
-                                type="radio"
-                                name="available"
-                                class="size-3.5 rounded-none accent-primary"
-                              />
-                              Any
-                            </label>
-                            <label class="flex items-center gap-4 font-normal">
-                              <input
-                                type="radio"
-                                name="available"
-                                class="size-3.5 rounded-none accent-primary"
-                              />
-                              Everyday
-                            </label>
-                            <label class="flex items-center gap-4 font-normal">
-                              <input
-                                type="radio"
-                                name="available"
-                                class="size-3.5 rounded-none accent-primary"
-                              />
-                              Every Monday
-                            </label>
-                            <label class="flex items-center gap-4 font-normal">
-                              <input
-                                type="radio"
-                                name="available"
-                                class="size-3.5 rounded-none accent-primary"
-                              />
-                              Every Friday
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                      Sort
+                    </button>
                   </div>
 
-                  <div class="hs-accordion-group space-y-2">
-                    <div
-                      class="hs-accordion border-transparent hs-accordion-active:border-gray"
-                      id="accordion-2"
+                  <div
+                    id="filter-sidebar"
+                    class="hs-overlay hidden [--auto-close:lg] hs-overlay-backdrop-open:bg-black/50 max-md:fixed max-md:inset-0 max-md:z-[120] max-md:translate-x-full max-md:transform max-md:overflow-y-auto max-md:bg-white max-md:p-4 max-md:transition-all max-md:duration-300 max-md:hs-overlay-open:translate-x-0 md:block"
+                    data-lenis-prevent
+                  >
+                    <button
+                      data-hs-overlay="#filter-sidebar"
+                      type="button"
+                      class="mb-3 flex items-center gap-2 lg:hidden"
                     >
-                      <button
-                        class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white hs-accordion-active:bg-secondary"
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        class="size-4 text-black"
                       >
-                        <span class="flex items-center gap-3">
-                          <svg
-                            class="size-4 text-secondary hs-accordion-active:text-primary lg:size-6"
-                          >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                        />
+                      </svg>
+
+                      Filter
+                    </button>
+
+                    <div
+                      data-hs-accordion-always-open
+                      class="hs-accordion-group mb-2 space-y-2"
+                    >
+                      <div class="hs-accordion active accordion-filter">
+                        <button
+                          class="hs-accordion-toggle accordion-btn"
+                          aria-controls="category"
+                        >
+                          <svg class="accordion-icon">
                             <use
-                              href="./assets/images/icons/sprite.svg#info"
+                              href="./assets/images/icons/sprite.svg#category"
                             ></use>
                           </svg>
-
-                          General Tips
-                        </span>
-
-                        <svg
-                          class="block size-4 hs-accordion-active:hidden"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="3"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path d="M5 12h14" />
-                          <path d="M12 5v14" />
-                        </svg>
-                        <svg
-                          class="hidden size-4 hs-accordion-active:block"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="3"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path d="M5 12h14" />
-                        </svg>
-                      </button>
-                      <div
-                        id="accordion-content-1"
-                        class="hs-accordion-content accordion-content-wrapper hidden"
-                      >
-                        <div class="px-2 pb-2">
-                          <div
-                            class="rounded-bl-xl rounded-br-xl bg-white p-4 shadow-lg"
+                          Category
+                          <svg
+                            class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                           >
+                            <path d="m6 9 6 6 6-6" />
+                          </svg>
+                        </button>
+                        <div
+                          id="category"
+                          class="hs-accordion-content accordion-content-wrapper"
+                        >
+                          <div class="accordion-content">
+                            <menu class="space-y-2">
+                              <li>
+                                <button
+                                  type="button"
+                                  aria-pressed="true"
+                                  class="font-normal text-black aria-pressed:font-semibold"
+                                >
+                                  Cairo Transfer
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  type="button"
+                                  class="font-normal text-black aria-pressed:font-semibold"
+                                >
+                                  Hurghada Transfer
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  type="button"
+                                  class="font-normal text-black aria-pressed:font-semibold"
+                                >
+                                  Hurghada Transfer
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  type="button"
+                                  class="font-normal text-black aria-pressed:font-semibold"
+                                >
+                                  Hurghada Transfer
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  type="button"
+                                  class="font-normal text-black aria-pressed:font-semibold"
+                                >
+                                  Hurghada Transfer
+                                </button>
+                              </li>
+                            </menu>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="hs-accordion active accordion-filter">
+                        <button
+                          class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
+                          aria-controls="type"
+                        >
+                          <svg class="accordion-icon">
+                            <use
+                              href="./assets/images/icons/sprite.svg#bus-card"
+                            ></use>
+                          </svg>
+                          Transfer Type
+                          <svg
+                            class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="m6 9 6 6 6-6" />
+                          </svg>
+                        </button>
+                        <div
+                          id="type"
+                          class="hs-accordion-content accordion-content-wrapper"
+                        >
+                          <div class="accordion-content">
+                            <div class="mb-3 space-y-2">
+                              <label
+                                class="flex items-center gap-4 font-normal"
+                              >
+                                <input
+                                  type="checkbox"
+                                  name="type"
+                                  class="size-3.5 rounded-none accent-primary"
+                                />
+                                Any
+                              </label>
+                              <label
+                                class="flex items-center gap-4 font-normal"
+                              >
+                                <input
+                                  type="checkbox"
+                                  name="type"
+                                  class="size-3.5 rounded-none accent-primary"
+                                />
+                                Jeep
+                              </label>
+                              <label
+                                class="flex items-center gap-4 font-normal"
+                              >
+                                <input
+                                  type="checkbox"
+                                  name="type"
+                                  class="size-3.5 rounded-none accent-primary"
+                                />
+                                Mini Bus
+                              </label>
+                              <label
+                                class="flex items-center gap-4 font-normal"
+                              >
+                                <input
+                                  type="checkbox"
+                                  name="type"
+                                  class="size-3.5 rounded-none accent-primary"
+                                />
+                                Micro Bus
+                              </label>
+                              <label
+                                class="flex items-center gap-4 font-normal"
+                              >
+                                <input
+                                  type="checkbox"
+                                  name="type"
+                                  class="size-3.5 rounded-none accent-primary"
+                                />
+                                Super Jet
+                              </label>
+                            </div>
+
+                            <button
+                              type="button"
+                              class="text-secondary underline"
+                            >
+                              Show +25
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="hs-accordion active accordion-filter">
+                        <button
+                          class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
+                          aria-controls="available"
+                        >
+                          <svg class="accordion-icon">
+                            <use
+                              href="./assets/images/icons/sprite.svg#event-available"
+                            ></use>
+                          </svg>
+                          Availability
+                          <svg
+                            class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="m6 9 6 6 6-6" />
+                          </svg>
+                        </button>
+                        <div
+                          id="available"
+                          class="hs-accordion-content accordion-content-wrapper"
+                        >
+                          <div class="accordion-content">
                             <div class="space-y-2">
-                              <div class="flex items-center gap-3">
-                                <svg class="size-5 text-green">
-                                  <use
-                                    href="./assets/images/icons/sprite.svg#checkmark-starburst"
-                                  ></use>
-                                </svg>
-                                Buy a local SIM card
-                              </div>
+                              <label
+                                class="flex items-center gap-4 font-normal"
+                              >
+                                <input
+                                  type="radio"
+                                  name="available"
+                                  class="size-3.5 rounded-none accent-primary"
+                                />
+                                Any
+                              </label>
+                              <label
+                                class="flex items-center gap-4 font-normal"
+                              >
+                                <input
+                                  type="radio"
+                                  name="available"
+                                  class="size-3.5 rounded-none accent-primary"
+                                />
+                                Everyday
+                              </label>
+                              <label
+                                class="flex items-center gap-4 font-normal"
+                              >
+                                <input
+                                  type="radio"
+                                  name="available"
+                                  class="size-3.5 rounded-none accent-primary"
+                                />
+                                Every Monday
+                              </label>
+                              <label
+                                class="flex items-center gap-4 font-normal"
+                              >
+                                <input
+                                  type="radio"
+                                  name="available"
+                                  class="size-3.5 rounded-none accent-primary"
+                                />
+                                Every Friday
+                              </label>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    <div
-                      class="hs-accordion border-transparent hs-accordion-active:border-gray"
-                      id="accordion-2"
-                    >
-                      <button
-                        class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white hs-accordion-active:bg-secondary"
-                      >
-                        <span class="flex items-center gap-3">
-                          <svg
-                            class="size-4 text-secondary hs-accordion-active:text-primary lg:size-6"
-                          >
-                            <use
-                              href="./assets/images/icons/sprite.svg#info"
-                            ></use>
-                          </svg>
-
-                          General Highlights
-                        </span>
-
-                        <svg
-                          class="block size-4 hs-accordion-active:hidden"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="3"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path d="M5 12h14" />
-                          <path d="M12 5v14" />
-                        </svg>
-                        <svg
-                          class="hidden size-4 hs-accordion-active:block"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="3"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path d="M5 12h14" />
-                        </svg>
-                      </button>
+                    <div class="hs-accordion-group space-y-2">
                       <div
-                        id="accordion-content-1"
-                        class="hs-accordion-content accordion-content-wrapper hidden"
+                        class="hs-accordion border-transparent hs-accordion-active:border-gray"
+                        id="accordion-2"
                       >
-                        <div class="px-2 pb-2">
-                          <div
-                            class="rounded-bl-xl rounded-br-xl bg-white p-4 shadow-lg"
+                        <button
+                          class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white hs-accordion-active:bg-secondary"
+                        >
+                          <span class="flex items-center gap-3">
+                            <svg
+                              class="size-4 text-secondary hs-accordion-active:text-primary lg:size-6"
+                            >
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+
+                            General Tips
+                          </span>
+
+                          <svg
+                            class="block size-4 hs-accordion-active:hidden"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                           >
-                            <div class="space-y-1">
-                              <div class="flex items-center gap-3">
-                                <svg class="size-5 text-green">
-                                  <use
-                                    href="./assets/images/icons/sprite.svg#checkmark-starburst"
-                                  ></use>
-                                </svg>
-                                Buy a local SIM card
+                            <path d="M5 12h14" />
+                            <path d="M12 5v14" />
+                          </svg>
+                          <svg
+                            class="hidden size-4 hs-accordion-active:block"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M5 12h14" />
+                          </svg>
+                        </button>
+                        <div
+                          id="accordion-content-1"
+                          class="hs-accordion-content accordion-content-wrapper hidden"
+                        >
+                          <div class="px-2 pb-2">
+                            <div
+                              class="rounded-bl-xl rounded-br-xl bg-white p-4 shadow-lg"
+                            >
+                              <div class="space-y-2">
+                                <div class="flex items-center gap-3">
+                                  <svg class="size-5 text-green">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#checkmark-starburst"
+                                    ></use>
+                                  </svg>
+                                  Buy a local SIM card
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="hs-accordion border-transparent hs-accordion-active:border-gray"
+                        id="accordion-2"
+                      >
+                        <button
+                          class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white hs-accordion-active:bg-secondary"
+                        >
+                          <span class="flex items-center gap-3">
+                            <svg
+                              class="size-4 text-secondary hs-accordion-active:text-primary lg:size-6"
+                            >
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+
+                            General Highlights
+                          </span>
+
+                          <svg
+                            class="block size-4 hs-accordion-active:hidden"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M5 12h14" />
+                            <path d="M12 5v14" />
+                          </svg>
+                          <svg
+                            class="hidden size-4 hs-accordion-active:block"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M5 12h14" />
+                          </svg>
+                        </button>
+                        <div
+                          id="accordion-content-1"
+                          class="hs-accordion-content accordion-content-wrapper hidden"
+                        >
+                          <div class="px-2 pb-2">
+                            <div
+                              class="rounded-bl-xl rounded-br-xl bg-white p-4 shadow-lg"
+                            >
+                              <div class="space-y-1">
+                                <div class="flex items-center gap-3">
+                                  <svg class="size-5 text-green">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#checkmark-starburst"
+                                    ></use>
+                                  </svg>
+                                  Buy a local SIM card
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -1124,120 +1257,149 @@
                   </div>
 
                   <div
-                    class="mb-8 flex flex-col flex-nowrap gap-2 pb-2 lg:mb-10 lg:flex-row"
+                    id="sort-sidebar"
+                    class="hs-overlay hidden [--auto-close:lg] hs-overlay-backdrop-open:bg-black/50 max-md:fixed max-md:inset-0 max-md:z-[120] max-md:translate-x-full max-md:transform max-md:overflow-y-auto max-md:bg-white max-md:p-4 max-md:transition-all max-md:duration-300 max-md:hs-overlay-open:translate-x-0 md:block lg:block"
+                    data-lenis-prevent
                   >
-                    <div class="hs-dropdown relative [--strategy:absolute]">
-                      <button
-                        type="button"
-                        class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
+                    <button
+                      data-hs-overlay="#sort-sidebar"
+                      type="button"
+                      class="mb-3 flex items-center gap-2 md:hidden"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        class="size-4 text-black"
                       >
-                        <svg class="size-6 text-primary">
-                          <use
-                            href="./assets/images/icons/sprite.svg#group-3"
-                          ></use>
-                        </svg>
-                        <span>Group Size</span>
-                        <svg
-                          class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
+                        <path
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                        >
-                          <path d="m6 9 6 6 6-6" />
-                        </svg>
-                      </button>
+                          d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                        />
+                      </svg>
 
-                      <div
-                        class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden min-w-52 space-y-3 rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
-                      >
+                      Sort
+                    </button>
+
+                    <div
+                      class="mb-8 flex flex-col flex-nowrap gap-2 pb-2 lg:mb-10 lg:flex-row"
+                    >
+                      <div class="hs-dropdown relative [--strategy:absolute]">
                         <button
                           type="button"
-                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                          aria-pressed="true"
+                          class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
                         >
-                          Group (1-3)
+                          <svg class="size-6 text-primary">
+                            <use
+                              href="./assets/images/icons/sprite.svg#group-3"
+                            ></use>
+                          </svg>
+                          <span>Group Size</span>
+                          <svg
+                            class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="m6 9 6 6 6-6" />
+                          </svg>
                         </button>
-                        <button
-                          type="button"
-                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+
+                        <div
+                          class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden min-w-52 space-y-3 rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
                         >
-                          Group (3-6)
-                        </button>
-                        <button
-                          type="button"
-                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                        >
-                          Group (7-10)
-                        </button>
-                        <button
-                          type="button"
-                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                        >
-                          Groups More than 10
-                        </button>
+                          <button
+                            type="button"
+                            class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                            aria-pressed="true"
+                          >
+                            Group (1-3)
+                          </button>
+                          <button
+                            type="button"
+                            class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                          >
+                            Group (3-6)
+                          </button>
+                          <button
+                            type="button"
+                            class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                          >
+                            Group (7-10)
+                          </button>
+                          <button
+                            type="button"
+                            class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                          >
+                            Groups More than 10
+                          </button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="hs-dropdown relative [--strategy:absolute]">
-                      <button
-                        type="button"
-                        class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
-                      >
-                        <svg class="size-6 text-primary">
-                          <use
-                            href="./assets/images/icons/sprite.svg#bus-clock"
-                          ></use>
-                        </svg>
-                        <span>Transfer to</span>
-                        <svg
-                          class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                      <div class="hs-dropdown relative [--strategy:absolute]">
+                        <button
+                          type="button"
+                          class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
                         >
-                          <path d="m6 9 6 6 6-6" />
-                        </svg>
-                      </button>
+                          <svg class="size-6 text-primary">
+                            <use
+                              href="./assets/images/icons/sprite.svg#bus-clock"
+                            ></use>
+                          </svg>
+                          <span>Transfer to</span>
+                          <svg
+                            class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="m6 9 6 6 6-6" />
+                          </svg>
+                        </button>
 
-                      <div
-                        class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden min-w-52 space-y-3 rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
-                      >
-                        <button
-                          type="button"
-                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                          aria-pressed="true"
+                        <div
+                          class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden min-w-52 space-y-3 rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
                         >
-                          Giza
-                        </button>
-                        <button
-                          type="button"
-                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                        >
-                          hurghda
-                        </button>
-                        <button
-                          type="button"
-                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                        >
-                          Sharm El-Sheik
-                        </button>
-                        <button
-                          type="button"
-                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                        >
-                          Alexanderia
-                        </button>
+                          <button
+                            type="button"
+                            class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                            aria-pressed="true"
+                          >
+                            Giza
+                          </button>
+                          <button
+                            type="button"
+                            class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                          >
+                            hurghda
+                          </button>
+                          <button
+                            type="button"
+                            class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                          >
+                            Sharm El-Sheik
+                          </button>
+                          <button
+                            type="button"
+                            class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                          >
+                            Alexanderia
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1347,7 +1509,9 @@
                         </p>
 
                         <div class="tour-card__footer">
-                          <a href="./-details.html" class="tour-card__link"
+                          <a
+                            href="./transfer-details.html"
+                            class="tour-card__link"
                             >View Details</a
                           >
                           <p>
@@ -1460,7 +1624,9 @@
                         </p>
 
                         <div class="tour-card__footer">
-                          <a href="./-details.html" class="tour-card__link"
+                          <a
+                            href="./transfer-details.html"
+                            class="tour-card__link"
                             >View Details</a
                           >
                           <p>
@@ -1572,7 +1738,9 @@
                         </p>
 
                         <div class="tour-card__footer">
-                          <a href="./-details.html" class="tour-card__link"
+                          <a
+                            href="./transfer-details.html"
+                            class="tour-card__link"
                             >View Details</a
                           >
                           <p>
@@ -1685,7 +1853,9 @@
                         </p>
 
                         <div class="tour-card__footer">
-                          <a href="./-details.html" class="tour-card__link"
+                          <a
+                            href="./transfer-details.html"
+                            class="tour-card__link"
                             >View Details</a
                           >
                           <p>

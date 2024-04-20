@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doudou</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -25,6 +26,10 @@
     ></script>
     <script
       defer
+      src="https://cdn.jsdelivr.net/npm/headroom.js@0.12.0/dist/headroom.min.js"
+    ></script>
+    <script
+      defer
       src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"
     ></script>
     <script defer src="./assets/scripts/main.js"></script>
@@ -32,18 +37,66 @@
 
   <body>
     <div class="app">
+      <nav id="headroom" class="navbar_nav primary hidden">
+        <div class="container">
+          <ul class="navbar_list">
+            <li>
+              <a href="./index.html" class="navbar_link">Home</a>
+            </li>
+            <li>
+              <a
+                href="./egypt-tours.html"
+                class="navbar_link"
+                aria-current="page"
+                >Egypt Tours</a
+              >
+            </li>
+            <li>
+              <a href="./events.html" class="navbar_link">Events</a>
+            </li>
+            <li>
+              <a href="./services.html" class="navbar_link">Services</a>
+            </li>
+            <li>
+              <a href="./blogs.html" class="navbar_link">Blogs</a>
+            </li>
+            <li>
+              <a href="./about.html" class="navbar_link">About us</a>
+            </li>
+            <li>
+              <a href="./loyalty-program.html" class="navbar_link"
+                >Loyalty Program</a
+              >
+            </li>
+            <li>
+              <a href="./careers.html" class="navbar_link">Careers</a>
+            </li>
+            <li>
+              <a href="./how-it-works.html" class="navbar_link"
+                >How it works?</a
+              >
+            </li>
+            <li>
+              <a href="./partner.html" class="navbar_link"
+                >Become our Partner</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
       <header class="page-header">
-        <div class="navbar static border-b border-primary/20">
+        <div class="navbar">
           <div class="container">
             <div class="navbar_top">
               <div class="flex items-center gap-3">
                 <a href="#">
-                  <svg class="size-5 text-primary">
+                  <svg class="size-5 text-white">
                     <use href="./assets/images/icons/sprite.svg#whatsapp"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="size-5 text-primary">
+                  <svg class="size-5 text-white">
                     <use href="./assets/images/icons/sprite.svg#mail"></use>
                   </svg>
                 </a>
@@ -51,26 +104,26 @@
 
               <div class="flex items-center gap-4 lg:gap-10">
                 <div class="flex items-center gap-2">
-                  <svg class="size-5 text-primary">
+                  <svg class="size-5 text-white">
                     <use href="./assets/images/icons/sprite.svg#clock"></use>
                   </svg>
-                  <span class="text-sm text-primary"
+                  <span class="text-sm text-white"
                     >Cairo : <span id="time">05: 14</span></span
                   >
                 </div>
                 <div class="flex items-center gap-2">
-                  <svg class="size-5 text-primary">
+                  <svg class="size-5 text-white">
                     <use
                       href="./assets/images/icons/sprite.svg#cloud-sun"
                     ></use>
                   </svg>
-                  <span class="text-sm text-primary">: 15 OC/ 60 OF</span>
+                  <span class="text-sm text-white">: 15 OC/ 60 OF</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <nav class="navbar_nav primary">
+          <nav class="navbar_nav">
             <div class="container">
               <ul class="navbar_list">
                 <li>
@@ -124,180 +177,9 @@
               class="w-48 shrink-0 lg:w-60"
               alt=""
             />
-
-            <div class="flex flex-1 rounded-xl border border-primary bg-white">
-              <div class="flex flex-1 divide-x divide-primary">
-                <div class="flex-1">
-                  <div
-                    class="hs-dropdown relative flex h-full [--strategy:absolute]"
-                  >
-                    <button
-                      type="button"
-                      class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap px-4"
-                    >
-                      <svg class="size-6 text-primary">
-                        <use
-                          href="./assets/images/icons/sprite.svg#hotel"
-                        ></use>
-                      </svg>
-                      <p>High Luxury 5 Stars</p>
-                      <svg
-                        class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-
-                    <div
-                      class="hs-dropdown-menu duration inset-x-0 z-10 mt-2 hidden space-y-3 rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
-                    >
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                        aria-pressed="true"
-                      >
-                        Hotel Name
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Hotel Name
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Hotel Name
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Hotel Name
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Hotel Name
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Hotel Name
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Hotel Name
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-1 items-center gap-3 px-4">
-                  <svg class="size-6 shrink-0 text-primary">
-                    <use href="./assets/images/icons/sprite.svg#calender"></use>
-                  </svg>
-                  <input
-                    id="range"
-                    type="text"
-                    class="flatpickr flatpickr-input flex-1 bg-transparent outline-none"
-                    placeholder="Check in date - Check out date"
-                  />
-                  <svg
-                    class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </div>
-                <div class="flex-1">
-                  <div
-                    class="hs-dropdown relative flex h-full [--strategy:absolute] [--auto-close:inside]"
-                  >
-                    <button
-                      type="button"
-                      class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap px-4"
-                    >
-                      <svg class="size-6 shrink-0 text-primary">
-                        <use
-                          href="./assets/images/icons/sprite.svg#subscription-cashflow"
-                        ></use>
-                      </svg>
-                      Budget From - to
-                      <svg
-                        class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-
-                    <div
-                      class="hs-dropdown-menu duration inset-x-0 z-10 mt-2 hidden rounded-lg bg-white p-6 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
-                    >
-                      <p class="mb-4 text-sm">Your Budget</p>
-                      <div id="slider-1">
-                        <div class="slider mb-3"></div>
-                        <p class="flex items-center justify-between text-sm">
-                          <span>$<span class="slider-min"></span></span>
-                          <span>$<span class="slider-max"></span></span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button
-                type="button"
-                class="rounded-br-xl rounded-tr-xl bg-primary px-5 py-3 text-white transition-colors hover:bg-opacity-80"
-              >
-                Search
-              </button>
-            </div>
-
-            <button
-              type="button"
-              data-hs-overlay="#customize-tour"
-              class="flex items-center gap-2 rounded-lg bg-primary px-4 py-3 text-white transition-colors hover:bg-opacity-75"
-            >
-              <svg class="size-5 text-white">
-                <use href="./assets/images/icons/sprite.svg#settings"></use>
-              </svg>
-
-              Customize Your Tour
-            </button>
           </div>
 
-          <div class="navbar_mobile static">
+          <div class="navbar_mobile" style="position: static !important">
             <div class="flex items-center gap-2">
               <div class="hs-dropdown relative inline-flex">
                 <button type="button">
@@ -455,7 +337,7 @@
                     <div class="divide-y divide-primary">
                       <div class="px-4 py-3">
                         <div
-                          class="hs-dropdown relative flex h-full [--strategy:absolute] [--auto-close:outside] [--offset:5]"
+                          class="hs-dropdown relative flex h-full [--auto-close:outside] [--offset:5] [--strategy:absolute]"
                         >
                           <button
                             type="button"
@@ -561,7 +443,7 @@
                       </div>
                       <div class="px-4 py-3">
                         <div
-                          class="hs-dropdown relative flex h-full w-full [--strategy:absolute] [--auto-close:inside] [--offset:5]"
+                          class="hs-dropdown relative flex h-full w-full [--offset:5] [--strategy:absolute] [--auto-close:inside]"
                         >
                           <button
                             type="button"
@@ -630,12 +512,201 @@
             </div>
           </div>
         </div>
+
+        <div class="hero">
+          <div class="container">
+            <div class="hero_content">
+              <h1
+                class="txt-shadow"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="600"
+              >
+                Egypt Private Tour Package
+              </h1>
+              <p
+                class="txt-shadow"
+                data-aos="fade-up"
+                data-aos-delay="600"
+                data-aos-duration="600"
+              >
+                Provide everyone with the finest vacation accompanied by the
+                highest level of safety, luxury and affordable prices
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <section class="bg-primary/75 py-12 text-white lg:py-16">
+          <div class="container">
+            <header class="section_header text-center">
+              <h2 class="section_heading" data-aos="fade-up">
+                Private Quality Guided Tours to Egypt Include Pyramids
+              </h2>
+            </header>
+
+            <div
+              class="grid gap-5 text-center md:grid-cols-2 lg:grid-cols-5 lg:gap-10"
+            >
+              <div
+                data-aos="fade-up"
+                data-aos-easing="ease-out"
+                data-aos-delay="200"
+              >
+                <img
+                  src="./assets/images/icons/map-signs.svg"
+                  class="mx-auto mb-2 size-10"
+                  alt=""
+                />
+                <h3 class="mb-4 text-2xl font-semibold text-secondary">
+                  Tour Guide
+                </h3>
+
+                <p class="line-clamp-3 leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do tation 
+                </p>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-easing="ease-out"
+                data-aos-delay="400"
+              >
+                <img
+                  src="./assets/images/icons/safety-certificate.svg"
+                  class="mx-auto mb-2 size-10"
+                  alt=""
+                />
+                <h3 class="mb-4 text-2xl font-semibold text-secondary">
+                  Safety
+                </h3>
+
+                <p class="line-clamp-3 leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do tation 
+                </p>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-easing="ease-out"
+                data-aos-delay="600"
+              >
+                <img
+                  src="./assets/images/icons/smile-beam.svg"
+                  class="mx-auto mb-2 size-10"
+                  alt=""
+                />
+                <h3 class="mb-4 text-2xl font-semibold text-secondary">
+                  Luxury
+                </h3>
+
+                <p class="line-clamp-3 leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do tation 
+                </p>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-easing="ease-out"
+                data-aos-delay="600"
+              >
+                <img
+                  src="./assets/images/icons/take-my-money.svg"
+                  class="mx-auto mb-2 size-10"
+                  alt=""
+                />
+                <h3 class="mb-4 text-2xl font-semibold text-secondary">
+                  Affordable Prices
+                </h3>
+
+                <p class="line-clamp-3 leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do tation 
+                </p>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-easing="ease-out"
+                data-aos-delay="1000"
+              >
+                <img
+                  src="./assets/images/icons/map-cancel.svg"
+                  class="mx-auto mb-2 size-10"
+                  alt=""
+                />
+                <h3 class="mb-4 text-2xl font-semibold text-secondary">
+                  Fair Cancellation
+                </h3>
+
+                <p class="line-clamp-3 leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do tation 
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <img
+          src="./assets/images/tours-bg.jpeg"
+          class="page-header__bg"
+          alt=""
+        />
       </header>
 
       <main class="space-y-12 lg:space-y-16">
         <section class="relative pt-8 lg:pt-10">
+          <div class="sticky top-0 z-40 mb-8 bg-white py-4">
+            <div class="container">
+              <menu class="tabs mb-0">
+                <li>
+                  <a href="#" class="tab" aria-current="page">Travel Package</a>
+                </li>
+                <li>
+                  <a href="#" class="tab">Egypt Day Tours</a>
+                </li>
+                <li>
+                  <a href="#" class="tab">Nile River Cruises</a>
+                </li>
+                <li>
+                  <a href="#" class="tab">Egypt Shore Excursions</a>
+                </li>
+              </menu>
+            </div>
+          </div>
+
           <header class="mb-6 lg:mb-10">
             <div class="container">
+              <div
+                class="mb-6 flex flex-nowrap items-center gap-2 overflow-y-auto lg:mb-10"
+              >
+                <button
+                  type="button"
+                  aria-pressed="true"
+                  class="text-nowrap rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-opacity-75 aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
+                >
+                  Egypt Family Holiday
+                </button>
+                <button
+                  type="button"
+                  class="text-nowrap rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-primary hover:text-white aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
+                >
+                  Egypt Honeymoon Package
+                </button>
+                <button
+                  type="button"
+                  class="text-nowrap rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-primary hover:text-white aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
+                >
+                  Cheap Holidays to Egypt
+                </button>
+                <button
+                  type="button"
+                  class="text-nowrap rounded-lg border border-primary px-4 py-2 text-primary transition-colors hover:bg-primary hover:text-white aria-pressed:bg-primary aria-pressed:text-white lg:text-lg"
+                >
+                  Egypt Classic Tours Package
+                </button>
+              </div>
+
               <ol class="breadcrumb" aria-label="Breadcrumb">
                 <li>
                   <a href="#"> Home </a>
@@ -709,1001 +780,1074 @@
                   Customize Your Tour
                 </button>
 
-                <div
-                  class="hs-accordion-group mb-2 space-y-2"
-                  data-hs-accordion-always-open
-                >
-                  <div class="hs-accordion active accordion-filter">
-                    <button
-                      class="hs-accordion-toggle accordion-btn"
-                      aria-controls="category"
+                <div class="flex items-center gap-3 lg:hidden">
+                  <button
+                    type="button"
+                    data-hs-overlay="#filter-sidebar"
+                    class="flex items-center gap-2 rounded-lg border border-primary px-4 py-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5 text-primary"
                     >
-                      <svg class="accordion-icon">
-                        <use
-                          href="./assets/images/icons/sprite.svg#category"
-                        ></use>
-                      </svg>
-                      Category
-                      <svg
-                        class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
+                      <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-                    <div
-                      id="category"
-                      class="hs-accordion-content accordion-content-wrapper"
-                    >
-                      <div class="accordion-content">
-                        <menu class="space-y-2">
-                          <li>
-                            <button
-                              type="button"
-                              aria-pressed="true"
-                              class="font-normal text-black aria-pressed:font-semibold"
-                            >
-                              Egypt Family Holidays
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              type="button"
-                              class="font-normal text-black aria-pressed:font-semibold"
-                            >
-                              Cheap Holidays to Egypt
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              type="button"
-                              class="font-normal text-black aria-pressed:font-semibold"
-                            >
-                              Cheap Holidays to Egypt
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              type="button"
-                              class="font-normal text-black aria-pressed:font-semibold"
-                            >
-                              Cheap Holidays to Egypt
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              type="button"
-                              class="font-normal text-black aria-pressed:font-semibold"
-                            >
-                              Cheap Holidays to Egypt
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              type="button"
-                              class="font-normal text-black aria-pressed:font-semibold"
-                            >
-                              Cheap Holidays to Egypt
-                            </button>
-                          </li>
-                        </menu>
-                      </div>
-                    </div>
-                  </div>
+                        d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
+                      />
+                    </svg>
 
-                  <div class="hs-accordion active accordion-filter">
-                    <button
-                      class="hs-accordion-toggle accordion-btn"
-                      aria-controls="duration"
-                    >
-                      <svg class="accordion-icon">
-                        <use
-                          href="./assets/images/icons/sprite.svg#clipboard-text-time"
-                        ></use>
-                      </svg>
-                      Tours By Duration
-                      <svg
-                        class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-                    <div
-                      id="duration"
-                      class="hs-accordion-content accordion-content-wrapper"
-                    >
-                      <div class="accordion-content">
-                        <div class="space-y-2">
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="duration"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Any
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="duration"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            3 Days Tour
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="duration"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            5 Days Tour
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="duration"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            7 Days Tour
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="duration"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            10 Days Tour
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="duration"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            14 Days Tour
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    Filter
+                  </button>
 
-                  <div class="hs-accordion active accordion-filter">
-                    <button
-                      class="hs-accordion-toggle accordion-btn"
-                      aria-controls="month"
-                    >
-                      <svg class="accordion-icon">
-                        <use
-                          href="./assets/images/icons/sprite.svg#clipboard-text-time"
-                        ></use>
-                      </svg>
-                      Tours By Month
-                      <svg
-                        class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-                    <div
-                      id="month"
-                      class="hs-accordion-content accordion-content-wrapper"
-                    >
-                      <div class="accordion-content">
-                        <div class="mb-3 space-y-2">
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="month"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Any
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="month"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            January
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="month"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            February
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="month"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            March
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="month"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            April
-                          </label>
-                        </div>
+                  <button
+                    type="button"
+                    data-hs-overlay="#sort-sidebar"
+                    class="flex items-center gap-2 rounded-lg border border-primary px-4 py-2"
+                  >
+                    <svg class="size-6 text-primary">
+                      <use href="./assets/images/icons/sprite.svg#sort"></use>
+                    </svg>
 
-                        <button type="button" class="text-secondary underline">
-                          Show +8
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="hs-accordion active accordion-filter">
-                    <button
-                      class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
-                      aria-controls="destination"
-                    >
-                      <svg class="accordion-icon">
-                        <use
-                          href="./assets/images/icons/sprite.svg#location"
-                        ></use>
-                      </svg>
-                      Tours By Destination
-                      <svg
-                        class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-                    <div
-                      id="destination"
-                      class="hs-accordion-content accordion-content-wrapper"
-                    >
-                      <div class="accordion-content">
-                        <div class="relative mb-4 flex items-center">
-                          <svg class="absolute start-4 size-4 text-primary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#search"
-                            ></use>
-                          </svg>
-                          <input
-                            type="text"
-                            class="block w-full rounded-xl border border-primary py-2.5 pe-4 ps-10 text-xs font-normal text-black outline-none placeholder:text-gray"
-                            placeholder="Search Destinations"
-                          />
-                        </div>
-
-                        <div class="mb-3 space-y-2">
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="destination"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            All Cities
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="destination"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Cairo
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="destination"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Luxor
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="destination"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Aswan
-                          </label>
-                        </div>
-
-                        <button type="button" class="text-secondary underline">
-                          Show +25
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="hs-accordion active accordion-filter">
-                    <button
-                      class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
-                      aria-controls="type"
-                    >
-                      <svg class="accordion-icon">
-                        <use
-                          href="./assets/images/icons/sprite.svg#travel-card"
-                        ></use>
-                      </svg>
-                      Tours Type
-                      <svg
-                        class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-                    <div
-                      id="type"
-                      class="hs-accordion-content accordion-content-wrapper"
-                    >
-                      <div class="accordion-content">
-                        <div class="mb-3 space-y-2">
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="type"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Any
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="type"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Classic Tour
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="type"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Luxury Tour
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="type"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Romantic Tours
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="type"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Accessible Tour
-                          </label>
-                        </div>
-
-                        <button type="button" class="text-secondary underline">
-                          Show +25
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="hs-accordion active accordion-filter">
-                    <button
-                      class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
-                      aria-controls="available"
-                    >
-                      <svg class="accordion-icon">
-                        <use
-                          href="./assets/images/icons/sprite.svg#event-available"
-                        ></use>
-                      </svg>
-                      Availability
-                      <svg
-                        class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-                    <div
-                      id="available"
-                      class="hs-accordion-content accordion-content-wrapper"
-                    >
-                      <div class="accordion-content">
-                        <div class="space-y-2">
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="available"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Any
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="available"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Everyday
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="available"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Every Monday
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="available"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Every Friday
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="hs-accordion active accordion-filter">
-                    <button
-                      class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
-                      aria-controls="rating"
-                    >
-                      <svg class="accordion-icon">
-                        <use
-                          href="./assets/images/icons/sprite.svg#dislike"
-                        ></use>
-                      </svg>
-                      Rating
-                      <svg
-                        class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-                    <div
-                      id="rating"
-                      class="hs-accordion-content accordion-content-wrapper"
-                    >
-                      <div class="accordion-content">
-                        <div class="space-y-2">
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="rating"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Any
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="rating"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            <div class="inline-flex items-center gap-1">
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                            </div>
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="rating"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            <div class="inline-flex items-center gap-1">
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                            </div>
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="rating"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            <div class="inline-flex items-center gap-1">
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                            </div>
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="rating"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            <div class="inline-flex items-center gap-1">
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                            </div>
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="checkbox"
-                              name="rating"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            <div class="inline-flex items-center gap-1">
-                              <svg class="size-3 text-secondary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#star"
-                                ></use>
-                              </svg>
-                            </div>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="hs-accordion active accordion-filter">
-                    <button
-                      class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
-                      aria-controls="special-event"
-                    >
-                      <svg class="accordion-icon">
-                        <use
-                          href="./assets/images/icons/sprite.svg#event"
-                        ></use>
-                      </svg>
-                      Special Events
-                      <svg
-                        class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-                    <div
-                      id="special-event"
-                      class="hs-accordion-content accordion-content-wrapper"
-                    >
-                      <div class="accordion-content">
-                        <div class="space-y-2">
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="available"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Any
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="available"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Christmas Tours
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="available"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Easter Offers
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="hs-accordion active accordion-filter">
-                    <button
-                      class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
-                      aria-controls="opportunities"
-                    >
-                      <svg class="accordion-icon">
-                        <use
-                          href="./assets/images/icons/sprite.svg#offer"
-                        ></use>
-                      </svg>
-                      Tours Opportunities
-                      <svg
-                        class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-                    <div
-                      id="opportunities"
-                      class="hs-accordion-content accordion-content-wrapper"
-                    >
-                      <div class="accordion-content">
-                        <div class="space-y-2">
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="opportunities"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Any
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="opportunities"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            10-30% Discount
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="opportunities"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            35-50% Discount
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="opportunities"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            More than 50% Discount
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="hs-accordion active accordion-filter">
-                    <button
-                      class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
-                      aria-controls="size"
-                    >
-                      <svg class="accordion-icon">
-                        <use
-                          href="./assets/images/icons/sprite.svg#group-3"
-                        ></use>
-                      </svg>
-                      Group Size
-                      <svg
-                        class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-                    <div
-                      id="size"
-                      class="hs-accordion-content accordion-content-wrapper"
-                    >
-                      <div class="accordion-content">
-                        <div class="space-y-2">
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="size"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Any
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="size"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Group Tour
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="size"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Private Tour
-                          </label>
-                          <label class="flex items-center gap-4 font-normal">
-                            <input
-                              type="radio"
-                              name="size"
-                              class="size-3.5 rounded-none accent-primary"
-                            />
-                            Small Group Tour
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    Sort
+                  </button>
                 </div>
 
-                <div class="hs-accordion-group space-y-2">
-                  <div
-                    class="hs-accordion border-transparent hs-accordion-active:border-gray"
-                    id="accordion-2"
+                <div
+                  id="filter-sidebar"
+                  class="hs-overlay hidden [--auto-close:lg] hs-overlay-backdrop-open:bg-black/50 max-md:fixed max-md:inset-0 max-md:z-[120] max-md:translate-x-full max-md:transform max-md:overflow-y-auto max-md:bg-white max-md:p-4 max-md:transition-all max-md:duration-300 max-md:hs-overlay-open:translate-x-0 md:block"
+                  data-lenis-prevent
+                >
+                  <button
+                    data-hs-overlay="#filter-sidebar"
+                    type="button"
+                    class="mb-3 flex items-center gap-2 lg:hidden"
                   >
-                    <button
-                      class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white hs-accordion-active:bg-secondary"
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="size-4 text-black"
                     >
-                      <span class="flex items-center gap-3">
-                        <svg
-                          class="size-4 text-secondary hs-accordion-active:text-primary lg:size-6"
-                        >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                      />
+                    </svg>
+
+                    Filter
+                  </button>
+                  <div
+                    class="hs-accordion-group mb-2 space-y-2"
+                    data-hs-accordion-always-open
+                  >
+                    <div class="hs-accordion active accordion-filter">
+                      <button
+                        class="hs-accordion-toggle accordion-btn"
+                        aria-controls="category"
+                      >
+                        <svg class="accordion-icon">
                           <use
-                            href="./assets/images/icons/sprite.svg#info"
+                            href="./assets/images/icons/sprite.svg#category"
                           ></use>
                         </svg>
-
-                        General Tips
-                      </span>
-
-                      <svg
-                        class="block size-4 hs-accordion-active:hidden"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="3"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="M5 12h14" />
-                        <path d="M12 5v14" />
-                      </svg>
-                      <svg
-                        class="hidden size-4 hs-accordion-active:block"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="3"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="M5 12h14" />
-                      </svg>
-                    </button>
-                    <div
-                      id="accordion-content-1"
-                      class="hs-accordion-content accordion-content-wrapper hidden"
-                    >
-                      <div class="px-2 pb-2">
-                        <div
-                          class="rounded-bl-xl rounded-br-xl bg-white p-4 shadow-lg"
+                        Category
+                        <svg
+                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+                      <div
+                        id="category"
+                        class="hs-accordion-content accordion-content-wrapper"
+                      >
+                        <div class="accordion-content">
+                          <menu class="space-y-2">
+                            <li>
+                              <button
+                                type="button"
+                                aria-pressed="true"
+                                class="font-normal text-black aria-pressed:font-semibold"
+                              >
+                                Egypt Family Holidays
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="font-normal text-black aria-pressed:font-semibold"
+                              >
+                                Cheap Holidays to Egypt
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="font-normal text-black aria-pressed:font-semibold"
+                              >
+                                Cheap Holidays to Egypt
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="font-normal text-black aria-pressed:font-semibold"
+                              >
+                                Cheap Holidays to Egypt
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="font-normal text-black aria-pressed:font-semibold"
+                              >
+                                Cheap Holidays to Egypt
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="font-normal text-black aria-pressed:font-semibold"
+                              >
+                                Cheap Holidays to Egypt
+                              </button>
+                            </li>
+                          </menu>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hs-accordion active accordion-filter">
+                      <button
+                        class="hs-accordion-toggle accordion-btn"
+                        aria-controls="duration"
+                      >
+                        <svg class="accordion-icon">
+                          <use
+                            href="./assets/images/icons/sprite.svg#clipboard-text-time"
+                          ></use>
+                        </svg>
+                        Tours By Duration
+                        <svg
+                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+                      <div
+                        id="duration"
+                        class="hs-accordion-content accordion-content-wrapper"
+                      >
+                        <div class="accordion-content">
                           <div class="space-y-2">
-                            <div class="flex items-center gap-3">
-                              <svg class="size-5 text-green">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#checkmark-starburst"
-                                ></use>
-                              </svg>
-                              Buy a local SIM card
-                            </div>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="duration"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Any
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="duration"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              3 Days Tour
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="duration"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              5 Days Tour
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="duration"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              7 Days Tour
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="duration"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              10 Days Tour
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="duration"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              14 Days Tour
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hs-accordion active accordion-filter">
+                      <button
+                        class="hs-accordion-toggle accordion-btn"
+                        aria-controls="month"
+                      >
+                        <svg class="accordion-icon">
+                          <use
+                            href="./assets/images/icons/sprite.svg#clipboard-text-time"
+                          ></use>
+                        </svg>
+                        Tours By Month
+                        <svg
+                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+                      <div
+                        id="month"
+                        class="hs-accordion-content accordion-content-wrapper"
+                      >
+                        <div class="accordion-content">
+                          <div class="mb-3 space-y-2">
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="month"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Any
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="month"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              January
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="month"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              February
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="month"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              March
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="month"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              April
+                            </label>
+                          </div>
+
+                          <button
+                            type="button"
+                            class="text-secondary underline"
+                          >
+                            Show +8
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hs-accordion active accordion-filter">
+                      <button
+                        class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
+                        aria-controls="destination"
+                      >
+                        <svg class="accordion-icon">
+                          <use
+                            href="./assets/images/icons/sprite.svg#location"
+                          ></use>
+                        </svg>
+                        Tours By Destination
+                        <svg
+                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+                      <div
+                        id="destination"
+                        class="hs-accordion-content accordion-content-wrapper"
+                      >
+                        <div class="accordion-content">
+                          <div class="relative mb-4 flex items-center">
+                            <svg class="absolute start-4 size-4 text-primary">
+                              <use
+                                href="./assets/images/icons/sprite.svg#search"
+                              ></use>
+                            </svg>
+                            <input
+                              type="text"
+                              class="block w-full rounded-xl border border-primary py-2.5 pe-4 ps-10 text-xs font-normal text-black outline-none placeholder:text-gray"
+                              placeholder="Search Destinations"
+                            />
+                          </div>
+
+                          <div class="mb-3 space-y-2">
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="destination"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              All Cities
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="destination"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Cairo
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="destination"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Luxor
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="destination"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Aswan
+                            </label>
+                          </div>
+
+                          <button
+                            type="button"
+                            class="text-secondary underline"
+                          >
+                            Show +25
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hs-accordion active accordion-filter">
+                      <button
+                        class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
+                        aria-controls="type"
+                      >
+                        <svg class="accordion-icon">
+                          <use
+                            href="./assets/images/icons/sprite.svg#travel-card"
+                          ></use>
+                        </svg>
+                        Tours Type
+                        <svg
+                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+                      <div
+                        id="type"
+                        class="hs-accordion-content accordion-content-wrapper"
+                      >
+                        <div class="accordion-content">
+                          <div class="mb-3 space-y-2">
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="type"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Any
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="type"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Classic Tour
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="type"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Luxury Tour
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="type"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Romantic Tours
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="type"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Accessible Tour
+                            </label>
+                          </div>
+
+                          <button
+                            type="button"
+                            class="text-secondary underline"
+                          >
+                            Show +25
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hs-accordion active accordion-filter">
+                      <button
+                        class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
+                        aria-controls="available"
+                      >
+                        <svg class="accordion-icon">
+                          <use
+                            href="./assets/images/icons/sprite.svg#event-available"
+                          ></use>
+                        </svg>
+                        Availability
+                        <svg
+                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+                      <div
+                        id="available"
+                        class="hs-accordion-content accordion-content-wrapper"
+                      >
+                        <div class="accordion-content">
+                          <div class="space-y-2">
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="available"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Any
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="available"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Everyday
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="available"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Every Monday
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="available"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Every Friday
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hs-accordion active accordion-filter">
+                      <button
+                        class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
+                        aria-controls="rating"
+                      >
+                        <svg class="accordion-icon">
+                          <use
+                            href="./assets/images/icons/sprite.svg#dislike"
+                          ></use>
+                        </svg>
+                        Rating
+                        <svg
+                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+                      <div
+                        id="rating"
+                        class="hs-accordion-content accordion-content-wrapper"
+                      >
+                        <div class="accordion-content">
+                          <div class="space-y-2">
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="rating"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Any
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="rating"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              <div class="inline-flex items-center gap-1">
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                              </div>
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="rating"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              <div class="inline-flex items-center gap-1">
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                              </div>
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="rating"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              <div class="inline-flex items-center gap-1">
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                              </div>
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="rating"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              <div class="inline-flex items-center gap-1">
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                              </div>
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="checkbox"
+                                name="rating"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              <div class="inline-flex items-center gap-1">
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hs-accordion active accordion-filter">
+                      <button
+                        class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
+                        aria-controls="special-event"
+                      >
+                        <svg class="accordion-icon">
+                          <use
+                            href="./assets/images/icons/sprite.svg#event"
+                          ></use>
+                        </svg>
+                        Special Events
+                        <svg
+                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+                      <div
+                        id="special-event"
+                        class="hs-accordion-content accordion-content-wrapper"
+                      >
+                        <div class="accordion-content">
+                          <div class="space-y-2">
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="available"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Any
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="available"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Christmas Tours
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="available"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Easter Offers
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hs-accordion active accordion-filter">
+                      <button
+                        class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
+                        aria-controls="opportunities"
+                      >
+                        <svg class="accordion-icon">
+                          <use
+                            href="./assets/images/icons/sprite.svg#offer"
+                          ></use>
+                        </svg>
+                        Tours Opportunities
+                        <svg
+                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+                      <div
+                        id="opportunities"
+                        class="hs-accordion-content accordion-content-wrapper"
+                      >
+                        <div class="accordion-content">
+                          <div class="space-y-2">
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="opportunities"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Any
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="opportunities"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              10-30% Discount
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="opportunities"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              35-50% Discount
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="opportunities"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              More than 50% Discount
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hs-accordion active accordion-filter">
+                      <button
+                        class="hs-accordion-toggle inline-flex w-full items-center gap-x-2 text-nowrap rounded-lg px-4 py-4 text-start font-semibold text-black lg:px-6 lg:text-lg"
+                        aria-controls="size"
+                      >
+                        <svg class="accordion-icon">
+                          <use
+                            href="./assets/images/icons/sprite.svg#group-3"
+                          ></use>
+                        </svg>
+                        Group Size
+                        <svg
+                          class="accordion-arrow shrink-0 hs-accordion-active:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+                      <div
+                        id="size"
+                        class="hs-accordion-content accordion-content-wrapper"
+                      >
+                        <div class="accordion-content">
+                          <div class="space-y-2">
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="size"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Any
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="size"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Group Tour
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="size"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Private Tour
+                            </label>
+                            <label class="flex items-center gap-4 font-normal">
+                              <input
+                                type="radio"
+                                name="size"
+                                class="size-3.5 rounded-none accent-primary"
+                              />
+                              Small Group Tour
+                            </label>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <div
-                    class="hs-accordion border-transparent hs-accordion-active:border-gray"
-                    id="accordion-2"
-                  >
-                    <button
-                      class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white hs-accordion-active:bg-secondary"
-                    >
-                      <span class="flex items-center gap-3">
-                        <svg
-                          class="size-4 text-secondary hs-accordion-active:text-primary lg:size-6"
-                        >
-                          <use
-                            href="./assets/images/icons/sprite.svg#info"
-                          ></use>
-                        </svg>
-
-                        General Highlights
-                      </span>
-
-                      <svg
-                        class="block size-4 hs-accordion-active:hidden"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="3"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="M5 12h14" />
-                        <path d="M12 5v14" />
-                      </svg>
-                      <svg
-                        class="hidden size-4 hs-accordion-active:block"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="3"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="M5 12h14" />
-                      </svg>
-                    </button>
+                  <div class="hs-accordion-group space-y-2">
                     <div
-                      id="accordion-content-1"
-                      class="hs-accordion-content accordion-content-wrapper hidden"
+                      class="hs-accordion border-transparent hs-accordion-active:border-gray"
+                      id="accordion-2"
                     >
-                      <div class="px-2 pb-2">
-                        <div
-                          class="rounded-bl-xl rounded-br-xl bg-white p-4 shadow-lg"
+                      <button
+                        class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white hs-accordion-active:bg-secondary"
+                      >
+                        <span class="flex items-center gap-3">
+                          <svg
+                            class="size-4 text-secondary hs-accordion-active:text-primary lg:size-6"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#info"
+                            ></use>
+                          </svg>
+
+                          General Tips
+                        </span>
+
+                        <svg
+                          class="block size-4 hs-accordion-active:hidden"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         >
-                          <div class="space-y-1">
-                            <div class="flex items-center gap-3">
-                              <svg class="size-5 text-green">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#checkmark-starburst"
-                                ></use>
-                              </svg>
-                              Buy a local SIM card
+                          <path d="M5 12h14" />
+                          <path d="M12 5v14" />
+                        </svg>
+                        <svg
+                          class="hidden size-4 hs-accordion-active:block"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M5 12h14" />
+                        </svg>
+                      </button>
+                      <div
+                        id="accordion-content-1"
+                        class="hs-accordion-content accordion-content-wrapper hidden"
+                      >
+                        <div class="px-2 pb-2">
+                          <div
+                            class="rounded-bl-xl rounded-br-xl bg-white p-4 shadow-lg"
+                          >
+                            <div class="space-y-2">
+                              <div class="flex items-center gap-3">
+                                <svg class="size-5 text-green">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#checkmark-starburst"
+                                  ></use>
+                                </svg>
+                                Buy a local SIM card
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="hs-accordion border-transparent hs-accordion-active:border-gray"
+                      id="accordion-2"
+                    >
+                      <button
+                        class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white hs-accordion-active:bg-secondary"
+                      >
+                        <span class="flex items-center gap-3">
+                          <svg
+                            class="size-4 text-secondary hs-accordion-active:text-primary lg:size-6"
+                          >
+                            <use
+                              href="./assets/images/icons/sprite.svg#info"
+                            ></use>
+                          </svg>
+
+                          General Highlights
+                        </span>
+
+                        <svg
+                          class="block size-4 hs-accordion-active:hidden"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="M12 5v14" />
+                        </svg>
+                        <svg
+                          class="hidden size-4 hs-accordion-active:block"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M5 12h14" />
+                        </svg>
+                      </button>
+                      <div
+                        id="accordion-content-1"
+                        class="hs-accordion-content accordion-content-wrapper hidden"
+                      >
+                        <div class="px-2 pb-2">
+                          <div
+                            class="rounded-bl-xl rounded-br-xl bg-white p-4 shadow-lg"
+                          >
+                            <div class="space-y-1">
+                              <div class="flex items-center gap-3">
+                                <svg class="size-5 text-green">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#checkmark-starburst"
+                                  ></use>
+                                </svg>
+                                Buy a local SIM card
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1733,230 +1877,260 @@
                 </div>
 
                 <div
-                  class="mb-8 flex flex-col flex-nowrap gap-2 pb-2 lg:mb-10 lg:flex-row"
+                  id="sort-sidebar"
+                  class="hs-overlay hidden [--auto-close:lg] hs-overlay-backdrop-open:bg-black/50 max-md:fixed max-md:inset-0 max-md:z-[120] max-md:translate-x-full max-md:transform max-md:overflow-y-auto max-md:bg-white max-md:p-4 max-md:transition-all max-md:duration-300 max-md:hs-overlay-open:translate-x-0 md:block lg:block"
+                  data-lenis-prevent
                 >
-                  <div
-                    class="hs-dropdown relative flex-1 [--strategy:absolute]"
+                  <button
+                    data-hs-overlay="#sort-sidebar"
+                    type="button"
+                    class="mb-3 flex items-center gap-2 md:hidden"
                   >
-                    <button
-                      type="button"
-                      class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="size-4 text-black"
                     >
-                      <svg class="size-6 text-primary">
-                        <use href="./assets/images/icons/sprite.svg#sort"></use>
-                      </svg>
-                      <span>Sort by: Our Top Picks</span>
-                      <svg
-                        class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
+                      <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-
-                    <div
-                      class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden min-w-72 space-y-3 rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
-                    >
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                        aria-pressed="true"
-                      >
-                        Our Top Picks
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Traveler Rating
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Price (Low to High)
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Price (High to Low)
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Duration (Low to High)
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Duration (High to Low)
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Most Popular First
-                      </button>
-                    </div>
-                  </div>
-                  <div class="hs-dropdown relative flex-1">
-                    <div
-                      class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
-                    >
-                      <svg class="size-6 text-primary">
-                        <use
-                          href="./assets/images/icons/sprite.svg#calender"
-                        ></use>
-                      </svg>
-                      <input
-                        id="range"
-                        type="text"
-                        class="flatpickr flatpickr-input inline bg-transparent outline-none"
-                        placeholder="Check in date - Check out date"
+                        d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
                       />
-                      <svg
-                        class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div
-                    class="hs-dropdown relative flex-1 [--strategy:absolute]"
-                  >
-                    <button
-                      type="button"
-                      class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap rounded-xl border border-primary p-3 xl:px-4"
-                    >
-                      <svg class="size-6 text-primary">
-                        <use
-                          href="./assets/images/icons/sprite.svg#hotel"
-                        ></use>
-                      </svg>
-                      High Luxury 5 Stars
-                      <svg
-                        class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
+                    </svg>
 
-                    <div
-                      class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden space-y-3 rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
-                    >
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                        aria-pressed="true"
-                      >
-                        Hotel Name
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Hotel Name
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Hotel Name
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Hotel Name
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Hotel Name
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Hotel Name
-                      </button>
-                      <button
-                        type="button"
-                        class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                      >
-                        Hotel Name
-                      </button>
-                    </div>
-                  </div>
+                    Sort
+                  </button>
                   <div
-                    class="hs-dropdown relative flex flex-1 [--strategy:absolute] [--auto-close:inside]"
+                    class="mb-8 flex flex-col flex-nowrap gap-2 pb-2 lg:mb-10 lg:flex-row"
                   >
-                    <button
-                      type="button"
-                      class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
-                    >
-                      <svg class="size-6 text-primary">
-                        <use
-                          href="./assets/images/icons/sprite.svg#subscription-cashflow"
-                        ></use>
-                      </svg>
-                      Budget From - to
-                      <svg
-                        class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
-
                     <div
-                      class="hs-dropdown-menu duration inset-x-0 z-10 mt-2 hidden rounded-lg bg-white p-6 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                      class="hs-dropdown relative flex-1 [--strategy:absolute]"
                     >
-                      <p class="mb-4 text-sm">Your Budget</p>
-                      <div id="slider-2">
-                        <div class="slider mb-3"></div>
-                        <p class="flex items-center justify-between text-sm">
-                          <span>$<span class="slider-min"></span></span>
-                          <span>$<span class="slider-max"></span></span>
-                        </p>
+                      <button
+                        type="button"
+                        class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
+                      >
+                        <svg class="size-6 text-primary">
+                          <use
+                            href="./assets/images/icons/sprite.svg#sort"
+                          ></use>
+                        </svg>
+                        <span>Sort by: Our Top Picks</span>
+                        <svg
+                          class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+
+                      <div
+                        class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden min-w-72 space-y-3 rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                      >
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                          aria-pressed="true"
+                        >
+                          Our Top Picks
+                        </button>
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                        >
+                          Traveler Rating
+                        </button>
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                        >
+                          Price (Low to High)
+                        </button>
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                        >
+                          Price (High to Low)
+                        </button>
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                        >
+                          Duration (Low to High)
+                        </button>
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                        >
+                          Duration (High to Low)
+                        </button>
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                        >
+                          Most Popular First
+                        </button>
+                      </div>
+                    </div>
+                    <div class="hs-dropdown relative flex-1">
+                      <div
+                        class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
+                      >
+                        <svg class="size-6 text-primary">
+                          <use
+                            href="./assets/images/icons/sprite.svg#calender"
+                          ></use>
+                        </svg>
+                        <input
+                          id="range"
+                          type="text"
+                          class="flatpickr flatpickr-input inline bg-transparent outline-none"
+                          placeholder="Check in date - Check out date"
+                        />
+                        <svg
+                          class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="hs-dropdown relative flex-1 [--strategy:absolute]"
+                    >
+                      <button
+                        type="button"
+                        class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap rounded-xl border border-primary p-3 xl:px-4"
+                      >
+                        <svg class="size-6 text-primary">
+                          <use
+                            href="./assets/images/icons/sprite.svg#hotel"
+                          ></use>
+                        </svg>
+                        High Luxury 5 Stars
+                        <svg
+                          class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+
+                      <div
+                        class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden space-y-3 rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                      >
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                          aria-pressed="true"
+                        >
+                          Hotel Name
+                        </button>
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                        >
+                          Hotel Name
+                        </button>
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                        >
+                          Hotel Name
+                        </button>
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                        >
+                          Hotel Name
+                        </button>
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                        >
+                          Hotel Name
+                        </button>
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                        >
+                          Hotel Name
+                        </button>
+                        <button
+                          type="button"
+                          class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                        >
+                          Hotel Name
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="hs-dropdown relative flex flex-1 [--strategy:absolute] [--auto-close:inside]"
+                    >
+                      <button
+                        type="button"
+                        class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
+                      >
+                        <svg class="size-6 text-primary">
+                          <use
+                            href="./assets/images/icons/sprite.svg#subscription-cashflow"
+                          ></use>
+                        </svg>
+                        Budget From - to
+                        <svg
+                          class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+
+                      <div
+                        class="hs-dropdown-menu duration inset-x-0 z-10 mt-2 hidden rounded-lg bg-white p-6 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                      >
+                        <p class="mb-4 text-sm">Your Budget</p>
+                        <div id="slider-2">
+                          <div class="slider mb-3"></div>
+                          <p class="flex items-center justify-between text-sm">
+                            <span>$<span class="slider-min"></span></span>
+                            <span>$<span class="slider-max"></span></span>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -4935,7 +5109,7 @@
                   data-hs-stepper-back-btn
                 >
                   <!-- data-hs-overlay="#customize-tour" -->
-                  Cancel
+                  Back
                 </button>
                 <button
                   type="button"
@@ -4968,6 +5142,10 @@
     </div>
 
     <!-- js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
     <script>
       function budgetSlider(el) {

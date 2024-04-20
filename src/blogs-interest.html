@@ -17,6 +17,10 @@
     ></script>
     <script
       defer
+      src="https://cdn.jsdelivr.net/npm/headroom.js@0.12.0/dist/headroom.min.js"
+    ></script>
+    <script
+      defer
       src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"
     ></script>
     <script defer src="./assets/scripts/main.js"></script>
@@ -24,6 +28,51 @@
 
   <body>
     <div class="app">
+      <nav id="headroom" class="navbar_nav primary hidden">
+        <div class="container">
+          <ul class="navbar_list">
+            <li>
+              <a href="./index.html" class="navbar_link">Home</a>
+            </li>
+            <li>
+              <a href="./egypt-tours.html" class="navbar_link">Egypt Tours</a>
+            </li>
+            <li>
+              <a href="./events.html" class="navbar_link">Events</a>
+            </li>
+            <li>
+              <a href="./services.html" class="navbar_link">Services</a>
+            </li>
+            <li>
+              <a href="./blogs.html" class="navbar_link" aria-current="page"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a href="./about.html" class="navbar_link">About us</a>
+            </li>
+            <li>
+              <a href="./loyalty-program.html" class="navbar_link"
+                >Loyalty Program</a
+              >
+            </li>
+            <li>
+              <a href="./careers.html" class="navbar_link">Careers</a>
+            </li>
+            <li>
+              <a href="./how-it-works.html" class="navbar_link"
+                >How it works?</a
+              >
+            </li>
+            <li>
+              <a href="./partner.html" class="navbar_link"
+                >Become our Partner</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
       <header class="page-header">
         <div class="navbar">
           <div class="container">
@@ -69,7 +118,9 @@
                   <a href="./index.html" class="navbar_link">Home</a>
                 </li>
                 <li>
-                  <a href="./egypt-tours.html" class="navbar_link">Egypt Tours</a>
+                  <a href="./egypt-tours.html" class="navbar_link"
+                    >Egypt Tours</a
+                  >
                 </li>
                 <li>
                   <a href="./events.html" class="navbar_link">Events</a>
@@ -78,22 +129,30 @@
                   <a href="./services.html" class="navbar_link">Services</a>
                 </li>
                 <li>
-                  <a href="./blogs.html" class="navbar_link" aria-current="page">Blogs</a>
+                  <a href="./blogs.html" class="navbar_link" aria-current="page"
+                    >Blogs</a
+                  >
                 </li>
                 <li>
                   <a href="./about.html" class="navbar_link">About us</a>
                 </li>
                 <li>
-                  <a href="./loyalty-program.html" class="navbar_link">Loyalty Program</a>
+                  <a href="./loyalty-program.html" class="navbar_link"
+                    >Loyalty Program</a
+                  >
                 </li>
                 <li>
                   <a href="./careers.html" class="navbar_link">Careers</a>
                 </li>
                 <li>
-                  <a href="./how-it-works.html" class="navbar_link">How it works?</a>
+                  <a href="./how-it-works.html" class="navbar_link"
+                    >How it works?</a
+                  >
                 </li>
                 <li>
-                  <a href="./partner.html" class="navbar_link">Become our Partner</a>
+                  <a href="./partner.html" class="navbar_link"
+                    >Become our Partner</a
+                  >
                 </li>
               </ul>
             </div>
@@ -107,7 +166,7 @@
             />
           </div>
 
-          <div class="navbar_mobile static">
+          <div class="navbar_mobile" style="position: static !important">
             <div class="flex items-center gap-2">
               <div class="hs-dropdown relative inline-flex">
                 <button type="button">
@@ -118,7 +177,6 @@
 
                 <div
                   class="mobile-sidebar hs-dropdown-menu duration hidden min-w-72 opacity-0 transition-opacity hs-dropdown-open:opacity-100"
-
                 >
                   <div
                     class="bg-gradient -ms-4 flex h-full flex-col justify-between px-4 pb-14 pt-10"
@@ -470,9 +528,7 @@
               <div class="container">
                 <menu class="tabs mb-0">
                   <li>
-                    <a href="./blogs.html" class="tab" 
-                      >Essential Tour Tips</a
-                    >
+                    <a href="./blogs.html" class="tab">Essential Tour Tips</a>
                   </li>
                   <li>
                     <a href="./blogs-destination.html" class="tab"
@@ -480,7 +536,10 @@
                     >
                   </li>
                   <li>
-                    <a href="./blogs-interest.html" class="tab" aria-current="page"
+                    <a
+                      href="./blogs-interest.html"
+                      class="tab"
+                      aria-current="page"
                       >Explore By Interest</a
                     >
                   </li>
@@ -614,7 +673,7 @@
               </div>
 
               <div class="flex flex-col gap-10 lg:flex-row">
-                <div class="w-full shrink-0 lg:max-w-[420px]">
+                <div class="w-full shrink-0 max-lg:order-2 lg:max-w-[420px]">
                   <div
                     class="hs-accordion-group mb-2 space-y-2"
                     data-hs-accordion-always-open
@@ -1057,14 +1116,14 @@
                   </div>
                 </div>
 
-                <div class="flex-1">
+                <div class="flex-1 max-lg:order-1">
                   <div
                     class="mb-5 flex flex-col items-start gap-4 lg:mb-6 lg:flex-row lg:items-center lg:justify-between"
                   >
                     <p class="text-xl font-semibold lg:text-2xl">
                       <span class="text-primary"
-                        ><span class="text-secondary">Search</span>
-                        Results</span
+                        ><span class="text-secondary">Latest </span>
+                        Articles</span
                       >: 44 Available Tours
                     </p>
 

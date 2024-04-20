@@ -13,7 +13,7 @@
     --sb-size: 10px;
     --sb-track-color: #fff;
     --sb-thumb-color: theme(colors.primary.DEFAULT);
-    @apply relative h-full overflow-x-hidden;
+    @apply relative h-full overflow-x-hidden bg-white text-black;
   }
 
   body::-webkit-scrollbar {
@@ -60,7 +60,13 @@
 /* navbar */
 @layer components {
   .navbar {
-    @apply absolute inset-x-0 z-50 h-auto;
+    @apply absolute inset-x-0 z-50 h-auto text-white;
+  }
+  .navbar.static {
+    @apply border-b border-primary/20;
+  }
+  .navbar.static .navbar_top {
+    @apply text-primary;
   }
   .navbar_top,
   .navbar_list {
@@ -68,6 +74,9 @@
   }
   .navbar_top {
     @apply pb-3 pt-6 max-lg:hidden;
+  }
+  .navbar_top svg {
+    color: inherit;
   }
   .navbar_nav {
     @apply relative bg-primary bg-opacity-20 max-lg:hidden;
@@ -100,10 +109,24 @@
     @apply container flex items-center justify-between gap-6 py-4 max-lg:hidden;
   }
   .navbar_mobile {
-    @apply fixed inset-x-0 top-0 flex w-screen items-center justify-between bg-primary/60 px-4 py-2 lg:hidden;
+    position: fixed !important;
+    @apply inset-x-0 top-0 z-[100] flex w-screen items-center justify-between bg-primary/60 px-4 py-2 lg:hidden;
   }
   .mobile-sidebar {
+    z-index: 100;
     height: calc(100dvh - 45px);
+  }
+
+  .headroom {
+    @apply fixed inset-x-0 top-0 z-[150] transition-[transform,opacity] !important;
+    will-change: transform;
+  }
+  .headroom-pinned {
+    @apply translate-y-0 opacity-100;
+  }
+  .headroom--top,
+  .headroom-unpinned {
+    @apply -translate-y-full;
   }
 }
 
@@ -555,6 +578,10 @@ textarea select {
   @apply placeholder:text-gray-400 !important;
 }
 
+input[type='date'] {
+  @apply bg-transparent;
+}
+
 select:not([size]) {
   appearance: none;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6'%3E%3Cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4'/%3E%3C/svg%3E");
@@ -568,7 +595,7 @@ select:not([size]) {
 
 /* noUiSlider */
 .noUi-target {
-  @apply h-1 border-none bg-gray !important;
+  @apply h-1 border-none bg-gray text-black !important;
 }
 .noUi-connect {
   @apply bg-primary !important;

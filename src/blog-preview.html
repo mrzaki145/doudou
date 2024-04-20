@@ -25,6 +25,10 @@
     ></script>
     <script
       defer
+      src="https://cdn.jsdelivr.net/npm/headroom.js@0.12.0/dist/headroom.min.js"
+    ></script>
+    <script
+      defer
       src="https://cdn.jsdelivr.net/npm/preline@2.0.3/dist/preline.min.js"
     ></script>
     <script defer src="./assets/scripts/main.js"></script>
@@ -32,18 +36,63 @@
 
   <body>
     <div class="app">
+      <nav id="headroom" class="navbar_nav primary hidden">
+        <div class="container">
+          <ul class="navbar_list">
+            <li>
+              <a href="./index.html" class="navbar_link">Home</a>
+            </li>
+            <li>
+              <a href="./egypt-tours.html" class="navbar_link">Egypt Tours</a>
+            </li>
+            <li>
+              <a href="./events.html" class="navbar_link">Events</a>
+            </li>
+            <li>
+              <a href="./services.html" class="navbar_link">Services</a>
+            </li>
+            <li>
+              <a href="./blogs.html" class="navbar_link" aria-current="page"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a href="./about.html" class="navbar_link">About us</a>
+            </li>
+            <li>
+              <a href="./loyalty-program.html" class="navbar_link"
+                >Loyalty Program</a
+              >
+            </li>
+            <li>
+              <a href="./careers.html" class="navbar_link">Careers</a>
+            </li>
+            <li>
+              <a href="./how-it-works.html" class="navbar_link"
+                >How it works?</a
+              >
+            </li>
+            <li>
+              <a href="./partner.html" class="navbar_link"
+                >Become our Partner</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
       <header class="page-header">
-        <div class="navbar static border-b border-primary/20">
+        <div class="navbar static">
           <div class="container">
             <div class="navbar_top">
               <div class="flex items-center gap-3">
                 <a href="#">
-                  <svg class="size-5 text-primary">
+                  <svg class="size-5">
                     <use href="./assets/images/icons/sprite.svg#whatsapp"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="size-5 text-primary">
+                  <svg class="size-5">
                     <use href="./assets/images/icons/sprite.svg#mail"></use>
                   </svg>
                 </a>
@@ -51,33 +100,35 @@
 
               <div class="flex items-center gap-4 lg:gap-10">
                 <div class="flex items-center gap-2">
-                  <svg class="size-5 text-primary">
+                  <svg class="size-5">
                     <use href="./assets/images/icons/sprite.svg#clock"></use>
                   </svg>
-                  <span class="text-sm text-primary"
+                  <span class="text-sm"
                     >Cairo : <span id="time">05: 14</span></span
                   >
                 </div>
                 <div class="flex items-center gap-2">
-                  <svg class="size-5 text-primary">
+                  <svg class="size-5">
                     <use
                       href="./assets/images/icons/sprite.svg#cloud-sun"
                     ></use>
                   </svg>
-                  <span class="text-sm text-primary">: 15 OC/ 60 OF</span>
+                  <span class="text-sm">: 15 OC/ 60 OF</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <nav class="navbar_nav bg-primary">
+          <nav class="navbar_nav primary">
             <div class="container">
               <ul class="navbar_list">
                 <li>
                   <a href="./index.html" class="navbar_link">Home</a>
                 </li>
                 <li>
-                  <a href="./egypt-tours.html" class="navbar_link">Egypt Tours</a>
+                  <a href="./egypt-tours.html" class="navbar_link"
+                    >Egypt Tours</a
+                  >
                 </li>
                 <li>
                   <a href="./events.html" class="navbar_link">Events</a>
@@ -86,22 +137,30 @@
                   <a href="./services.html" class="navbar_link">Services</a>
                 </li>
                 <li>
-                  <a href="./blogs.html" class="navbar_link" aria-current="page">Blogs</a>
+                  <a href="./blogs.html" class="navbar_link" aria-current="page"
+                    >Blogs</a
+                  >
                 </li>
                 <li>
                   <a href="./about.html" class="navbar_link">About us</a>
                 </li>
                 <li>
-                  <a href="./loyalty-program.html" class="navbar_link">Loyalty Program</a>
+                  <a href="./loyalty-program.html" class="navbar_link"
+                    >Loyalty Program</a
+                  >
                 </li>
                 <li>
                   <a href="./careers.html" class="navbar_link">Careers</a>
                 </li>
                 <li>
-                  <a href="./how-it-works.html" class="navbar_link">How it works?</a>
+                  <a href="./how-it-works.html" class="navbar_link"
+                    >How it works?</a
+                  >
                 </li>
                 <li>
-                  <a href="./partner.html" class="navbar_link">Become our Partner</a>
+                  <a href="./partner.html" class="navbar_link"
+                    >Become our Partner</a
+                  >
                 </li>
               </ul>
             </div>
@@ -122,16 +181,16 @@
                   >
                     <button
                       type="button"
-                      class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap px-4"
+                      class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap px-4 text-black"
                     >
                       <svg class="size-6 text-primary">
                         <use
                           href="./assets/images/icons/sprite.svg#hotel"
                         ></use>
                       </svg>
-                      <p>High Luxury 5 Stars</p>
+                      Accommodation
                       <svg
-                        class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
+                        class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -196,17 +255,17 @@
                   </div>
                 </div>
                 <div class="flex flex-1 items-center gap-3 px-4">
-                  <svg class="size-6 shrink-0 text-primary">
+                  <svg class="size-6 text-primary">
                     <use href="./assets/images/icons/sprite.svg#calender"></use>
                   </svg>
                   <input
                     id="range"
                     type="text"
-                    class="flatpickr flatpickr-input flex-1 bg-transparent outline-none"
+                    class="flatpickr flatpickr-input flex-1 bg-transparent text-black outline-none placeholder:text-black"
                     placeholder="Check in date - Check out date"
                   />
                   <svg
-                    class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
+                    class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -226,16 +285,16 @@
                   >
                     <button
                       type="button"
-                      class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap px-4"
+                      class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap px-4 text-black"
                     >
-                      <svg class="size-6 shrink-0 text-primary">
+                      <svg class="size-6 text-primary">
                         <use
                           href="./assets/images/icons/sprite.svg#subscription-cashflow"
                         ></use>
                       </svg>
                       Budget From - to
                       <svg
-                        class="accordion-arrow ms-auto shrink-0 hs-dropdown-open:rotate-180"
+                        class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -251,7 +310,7 @@
                     </button>
 
                     <div
-                      class="hs-dropdown-menu duration inset-x-0 z-10 mt-2 hidden rounded-lg bg-white p-6 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                      class="hs-dropdown-menu duration inset-x-0 z-10 mt-2 hidden rounded-lg bg-white p-6 text-black opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
                     >
                       <p class="mb-4 text-sm">Your Budget</p>
                       <div id="slider-1">
@@ -286,7 +345,7 @@
             </button>
           </div>
 
-          <div class="navbar_mobile static">
+          <div class="navbar_mobile" style="position: static !important;">
             <div class="flex items-center gap-2">
               <div class="hs-dropdown relative inline-flex">
                 <button type="button">
@@ -296,7 +355,7 @@
                 </button>
 
                 <div
-                  class="mobile-sidebar hs-dropdown-menu duration z-50 hidden min-w-72 opacity-0 transition-opacity hs-dropdown-open:opacity-100"
+                  class="mobile-sidebar hs-dropdown-menu duration hidden min-w-72 opacity-0 transition-opacity hs-dropdown-open:opacity-100"
                 >
                   <div
                     class="bg-gradient -ms-4 flex h-full flex-col justify-between px-4 pb-14 pt-10"
@@ -622,12 +681,28 @@
       </header>
 
       <main class="relative space-y-12 lg:space-y-16">
-        <section class="pt-8">
-          <div class="pt-8">
-            <div class="container">
-              <ol class="breadcrumb mb-8" aria-label="Breadcrumb">
-                <li>
-                  <a href="#"> Home </a>
+        <section class="pt-8 lg:pt-16">
+          <div class="container">
+            <ol class="breadcrumb mb-8" aria-label="Breadcrumb">
+              <li>
+                <a href="#"> Home </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </li>
+              <li>
+                <a href="#">
+                  Blogs
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -641,1395 +716,1268 @@
                   >
                     <path d="m9 18 6-6-6-6" />
                   </svg>
-                </li>
-                <li>
-                  <a href="#">
-                    Blogs
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m9 18 6-6-6-6" />
-                    </svg>
-                  </a>
-                </li>
-                <li aria-current="page">How to Plan A Trip to Egypt</li>
-              </ol>
+                </a>
+              </li>
+              <li aria-current="page">How to Plan A Trip to Egypt</li>
+            </ol>
 
-              <div class="flex flex-col gap-10 lg:flex-row">
-                <div class="w-full shrink-0 lg:max-w-[420px]">
-                  <div
-                    class="hs-accordion-group space-y-2"
-                    data-hs-accordion-always-open
-                  >
-                    <div class="hs-accordion active accordion-filter">
-                      <button
-                        class="hs-accordion-toggle accordion-btn font-medium"
-                      >
-                        <svg class="accordion-icon size-4.5">
-                          <use
-                            href="./assets/images/icons/sprite.svg#articles"
-                          ></use>
-                        </svg>
-                        Content of This Article
-                      </button>
+            <div class="flex flex-col gap-10 lg:flex-row lg:items-start">
+              <div
+                class="w-full shrink-0 max-lg:order-2 lg:sticky lg:top-8 lg:max-w-[420px]"
+              >
+                <div
+                  class="hs-accordion-group space-y-2"
+                  data-hs-accordion-always-open
+                >
+                  <div class="hs-accordion active accordion-filter">
+                    <button
+                      class="hs-accordion-toggle accordion-btn font-medium"
+                    >
+                      <svg class="accordion-icon size-4.5">
+                        <use
+                          href="./assets/images/icons/sprite.svg#articles"
+                        ></use>
+                      </svg>
+                      Content of This Article
+                    </button>
+                    <div class="hs-accordion-content accordion-content-wrapper">
                       <div
-                        class="hs-accordion-content accordion-content-wrapper"
+                        data-hs-scrollspy="#scrollspy-1"
+                        class="accordion-content space-y-3 [--scrollspy-offset:100]"
                       >
-                        <div class="accordion-content">
-                          <div class="hs-accordion-group space-y-3 px-2">
-                            <div class="hs-accordion active">
-                              <button
-                                class="hs-accordion-toggle inline-flex w-full items-center justify-between gap-x-3 text-start text-black hs-accordion-active:text-primary"
-                              >
-                                1. How to plan a trip to Egypt
-                                <svg
-                                  class="block size-4 transition-transform hs-accordion-active:rotate-180"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                >
-                                  <path d="m6 9 6 6 6-6" />
-                                </svg>
-                              </button>
-                              <div
-                                class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-                              >
-                                <ul class="list-disc py-3 ps-6">
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="hs-accordion">
-                              <button
-                                class="hs-accordion-toggle inline-flex w-full items-center justify-between gap-x-3 text-start text-black hs-accordion-active:text-primary"
-                              >
-                                1. How to plan a trip to Egypt
-                                <svg
-                                  class="block size-4 transition-transform hs-accordion-active:rotate-180"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                >
-                                  <path d="m6 9 6 6 6-6" />
-                                </svg>
-                              </button>
-                              <div
-                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                              >
-                                <ul class="list-disc py-3 ps-6">
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="hs-accordion">
-                              <button
-                                class="hs-accordion-toggle inline-flex w-full items-center justify-between gap-x-3 text-start text-black hs-accordion-active:text-primary"
-                              >
-                                1. How to plan a trip to Egypt
-                                <svg
-                                  class="block size-4 transition-transform hs-accordion-active:rotate-180"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                >
-                                  <path d="m6 9 6 6 6-6" />
-                                </svg>
-                              </button>
-                              <div
-                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                              >
-                                <ul class="list-disc py-3 ps-6">
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="hs-accordion">
-                              <button
-                                class="hs-accordion-toggle inline-flex w-full items-center justify-between gap-x-3 text-start text-black hs-accordion-active:text-primary"
-                              >
-                                1. How to plan a trip to Egypt
-                                <svg
-                                  class="block size-4 transition-transform hs-accordion-active:rotate-180"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                >
-                                  <path d="m6 9 6 6 6-6" />
-                                </svg>
-                              </button>
-                              <div
-                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                              >
-                                <ul class="list-disc py-3 ps-6">
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" aria-current="page"
-                                      >Cheap Holidays to Egypt</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
+                        <a
+                          href="#intro"
+                          onclick="lenis.scrollTo('#intro', {offset: -100})"
+                          class="inline-flex w-full items-center justify-between gap-x-3 text-start text-black hs-scrollspy-active:text-primary"
+                        >
+                          1. How to plan a trip to Egypt
+                        </a>
+                        <a
+                          href="#title-1"
+                          onclick="lenis.scrollTo('#title-1', {offset: -100})"
+                          class="inline-flex w-full items-center justify-between gap-x-3 text-start text-black hs-scrollspy-active:text-primary"
+                        >
+                          1. Title
+                        </a>
+                        <a
+                          href="#title-2"
+                          onclick="lenis.scrollTo('#title-2', {offset: -100})"
+                          class="inline-flex w-full items-center justify-between gap-x-3 text-start text-black hs-scrollspy-active:text-primary"
+                        >
+                          2. Title
+                        </a>
+                        <a
+                          href="#title-3"
+                          onclick="lenis.scrollTo('#title-3', {offset: -100})"
+                          class="inline-flex w-full items-center justify-between gap-x-3 text-start text-black hs-scrollspy-active:text-primary"
+                        >
+                          3. Title
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hs-accordion active accordion-filter">
+                    <button
+                      class="hs-accordion-toggle accordion-btn font-medium"
+                    >
+                      <svg class="accordion-icon size-4.5">
+                        <use
+                          href="./assets/images/icons/sprite.svg#search"
+                        ></use>
+                      </svg>
+                      Search Articles
+                    </button>
+                    <div class="hs-accordion-content accordion-content-wrapper">
+                      <div class="accordion-content">
+                        <div
+                          class="relative flex items-center overflow-hidden rounded-xl border border-primary ps-10"
+                        >
+                          <svg class="absolute start-4 size-4 text-gray/90">
+                            <use
+                              href="./assets/images/icons/sprite.svg#search"
+                            ></use>
+                          </svg>
+                          <input
+                            type="text"
+                            class="block w-full text-sm font-normal text-black outline-none placeholder:text-gray"
+                            placeholder="Search Destinations"
+                          />
+                          <button
+                            type="button"
+                            class="bg-primary px-6 py-2 text-white"
+                          >
+                            Search
+                          </button>
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="hs-accordion active accordion-filter">
-                      <button
-                        class="hs-accordion-toggle accordion-btn font-medium"
-                      >
-                        <svg class="accordion-icon size-4.5">
-                          <use
-                            href="./assets/images/icons/sprite.svg#search"
-                          ></use>
-                        </svg>
-                        Search Articles
-                      </button>
-                      <div
-                        class="hs-accordion-content accordion-content-wrapper"
-                      >
-                        <div class="accordion-content">
-                          <div
-                            class="relative flex items-center overflow-hidden rounded-xl border border-primary ps-10"
+                  <div class="hs-accordion active accordion-filter">
+                    <button
+                      class="hs-accordion-toggle accordion-btn font-medium"
+                    >
+                      <svg class="accordion-icon size-4.5">
+                        <use
+                          href="./assets/images/icons/sprite.svg#articles"
+                        ></use>
+                      </svg>
+                      Latest Articles
+                    </button>
+                    <div
+                      class="hs-accordion-content accordion-content-wrapper hidden"
+                    >
+                      <div class="accordion-content">
+                        <div
+                          class="hs-dropdown relative flex-1 [--strategy:absolute]"
+                        >
+                          <button
+                            type="button"
+                            class="hs-dropdown-toggle inline-flex items-center gap-2 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
                           >
-                            <svg class="absolute start-4 size-4 text-gray/90">
+                            <svg class="size-6 text-primary">
                               <use
-                                href="./assets/images/icons/sprite.svg#search"
+                                href="./assets/images/icons/sprite.svg#sort"
                               ></use>
                             </svg>
-                            <input
-                              type="text"
-                              class="block w-full text-sm font-normal text-black outline-none placeholder:text-gray"
-                              placeholder="Search Destinations"
-                            />
-                            <button
-                              type="button"
-                              class="bg-primary px-6 py-2 text-white"
+                            <span>Sort by: Recommended</span>
+                            <svg
+                              class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
                             >
-                              Search
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                              <path d="m6 9 6 6 6-6" />
+                            </svg>
+                          </button>
 
-                    <div class="hs-accordion active accordion-filter">
-                      <button
-                        class="hs-accordion-toggle accordion-btn font-medium"
-                      >
-                        <svg class="accordion-icon size-4.5">
-                          <use
-                            href="./assets/images/icons/sprite.svg#articles"
-                          ></use>
-                        </svg>
-                        Latest Articles
-                      </button>
-                      <div
-                        class="hs-accordion-content accordion-content-wrapper"
-                      >
-                        <div class="accordion-content">
                           <div
-                            class="hs-dropdown relative flex-1 [--strategy:absolute]"
+                            class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden min-w-72 space-y-3 rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
                           >
                             <button
                               type="button"
-                              class="hs-dropdown-toggle inline-flex items-center gap-2 text-nowrap rounded-xl border border-primary p-3 text-sm xl:px-4 xl:text-base"
+                              class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                              aria-pressed="true"
                             >
-                              <svg class="size-6 text-primary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#sort"
-                                ></use>
-                              </svg>
-                              <span>Sort by: Recommended</span>
-                              <svg
-                                class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              >
-                                <path d="m6 9 6 6 6-6" />
-                              </svg>
+                              Our Top Picks
                             </button>
-
-                            <div
-                              class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden min-w-72 space-y-3 rounded-lg bg-white p-5 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                            <button
+                              type="button"
+                              class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
                             >
-                              <button
-                                type="button"
-                                class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                                aria-pressed="true"
-                              >
-                                Our Top Picks
-                              </button>
-                              <button
-                                type="button"
-                                class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                              >
-                                Traveler Rating
-                              </button>
-                              <button
-                                type="button"
-                                class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                              >
-                                Price (Low to High)
-                              </button>
-                              <button
-                                type="button"
-                                class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                              >
-                                Price (High to Low)
-                              </button>
-                              <button
-                                type="button"
-                                class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                              >
-                                Duration (Low to High)
-                              </button>
-                              <button
-                                type="button"
-                                class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                              >
-                                Duration (High to Low)
-                              </button>
-                              <button
-                                type="button"
-                                class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                              >
-                                Most Popular First
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div
-                          class="max-h-[640px] space-y-4 overflow-auto p-4 pt-0 lg:p-6 lg:pt-0"
-                          data-lenis-prevent
-                        >
-                          <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
-                            <img
-                              src="./assets/images/article-mini-placeholder.jpeg"
-                              class="max-w-[125px] shrink-0 rounded"
-                              alt=""
-                            />
-
-                            <div>
-                              <p class="mb-2 line-clamp-2 font-medium">
-                                Best Time to Visit Egypt
-                              </p>
-                              <p
-                                class="flex items-center gap-2 text-sm text-gray"
-                              >
-                                <svg class="size-4 text-primary">
-                                  <use
-                                    href="./assets/images/icons/sprite.svg#calendar-date"
-                                  ></use>
-                                </svg>
-                                13 March, 2024
-                              </p>
-                            </div>
-                          </div>
-                          <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
-                            <img
-                              src="./assets/images/article-mini-placeholder.jpeg"
-                              class="max-w-[125px] shrink-0 rounded"
-                              alt=""
-                            />
-
-                            <div>
-                              <p class="mb-2 line-clamp-2 font-medium">
-                                Best Time to Visit Egypt
-                              </p>
-                              <p
-                                class="flex items-center gap-2 text-sm text-gray"
-                              >
-                                <svg class="size-4 text-primary">
-                                  <use
-                                    href="./assets/images/icons/sprite.svg#calendar-date"
-                                  ></use>
-                                </svg>
-                                13 March, 2024
-                              </p>
-                            </div>
-                          </div>
-                          <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
-                            <img
-                              src="./assets/images/article-mini-placeholder.jpeg"
-                              class="max-w-[125px] shrink-0 rounded"
-                              alt=""
-                            />
-
-                            <div>
-                              <p class="mb-2 line-clamp-2 font-medium">
-                                Best Time to Visit Egypt
-                              </p>
-                              <p
-                                class="flex items-center gap-2 text-sm text-gray"
-                              >
-                                <svg class="size-4 text-primary">
-                                  <use
-                                    href="./assets/images/icons/sprite.svg#calendar-date"
-                                  ></use>
-                                </svg>
-                                13 March, 2024
-                              </p>
-                            </div>
-                          </div>
-                          <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
-                            <img
-                              src="./assets/images/article-mini-placeholder.jpeg"
-                              class="max-w-[125px] shrink-0 rounded"
-                              alt=""
-                            />
-
-                            <div>
-                              <p class="mb-2 line-clamp-2 font-medium">
-                                Best Time to Visit Egypt
-                              </p>
-                              <p
-                                class="flex items-center gap-2 text-sm text-gray"
-                              >
-                                <svg class="size-4 text-primary">
-                                  <use
-                                    href="./assets/images/icons/sprite.svg#calendar-date"
-                                  ></use>
-                                </svg>
-                                13 March, 2024
-                              </p>
-                            </div>
-                          </div>
-                          <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
-                            <img
-                              src="./assets/images/article-mini-placeholder.jpeg"
-                              class="max-w-[125px] shrink-0 rounded"
-                              alt=""
-                            />
-
-                            <div>
-                              <p class="mb-2 line-clamp-2 font-medium">
-                                Best Time to Visit Egypt
-                              </p>
-                              <p
-                                class="flex items-center gap-2 text-sm text-gray"
-                              >
-                                <svg class="size-4 text-primary">
-                                  <use
-                                    href="./assets/images/icons/sprite.svg#calendar-date"
-                                  ></use>
-                                </svg>
-                                13 March, 2024
-                              </p>
-                            </div>
-                          </div>
-                          <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
-                            <img
-                              src="./assets/images/article-mini-placeholder.jpeg"
-                              class="max-w-[125px] shrink-0 rounded"
-                              alt=""
-                            />
-
-                            <div>
-                              <p class="mb-2 line-clamp-2 font-medium">
-                                Best Time to Visit Egypt
-                              </p>
-                              <p
-                                class="flex items-center gap-2 text-sm text-gray"
-                              >
-                                <svg class="size-4 text-primary">
-                                  <use
-                                    href="./assets/images/icons/sprite.svg#calendar-date"
-                                  ></use>
-                                </svg>
-                                13 March, 2024
-                              </p>
-                            </div>
+                              Traveler Rating
+                            </button>
+                            <button
+                              type="button"
+                              class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                            >
+                              Price (Low to High)
+                            </button>
+                            <button
+                              type="button"
+                              class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                            >
+                              Price (High to Low)
+                            </button>
+                            <button
+                              type="button"
+                              class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                            >
+                              Duration (Low to High)
+                            </button>
+                            <button
+                              type="button"
+                              class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                            >
+                              Duration (High to Low)
+                            </button>
+                            <button
+                              type="button"
+                              class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                            >
+                              Most Popular First
+                            </button>
                           </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="hs-accordion active accordion-filter">
-                      <button
-                        class="hs-accordion-toggle accordion-btn font-medium"
-                      >
-                        <svg class="accordion-icon size-4.5">
-                          <use
-                            href="./assets/images/icons/sprite.svg#tag"
-                          ></use>
-                        </svg>
-                        Tags
-                      </button>
                       <div
-                        class="hs-accordion-content accordion-content-wrapper"
+                        class="max-h-[640px] space-y-4 overflow-auto p-4 pt-0 lg:p-6 lg:pt-0"
+                        data-lenis-prevent
                       >
-                        <div class="accordion-content">
-                          <div class="tags">
-                            <button type="button">wiki</button>
-                            <button type="button">Oasis Egypt</button>
-                            <button type="button">Egypt Civilization</button>
-                            <button type="button" aria-pressed="true">
-                              Travel
-                            </button>
-                            <button type="button">History</button>
-                            <button type="button">Landmarks</button>
-                            <button type="button">Aswan</button>
-                            <button type="button" aria-pressed="true">
-                              Pyramids
-                            </button>
-                            <button type="button">wiki</button>
-                            <button type="button">Oasis Egypt</button>
-                            <button type="button">Egypt Civilization</button>
-                            <button type="button">Travel</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="hs-accordion active accordion-filter">
-                      <button
-                        class="hs-accordion-toggle accordion-btn font-medium"
-                      >
-                        <svg class="accordion-icon size-5">
-                          <use
-                            href="./assets/images/icons/sprite.svg#info"
-                          ></use>
-                        </svg>
-                        About Us
-                      </button>
-                      <div
-                        class="hs-accordion-content accordion-content-wrapper"
-                      >
-                        <div class="accordion-content">
+                        <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
                           <img
                             src="./assets/images/article-mini-placeholder.jpeg"
-                            class="mb-6 max-h-[150px] w-full rounded-xl object-cover object-center"
+                            class="max-w-[125px] shrink-0 rounded"
                             alt=""
                           />
-                          <p class="mb-5">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Sequi quos, repudiandae quisquam ducimus rem
-                            quibusdam veritatis distinctio possimus corrupti
-                            quia?
-                          </p>
 
-                          <ul class="social-list primary justify-center">
-                            <li>
-                              <a href="#">
-                                <svg>
-                                  <use
-                                    href="./assets/images/icons/sprite.svg#facebook"
-                                  ></use>
-                                </svg>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <svg>
-                                  <use
-                                    href="./assets/images/icons/sprite.svg#linkedin"
-                                  ></use>
-                                </svg>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <svg>
-                                  <use
-                                    href="./assets/images/icons/sprite.svg#youtube"
-                                  ></use>
-                                </svg>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <svg>
-                                  <use
-                                    href="./assets/images/icons/sprite.svg#instagram"
-                                  ></use>
-                                </svg>
-                              </a>
-                            </li>
-                          </ul>
+                          <div>
+                            <p class="mb-2 line-clamp-2 font-medium">
+                              Best Time to Visit Egypt
+                            </p>
+                            <p
+                              class="flex items-center gap-2 text-sm text-gray"
+                            >
+                              <svg class="size-4 text-primary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#calendar-date"
+                                ></use>
+                              </svg>
+                              13 March, 2024
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
+                          <img
+                            src="./assets/images/article-mini-placeholder.jpeg"
+                            class="max-w-[125px] shrink-0 rounded"
+                            alt=""
+                          />
+
+                          <div>
+                            <p class="mb-2 line-clamp-2 font-medium">
+                              Best Time to Visit Egypt
+                            </p>
+                            <p
+                              class="flex items-center gap-2 text-sm text-gray"
+                            >
+                              <svg class="size-4 text-primary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#calendar-date"
+                                ></use>
+                              </svg>
+                              13 March, 2024
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
+                          <img
+                            src="./assets/images/article-mini-placeholder.jpeg"
+                            class="max-w-[125px] shrink-0 rounded"
+                            alt=""
+                          />
+
+                          <div>
+                            <p class="mb-2 line-clamp-2 font-medium">
+                              Best Time to Visit Egypt
+                            </p>
+                            <p
+                              class="flex items-center gap-2 text-sm text-gray"
+                            >
+                              <svg class="size-4 text-primary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#calendar-date"
+                                ></use>
+                              </svg>
+                              13 March, 2024
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
+                          <img
+                            src="./assets/images/article-mini-placeholder.jpeg"
+                            class="max-w-[125px] shrink-0 rounded"
+                            alt=""
+                          />
+
+                          <div>
+                            <p class="mb-2 line-clamp-2 font-medium">
+                              Best Time to Visit Egypt
+                            </p>
+                            <p
+                              class="flex items-center gap-2 text-sm text-gray"
+                            >
+                              <svg class="size-4 text-primary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#calendar-date"
+                                ></use>
+                              </svg>
+                              13 March, 2024
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
+                          <img
+                            src="./assets/images/article-mini-placeholder.jpeg"
+                            class="max-w-[125px] shrink-0 rounded"
+                            alt=""
+                          />
+
+                          <div>
+                            <p class="mb-2 line-clamp-2 font-medium">
+                              Best Time to Visit Egypt
+                            </p>
+                            <p
+                              class="flex items-center gap-2 text-sm text-gray"
+                            >
+                              <svg class="size-4 text-primary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#calendar-date"
+                                ></use>
+                              </svg>
+                              13 March, 2024
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
+                          <img
+                            src="./assets/images/article-mini-placeholder.jpeg"
+                            class="max-w-[125px] shrink-0 rounded"
+                            alt=""
+                          />
+
+                          <div>
+                            <p class="mb-2 line-clamp-2 font-medium">
+                              Best Time to Visit Egypt
+                            </p>
+                            <p
+                              class="flex items-center gap-2 text-sm text-gray"
+                            >
+                              <svg class="size-4 text-primary">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#calendar-date"
+                                ></use>
+                              </svg>
+                              13 March, 2024
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="hs-accordion active accordion-filter">
-                      <button
-                        class="hs-accordion-toggle accordion-btn font-medium"
-                      >
-                        <svg class="accordion-icon size-5">
-                          <use
-                            href="./assets/images/icons/sprite.svg#mail"
-                          ></use>
-                        </svg>
-                        Enter Email Address
-                      </button>
-                      <div
-                        class="hs-accordion-content accordion-content-wrapper"
-                      >
-                        <div class="accordion-content">
-                          <p class="mb-6">
-                            Subscribe for latest Updates & promotions
-                          </p>
-
-                          <div class="relative mb-4 flex-1">
-                            <label
-                              for="email"
-                              class="absolute start-4 top-0 -translate-y-1/2 bg-white px-1 text-sm text-primary lg:text-base"
-                              >Email</label
-                            >
-                            <input
-                              id="email"
-                              type="email"
-                              class="w-full rounded-xl border border-primary px-4 py-3 text-gray outline-none placeholder:text-gray"
-                              placeholder="Your Email"
-                            />
-                            <button
-                              data-hs-overlay="#send-email"
-                              class="absolute inset-y-0 end-0 rounded-br-xl rounded-tr-xl bg-primary px-5 py-2 text-white"
-                            >
-                              Go
-                            </button>
-                          </div>
-
-                          <p class="flex items-center gap-2 text-sm">
-                            <svg class="accordion-icon size-4">
-                              <use
-                                href="./assets/images/icons/sprite.svg#lock"
-                              ></use>
-                            </svg>
-                            Your information is safe with us
-                          </p>
+                  <div class="hs-accordion active accordion-filter">
+                    <button
+                      class="hs-accordion-toggle accordion-btn font-medium"
+                    >
+                      <svg class="accordion-icon size-4.5">
+                        <use href="./assets/images/icons/sprite.svg#tag"></use>
+                      </svg>
+                      Tags
+                    </button>
+                    <div class="hs-accordion-content accordion-content-wrapper">
+                      <div class="accordion-content">
+                        <div class="tags">
+                          <button type="button">wiki</button>
+                          <button type="button">Oasis Egypt</button>
+                          <button type="button">Egypt Civilization</button>
+                          <button type="button" aria-pressed="true">
+                            Travel
+                          </button>
+                          <button type="button">History</button>
+                          <button type="button">Landmarks</button>
+                          <button type="button">Aswan</button>
+                          <button type="button" aria-pressed="true">
+                            Pyramids
+                          </button>
+                          <button type="button">wiki</button>
+                          <button type="button">Oasis Egypt</button>
+                          <button type="button">Egypt Civilization</button>
+                          <button type="button">Travel</button>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hs-accordion active accordion-filter">
+                    <button
+                      class="hs-accordion-toggle accordion-btn font-medium"
+                    >
+                      <svg class="accordion-icon size-5">
+                        <use href="./assets/images/icons/sprite.svg#info"></use>
+                      </svg>
+                      About Us
+                    </button>
+                    <div class="hs-accordion-content accordion-content-wrapper">
+                      <div class="accordion-content">
+                        <img
+                          src="./assets/images/article-mini-placeholder.jpeg"
+                          class="mb-6 max-h-[150px] w-full rounded-xl object-cover object-center"
+                          alt=""
+                        />
+                        <p class="mb-5">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Sequi quos, repudiandae quisquam ducimus rem
+                          quibusdam veritatis distinctio possimus corrupti quia?
+                        </p>
+
+                        <ul class="social-list primary justify-center">
+                          <li>
+                            <a href="#">
+                              <svg>
+                                <use
+                                  href="./assets/images/icons/sprite.svg#facebook"
+                                ></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg>
+                                <use
+                                  href="./assets/images/icons/sprite.svg#linkedin"
+                                ></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg>
+                                <use
+                                  href="./assets/images/icons/sprite.svg#youtube"
+                                ></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg>
+                                <use
+                                  href="./assets/images/icons/sprite.svg#instagram"
+                                ></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hs-accordion active accordion-filter">
+                    <button
+                      class="hs-accordion-toggle accordion-btn font-medium"
+                    >
+                      <svg class="accordion-icon size-5">
+                        <use href="./assets/images/icons/sprite.svg#mail"></use>
+                      </svg>
+                      Enter Email Address
+                    </button>
+                    <div class="hs-accordion-content accordion-content-wrapper">
+                      <div class="accordion-content">
+                        <p class="mb-6">
+                          Subscribe for latest Updates & promotions
+                        </p>
+
+                        <div class="relative mb-4 flex-1">
+                          <label
+                            for="email"
+                            class="absolute start-4 top-0 -translate-y-1/2 bg-white px-1 text-sm text-primary lg:text-base"
+                            >Email</label
+                          >
+                          <input
+                            id="email"
+                            type="email"
+                            class="w-full rounded-xl border border-primary px-4 py-3 text-gray outline-none placeholder:text-gray"
+                            placeholder="Your Email"
+                          />
+                          <button
+                            data-hs-overlay="#send-email"
+                            class="absolute inset-y-0 end-0 rounded-br-xl rounded-tr-xl bg-primary px-5 py-2 text-white"
+                          >
+                            Go
+                          </button>
+                        </div>
+
+                        <p class="flex items-center gap-2 text-sm">
+                          <svg class="accordion-icon size-4">
+                            <use
+                              href="./assets/images/icons/sprite.svg#lock"
+                            ></use>
+                          </svg>
+                          Your information is safe with us
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="flex-1">
-                  <div
-                    class="mb-3 flex flex-col items-start gap-x-4 gap-y-1 lg:mb-6 lg:flex-row lg:items-center lg:justify-between"
-                  >
-                    <p class="text-xl font-semibold text-primary lg:text-2xl">
-                      <span class="text-secondary">How</span> to Plan A Trip to
-                      Egypt
-                    </p>
+              <div class="flex-1 max-lg:order-1">
+                <div
+                  class="mb-3 flex flex-col items-start gap-x-4 gap-y-2 md:flex-row md:items-center md:justify-between lg:mb-6"
+                >
+                  <p class="text-xl font-semibold text-primary lg:text-2xl">
+                    <span class="text-secondary">How</span> to Plan A Trip to
+                    Egypt
+                  </p>
 
-                    <div class="flex items-center gap-2">
-                      <button
-                        type="button"
-                        data-hs-overlay="#send-feedback"
-                        class="inline-flex items-center gap-1 rounded-xl bg-primary px-5 py-3 text-lg text-white shadow-md transition-colors hover:bg-secondary lg:text-xl"
-                      >
-                        <svg class="size-6 text-white">
-                          <use
-                            href="./assets/images/icons/sprite.svg#log-out"
-                          ></use>
-                        </svg>
-                        Send feedback
-                      </button>
-                      <button type="button" data-hs-overlay="#share-article">
-                        <img
-                          src="./assets/images/icons/share.svg"
-                          class="size-6 lg:size-8"
-                          alt=""
-                        />
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="mb-5 flex flex-wrap gap-x-6 gap-y-2">
-                    <span class="text-sm font-medium"
-                      ><span class="text-primary">By:</span> Doudou Team</span
+                  <div class="flex items-center gap-2">
+                    <button
+                      type="button"
+                      data-hs-overlay="#send-feedback"
+                      class="inline-flex items-center gap-1 rounded-xl bg-primary px-3.5 py-2.5 text-white shadow-md transition-colors hover:bg-secondary lg:px-5 lg:py-3 lg:text-xl"
                     >
-                    <span class="text-sm font-medium"
-                      ><span class="text-primary">Published:</span> 06 Jun
-                      2022</span
-                    >
-                    <span class="text-sm font-medium"
-                      ><span class="text-primary">Updated:</span> 13 Jan
-                      2023</span
-                    >
-                  </div>
-
-                  <div class="space-y-8">
-                    <section>
-                      <div class="mb-6">
-                        <div
-                          class="items-start lg:grid lg:grid-cols-8 lg:gap-8"
-                        >
-                          <div
-                            class="h-[400px] max-lg:mb-8 lg:col-span-6 lg:h-[650px]"
-                          >
-                            <div class="swiper gallery h-full w-full">
-                              <div class="swiper-wrapper">
-                                <div class="swiper-slide h-full">
-                                  <div
-                                    class="h-full overflow-hidden rounded-xl"
-                                  >
-                                    <img
-                                      src="./assets/images/tour-img-1.png"
-                                      class="h-full w-full object-cover object-center"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div>
-                                <div class="swiper-slide h-full">
-                                  <div
-                                    class="h-full overflow-hidden rounded-xl"
-                                  >
-                                    <img
-                                      src="./assets/images/tour-img-1.png"
-                                      class="h-full w-full object-cover object-center"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div>
-                                <div class="swiper-slide h-full">
-                                  <div
-                                    class="h-full overflow-hidden rounded-xl"
-                                  >
-                                    <img
-                                      src="./assets/images/tour-img-1.png"
-                                      class="h-full w-full object-cover object-center"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="h-[150px] lg:col-span-2 lg:h-[650px]">
-                            <div class="swiper thumbs h-full w-full flex-1">
-                              <div class="swiper-wrapper h-full">
-                                <div
-                                  class="swiper-slide group h-full cursor-pointer rounded-2xl border-2 border-primary"
-                                >
-                                  <img
-                                    src="./assets/images/tour-img-1.png"
-                                    class="h-full w-full rounded-2xl border-2 border-transparent object-cover object-center group-[.swiper-slide-thumb-active]:border-primary"
-                                    alt=""
-                                  />
-                                </div>
-                                <div
-                                  class="swiper-slide group h-full cursor-pointer rounded-2xl border-2 border-primary"
-                                >
-                                  <img
-                                    src="./assets/images/tour-img-1.png"
-                                    class="h-full w-full rounded-2xl border-2 border-transparent object-cover object-center group-[.swiper-slide-thumb-active]:border-primary"
-                                    alt=""
-                                  />
-                                </div>
-                                <div
-                                  class="swiper-slide group h-full cursor-pointer rounded-2xl border-2 border-primary"
-                                >
-                                  <img
-                                    src="./assets/images/tour-img-1.png"
-                                    class="h-full w-full rounded-2xl border-2 border-transparent object-cover object-center group-[.swiper-slide-thumb-active]:border-primary"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <p class="mb-4 text-lg font-normal lg:text-xl">
-                        <span class="font-semibold text-primary">Head</span>
-                        Lorem ipsum dolor sit amet consectetur. Pulvinar tellus
-                        tempor pretium nibh id vitae amet. Tortor ullamcorper
-                        eleifend nisi turpis vestibulum. Mattis at proin urna
-                        egestas nunc tincidunt ligula tellus. Consequat in
-                        suscipit pellentesque tellus consectetur. Tellus eget
-                        eget lorem sed commodo interdum. Amet cursus aliquam
-                        lorem tellus elementum ac. Lectus quam adipiscing odio
-                        vel eleifend elit odio accumsan vulputate. Massa turpis
-                        nunc at nullam arcu sagittis vulputate ut. Sed commodo
-                        dapibus viverra id feugiat eu ullamcorper nullam.
-                        Aliquet felis facilisis Tags sociis morbi feugiat
-                        vestibulum. Nec turpis molestie est
-                      </p>
-                      <ul class="list-disc space-y-2 ps-4 marker:text-primary">
-                        <li>
-                          <span class="text-primary">Sub Head</span> Lorem ipsum
-                          dolor sit amet consectetur. Pulvinar tellus tempor
-                          pretium nibh id vitae amet. Tortor ullamcorper
-                          eleifend nisi turpis vestibulum. Mattis at proin urna
-                          egestas nunc tincidunt ligula tellus. Consequat in
-                          suscipit pellentesque tellus consectetur. Tellus eget
-                          eget lorem sed commodo interdum. Amet cursus aliquam
-                          lorem tellus elementum ac. Lectus quam adipiscing odio
-                          vel eleifend elit odio accumsan vulputate. Massa
-                          turpis nunc at nullam arcu sagittis vulputate ut. Sed
-                          commodo dapibus viverra id feugiat eu ullamcorper
-                          nullam. Aliquet felis facilisis Tags sociis morbi
-                          feugiat vestibulum. Nec turpis molestie est
-                        </li>
-                        <li>
-                          <span class="text-primary">Sub Head</span> Lorem ipsum
-                          dolor sit amet consectetur. Pulvinar tellus tempor
-                          pretium nibh id vitae amet. Tortor ullamcorper
-                          eleifend nisi turpis vestibulum. Mattis at proin urna
-                          egestas nunc tincidunt ligula tellus. Consequat in
-                          suscipit pellentesque tellus consectetur. Tellus eget
-                          eget lorem sed commodo interdum. Amet cursus aliquam
-                          lorem tellus elementum ac. Lectus quam adipiscing odio
-                          vel eleifend elit odio accumsan vulputate. Massa
-                          turpis nunc at nullam arcu sagittis vulputate ut. Sed
-                          commodo dapibus viverra id feugiat eu ullamcorper
-                          nullam. Aliquet felis facilisis Tags sociis morbi
-                          feugiat vestibulum. Nec turpis molestie est
-                        </li>
-                      </ul>
-
-                      <img
-                        src="./assets/images/section-divider.png"
-                        class="pointer-events-none mx-auto mt-5 lg:mt-10 lg:w-4/5"
-                        alt=""
-                      />
-                    </section>
-
-                    <section>
-                      <h2
-                        class="text-xl font-semibold text-primary lg:text-2xl"
-                      >
-                        <span class="text-secondary">Title</span> Here
-                      </h2>
-
-                      <img
-                        src="./assets/images/tour-img-1.png"
-                        class="my-7 size-full max-h-[460px] rounded-2xl object-cover object-center"
-                        alt=""
-                      />
-
-                      <div class="space-y-6">
-                        <div>
-                          <h3
-                            class="mb-2 text-lg font-semibold text-primary lg:text-xl"
-                          >
-                            Titles
-                          </h3>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur. Pulvinar
-                            tellus tempor pretium nibh id vitae amet. Tortor
-                            ullamcorper eleifend nisi turpis vestibulum. Mattis
-                            at proin urna egestas nunc tincidunt ligula tellus.
-                            Consequat in suscipit pellentesque tellus
-                            consectetur. Tellus eget eget lorem sed commodo
-                            interdum. Amet cursus aliquam lorem tellus elementum
-                            ac. Lectus quam adipiscing odio vel eleifend elit
-                            odio accumsan vulputate. Massa turpis nunc at nullam
-                            arcu sagittis vulputate ut. Sed commodo dapibus
-                            viverra id feugiat eu ullamcorper nullam. Aliquet
-                            felis facilisis Tags sociis morbi feugiat
-                            vestibulum. Nec turpis molestie est
-                          </p>
-                        </div>
-                        <div>
-                          <h3
-                            class="mb-2 text-lg font-semibold text-primary lg:text-xl"
-                          >
-                            Titles
-                          </h3>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur. Pulvinar
-                            tellus tempor pretium nibh id vitae amet. Tortor
-                            ullamcorper eleifend nisi turpis vestibulum. Mattis
-                            at proin urna egestas nunc tincidunt ligula tellus.
-                            Consequat in suscipit pellentesque tellus
-                            consectetur. Tellus eget eget lorem sed commodo
-                            interdum. Amet cursus aliquam lorem tellus elementum
-                            ac. Lectus quam adipiscing odio vel eleifend elit
-                            odio accumsan vulputate. Massa turpis nunc at nullam
-                            arcu sagittis vulputate ut. Sed commodo dapibus
-                            viverra id feugiat eu ullamcorper nullam. Aliquet
-                            felis facilisis Tags sociis morbi feugiat
-                            vestibulum. Nec turpis molestie est
-                          </p>
-                        </div>
-                        <div>
-                          <h3
-                            class="mb-2 text-lg font-semibold text-primary lg:text-xl"
-                          >
-                            Titles
-                          </h3>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur. Pulvinar
-                            tellus tempor pretium nibh id vitae amet. Tortor
-                            ullamcorper eleifend nisi turpis vestibulum. Mattis
-                            at proin urna egestas nunc tincidunt ligula tellus.
-                            Consequat in suscipit pellentesque tellus
-                            consectetur. Tellus eget eget lorem sed commodo
-                            interdum. Amet cursus aliquam lorem tellus elementum
-                            ac. Lectus quam adipiscing odio vel eleifend elit
-                            odio accumsan vulputate. Massa turpis nunc at nullam
-                            arcu sagittis vulputate ut. Sed commodo dapibus
-                            viverra id feugiat eu ullamcorper nullam. Aliquet
-                            felis facilisis Tags sociis morbi feugiat
-                            vestibulum. Nec turpis molestie est
-                          </p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="./assets/images/section-divider.png"
-                        class="pointer-events-none mx-auto mt-5 lg:mt-10 lg:w-4/5"
-                        alt=""
-                      />
-                    </section>
-
-                    <section>
-                      <h2
-                        class="text-xl font-semibold text-primary lg:text-2xl"
-                      >
-                        <span class="text-secondary">Title</span> Here
-                      </h2>
-
-                      <img
-                        src="./assets/images/tour-img-1.png"
-                        class="my-7 size-full max-h-[460px] rounded-2xl object-cover object-center"
-                        alt=""
-                      />
-
-                      <div class="space-y-6">
-                        <div>
-                          <h3
-                            class="mb-2 text-lg font-semibold text-primary lg:text-xl"
-                          >
-                            Titles
-                          </h3>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur. Pulvinar
-                            tellus tempor pretium nibh id vitae amet. Tortor
-                            ullamcorper eleifend nisi turpis vestibulum. Mattis
-                            at proin urna egestas nunc tincidunt ligula tellus.
-                            Consequat in suscipit pellentesque tellus
-                            consectetur. Tellus eget eget lorem sed commodo
-                            interdum. Amet cursus aliquam lorem tellus elementum
-                            ac. Lectus quam adipiscing odio vel eleifend elit
-                            odio accumsan vulputate. Massa turpis nunc at nullam
-                            arcu sagittis vulputate ut. Sed commodo dapibus
-                            viverra id feugiat eu ullamcorper nullam. Aliquet
-                            felis facilisis Tags sociis morbi feugiat
-                            vestibulum. Nec turpis molestie est
-                          </p>
-                        </div>
-                        <div>
-                          <h3
-                            class="mb-2 text-lg font-semibold text-primary lg:text-xl"
-                          >
-                            Titles
-                          </h3>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur. Pulvinar
-                            tellus tempor pretium nibh id vitae amet. Tortor
-                            ullamcorper eleifend nisi turpis vestibulum. Mattis
-                            at proin urna egestas nunc tincidunt ligula tellus.
-                            Consequat in suscipit pellentesque tellus
-                            consectetur. Tellus eget eget lorem sed commodo
-                            interdum. Amet cursus aliquam lorem tellus elementum
-                            ac. Lectus quam adipiscing odio vel eleifend elit
-                            odio accumsan vulputate. Massa turpis nunc at nullam
-                            arcu sagittis vulputate ut. Sed commodo dapibus
-                            viverra id feugiat eu ullamcorper nullam. Aliquet
-                            felis facilisis Tags sociis morbi feugiat
-                            vestibulum. Nec turpis molestie est
-                          </p>
-                        </div>
-                        <div>
-                          <h3
-                            class="mb-2 text-lg font-semibold text-primary lg:text-xl"
-                          >
-                            Titles
-                          </h3>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur. Pulvinar
-                            tellus tempor pretium nibh id vitae amet. Tortor
-                            ullamcorper eleifend nisi turpis vestibulum. Mattis
-                            at proin urna egestas nunc tincidunt ligula tellus.
-                            Consequat in suscipit pellentesque tellus
-                            consectetur. Tellus eget eget lorem sed commodo
-                            interdum. Amet cursus aliquam lorem tellus elementum
-                            ac. Lectus quam adipiscing odio vel eleifend elit
-                            odio accumsan vulputate. Massa turpis nunc at nullam
-                            arcu sagittis vulputate ut. Sed commodo dapibus
-                            viverra id feugiat eu ullamcorper nullam. Aliquet
-                            felis facilisis Tags sociis morbi feugiat
-                            vestibulum. Nec turpis molestie est
-                          </p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="./assets/images/section-divider.png"
-                        class="pointer-events-none mx-auto mt-5 lg:mt-10 lg:w-4/5"
-                        alt=""
-                      />
-                    </section>
-
-                    <section>
-                      <div
-                        class="mb-2 flex flex-col items-start gap-4 rounded-xl border border-gray px-5 py-4 lg:mb-6 lg:flex-row lg:items-center lg:justify-between"
-                      >
-                        <p
-                          class="text-xl font-semibold text-primary lg:text-2xl"
-                        >
-                          Was This Article Helpful?
-                        </p>
-
-                        <div class="flex items-center gap-2">
-                          <button
-                            type="button"
-                            data-hs-overlay="#send-feedback"
-                            class="inline-flex items-center gap-1 rounded-xl bg-primary px-5 py-3 text-lg text-white shadow-md transition-colors hover:bg-secondary lg:text-xl"
-                          >
-                            <svg class="size-6 text-white">
-                              <use
-                                href="./assets/images/icons/sprite.svg#log-out"
-                              ></use>
-                            </svg>
-                            Send feedback
-                          </button>
-                          <button type="button">
-                            <img
-                              src="./assets/images/icons/share.svg"
-                              class="size-6 lg:size-8"
-                              alt=""
-                            />
-                          </button>
-                        </div>
-                      </div>
-
-                      <!-- comments -->
-                      <div
-                        class="overflow-hidden rounded-xl border border-gray"
-                      >
-                        <div
-                          class="flex items-center justify-between border-b border-gray px-6 py-4 lg:px-8 lg:py-6"
-                        >
-                          <p class="lg:text-lg">Comments (9)</p>
-
-                          <div class="hs-dropdown relative flex">
-                            <button
-                              class="hs-dropdown inline-flex items-center gap-2 text-sm"
-                            >
-                              Top Comments
-                              <svg
-                                width="11"
-                                height="6"
-                                viewBox="0 0 11 6"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M1.5 1L5.5 5L9.5 1"
-                                  stroke="#232323"
-                                  stroke-width="1.5"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-
-                        <div
-                          class="h-96 space-y-5 overflow-auto px-6 py-5"
-                          data-lenis-prevent
-                        >
-                          <div>
-                            <div class="mb-3 flex items-center gap-2">
-                              <div
-                                class="size-8 shrink-0 overflow-hidden rounded-full lg:size-10"
-                              >
-                                <img
-                                  src="./assets/images/avatar.jpeg"
-                                  class="h-full w-full object-cover object-center"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div>
-                                <p class="mb-1 text-sm text-black">
-                                  Mai Hussien
-                                  <span class="text-gray">10 Feb 2024</span>
-                                </p>
-                                <div class="flex items-center gap-x-px">
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-gray-200">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-
-                            <p
-                              class="line-clamp-4 font-normal leading-relaxed text-gray"
-                            >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit, sed do eiusmod tempor incididunt ut labore
-                              et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut
-                              aliquip ex ea commodo consequat. Duis aute irure
-                              dolor in reprehenderit in voluptate velit esse
-                              cillum lpa qui officia deserunt mollit anim id est
-                              laborum...
-                            </p>
-                          </div>
-                          <div>
-                            <div class="mb-3 flex items-center gap-2">
-                              <div
-                                class="size-8 shrink-0 overflow-hidden rounded-full lg:size-10"
-                              >
-                                <img
-                                  src="./assets/images/avatar.jpeg"
-                                  class="h-full w-full object-cover object-center"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div>
-                                <p class="mb-1 text-sm text-black">
-                                  Mai Hussien
-                                  <span class="text-gray">10 Feb 2024</span>
-                                </p>
-                                <div class="flex items-center gap-x-px">
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-gray-200">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-
-                            <p
-                              class="line-clamp-4 font-normal leading-relaxed text-gray"
-                            >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit, sed do eiusmod tempor incididunt ut labore
-                              et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut
-                              aliquip ex ea commodo consequat. Duis aute irure
-                              dolor in reprehenderit in voluptate velit esse
-                              cillum lpa qui officia deserunt mollit anim id est
-                              laborum...
-                            </p>
-                          </div>
-                          <div>
-                            <div class="mb-3 flex items-center gap-2">
-                              <div
-                                class="size-8 shrink-0 overflow-hidden rounded-full lg:size-10"
-                              >
-                                <img
-                                  src="./assets/images/avatar.jpeg"
-                                  class="h-full w-full object-cover object-center"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div>
-                                <p class="mb-1 text-sm text-black">
-                                  Mai Hussien
-                                  <span class="text-gray">10 Feb 2024</span>
-                                </p>
-                                <div class="flex items-center gap-x-px">
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-gray-200">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-
-                            <p
-                              class="line-clamp-4 font-normal leading-relaxed text-gray"
-                            >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit, sed do eiusmod tempor incididunt ut labore
-                              et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut
-                              aliquip ex ea commodo consequat. Duis aute irure
-                              dolor in reprehenderit in voluptate velit esse
-                              cillum lpa qui officia deserunt mollit anim id est
-                              laborum...
-                            </p>
-                          </div>
-                          <div>
-                            <div class="mb-3 flex items-center gap-2">
-                              <div
-                                class="size-8 shrink-0 overflow-hidden rounded-full lg:size-10"
-                              >
-                                <img
-                                  src="./assets/images/avatar.jpeg"
-                                  class="h-full w-full object-cover object-center"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div>
-                                <p class="mb-1 text-sm text-black">
-                                  Mai Hussien
-                                  <span class="text-gray">10 Feb 2024</span>
-                                </p>
-                                <div class="flex items-center gap-x-px">
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-secondary">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                  <svg class="size-3 text-gray-200">
-                                    <use
-                                      href="./assets/images/icons/sprite.svg#star"
-                                    ></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-
-                            <p
-                              class="line-clamp-4 font-normal leading-relaxed text-gray"
-                            >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit, sed do eiusmod tempor incididunt ut labore
-                              et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut
-                              aliquip ex ea commodo consequat. Duis aute irure
-                              dolor in reprehenderit in voluptate velit esse
-                              cillum lpa qui officia deserunt mollit anim id est
-                              laborum...
-                            </p>
-                          </div>
-                        </div>
-
-                        <!-- <p class="flex items-center justify-center text-gray-300 px-6 py-9 gap-2.5">
-                      <svg class="text-gray-300 size-6 shrink-0">
+                      <svg class="size-6 text-white">
                         <use
-                          href="./assets/images/icons/sprite.svg#comment"
+                          href="./assets/images/icons/sprite.svg#log-out"
                         ></use>
                       </svg>
-                      No available comments yet!...
-                    </p> -->
+                      Send feedback
+                    </button>
+                    <button type="button" data-hs-overlay="#share-article">
+                      <img
+                        src="./assets/images/icons/share.svg"
+                        class="size-6 lg:size-8"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
 
-                        <div
-                          class="border-t border-gray bg-gray-50 px-6 py-6 lg:px-8"
-                        >
-                          <form
-                            class="flex items-center gap-2.5 rounded-xl border border-gray bg-white px-5 py-3"
-                          >
-                            <svg class="size-6 shrink-0 text-gray-300">
-                              <use
-                                href="./assets/images/icons/sprite.svg#comment"
-                              ></use>
-                            </svg>
+                <div class="mb-5 flex flex-wrap gap-x-6 gap-y-2">
+                  <span class="text-sm font-medium"
+                    ><span class="text-primary">By:</span> Doudou Team</span
+                  >
+                  <span class="text-sm font-medium"
+                    ><span class="text-primary">Published:</span> 06 Jun
+                    2022</span
+                  >
+                  <span class="text-sm font-medium"
+                    ><span class="text-primary">Updated:</span> 13 Jan
+                    2023</span
+                  >
+                </div>
 
-                            <input
-                              type="text"
-                              class="block flex-1 border-none bg-transparent text-black outline-none placeholder:text-gray-300"
-                              placeholder="Write your comment here..."
-                            />
+                <div id="scrollspy-1" class="space-y-8">
+                  <section id="intro">
+                    <div class="mb-6">
+                      <div class="items-start lg:grid lg:grid-cols-8 lg:gap-8">
+                        <div class="h-[400px] max-lg:mb-8 lg:col-span-6">
+                          <div class="swiper gallery-2 h-full w-full">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide h-full">
+                                <div class="h-full overflow-hidden rounded-xl">
+                                  <img
+                                    src="./assets/images/tour-img-1.png"
+                                    class="h-full w-full object-cover object-center"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide h-full">
+                                <div class="h-full overflow-hidden rounded-xl">
+                                  <img
+                                    src="./assets/images/tour-img-1.png"
+                                    class="h-full w-full object-cover object-center"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide h-full">
+                                <div class="h-full overflow-hidden rounded-xl">
+                                  <img
+                                    src="./assets/images/tour-img-1.png"
+                                    class="h-full w-full object-cover object-center"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-                            <button class="shrink-0">
-                              <svg class="size-6 text-primary">
-                                <use
-                                  href="./assets/images/icons/sprite.svg#send"
-                                ></use>
-                              </svg>
-                            </button>
-                          </form>
+                        <div class="h-[100px] lg:col-span-2 lg:h-[400px]">
+                          <div class="swiper thumbs-2 h-full w-full flex-1">
+                            <div class="swiper-wrapper h-full">
+                              <div
+                                class="swiper-slide group h-full cursor-pointer rounded-2xl"
+                              >
+                                <img
+                                  src="./assets/images/tour-img-1.png"
+                                  class="h-full w-full rounded-2xl border-2 border-transparent object-cover object-center transition-colors hover:border-primary lg:border-4"
+                                  alt=""
+                                />
+                              </div>
+                              <div
+                                class="swiper-slide group h-full cursor-pointer rounded-2xl"
+                              >
+                                <img
+                                  src="./assets/images/tour-img-1.png"
+                                  class="h-full w-full rounded-2xl border-2 border-transparent object-cover object-center transition-colors hover:border-primary lg:border-4"
+                                  alt=""
+                                />
+                              </div>
+                              <div
+                                class="swiper-slide group h-full cursor-pointer rounded-2xl"
+                              >
+                                <img
+                                  src="./assets/images/tour-img-1.png"
+                                  class="h-full w-full rounded-2xl border-2 border-transparent object-cover object-center transition-colors hover:border-primary lg:border-4"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </section>
-                  </div>
+                    </div>
+
+                    <p class="mb-4 text-lg font-normal lg:text-xl">
+                      <span class="font-semibold text-primary">Head</span>
+                      Lorem ipsum dolor sit amet consectetur. Pulvinar tellus
+                      tempor pretium nibh id vitae amet. Tortor ullamcorper
+                      eleifend nisi turpis vestibulum. Mattis at proin urna
+                      egestas nunc tincidunt ligula tellus. Consequat in
+                      suscipit pellentesque tellus consectetur. Tellus eget eget
+                      lorem sed commodo interdum. Amet cursus aliquam lorem
+                      tellus elementum ac. Lectus quam adipiscing odio vel
+                      eleifend elit odio accumsan vulputate. Massa turpis nunc
+                      at nullam arcu sagittis vulputate ut. Sed commodo dapibus
+                      viverra id feugiat eu ullamcorper nullam. Aliquet felis
+                      facilisis Tags sociis morbi feugiat vestibulum. Nec turpis
+                      molestie est
+                    </p>
+                    <ul class="list-disc space-y-2 ps-4 marker:text-primary">
+                      <li>
+                        <span class="text-primary">Sub Head</span> Lorem ipsum
+                        dolor sit amet consectetur. Pulvinar tellus tempor
+                        pretium nibh id vitae amet. Tortor ullamcorper eleifend
+                        nisi turpis vestibulum. Mattis at proin urna egestas
+                        nunc tincidunt ligula tellus. Consequat in suscipit
+                        pellentesque tellus consectetur. Tellus eget eget lorem
+                        sed commodo interdum. Amet cursus aliquam lorem tellus
+                        elementum ac. Lectus quam adipiscing odio vel eleifend
+                        elit odio accumsan vulputate. Massa turpis nunc at
+                        nullam arcu sagittis vulputate ut. Sed commodo dapibus
+                        viverra id feugiat eu ullamcorper nullam. Aliquet felis
+                        facilisis Tags sociis morbi feugiat vestibulum. Nec
+                        turpis molestie est
+                      </li>
+                      <li>
+                        <span class="text-primary">Sub Head</span> Lorem ipsum
+                        dolor sit amet consectetur. Pulvinar tellus tempor
+                        pretium nibh id vitae amet. Tortor ullamcorper eleifend
+                        nisi turpis vestibulum. Mattis at proin urna egestas
+                        nunc tincidunt ligula tellus. Consequat in suscipit
+                        pellentesque tellus consectetur. Tellus eget eget lorem
+                        sed commodo interdum. Amet cursus aliquam lorem tellus
+                        elementum ac. Lectus quam adipiscing odio vel eleifend
+                        elit odio accumsan vulputate. Massa turpis nunc at
+                        nullam arcu sagittis vulputate ut. Sed commodo dapibus
+                        viverra id feugiat eu ullamcorper nullam. Aliquet felis
+                        facilisis Tags sociis morbi feugiat vestibulum. Nec
+                        turpis molestie est
+                      </li>
+                    </ul>
+
+                    <img
+                      src="./assets/images/section-divider.png"
+                      class="pointer-events-none mx-auto mt-5 lg:mt-10 lg:w-4/5"
+                      alt=""
+                    />
+                  </section>
+
+                  <section id="title-1">
+                    <h2 class="text-xl font-semibold text-primary lg:text-2xl">
+                      <span class="text-secondary">Title</span> Here
+                    </h2>
+
+                    <img
+                      src="./assets/images/tour-img-1.png"
+                      class="my-7 max-h-[460px] w-full rounded-2xl object-cover object-center"
+                      alt=""
+                    />
+
+                    <div class="space-y-6">
+                      <div>
+                        <h3
+                          class="mb-2 text-lg font-semibold text-primary lg:text-xl"
+                        >
+                          Titles
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Pulvinar
+                          tellus tempor pretium nibh id vitae amet. Tortor
+                          ullamcorper eleifend nisi turpis vestibulum. Mattis at
+                          proin urna egestas nunc tincidunt ligula tellus.
+                          Consequat in suscipit pellentesque tellus consectetur.
+                          Tellus eget eget lorem sed commodo interdum. Amet
+                          cursus aliquam lorem tellus elementum ac. Lectus quam
+                          adipiscing odio vel eleifend elit odio accumsan
+                          vulputate. Massa turpis nunc at nullam arcu sagittis
+                          vulputate ut. Sed commodo dapibus viverra id feugiat
+                          eu ullamcorper nullam. Aliquet felis facilisis Tags
+                          sociis morbi feugiat vestibulum. Nec turpis molestie
+                          est
+                        </p>
+                      </div>
+                      <div>
+                        <h3
+                          class="mb-2 text-lg font-semibold text-primary lg:text-xl"
+                        >
+                          Titles
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Pulvinar
+                          tellus tempor pretium nibh id vitae amet. Tortor
+                          ullamcorper eleifend nisi turpis vestibulum. Mattis at
+                          proin urna egestas nunc tincidunt ligula tellus.
+                          Consequat in suscipit pellentesque tellus consectetur.
+                          Tellus eget eget lorem sed commodo interdum. Amet
+                          cursus aliquam lorem tellus elementum ac. Lectus quam
+                          adipiscing odio vel eleifend elit odio accumsan
+                          vulputate. Massa turpis nunc at nullam arcu sagittis
+                          vulputate ut. Sed commodo dapibus viverra id feugiat
+                          eu ullamcorper nullam. Aliquet felis facilisis Tags
+                          sociis morbi feugiat vestibulum. Nec turpis molestie
+                          est
+                        </p>
+                      </div>
+                      <div>
+                        <h3
+                          class="mb-2 text-lg font-semibold text-primary lg:text-xl"
+                        >
+                          Titles
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Pulvinar
+                          tellus tempor pretium nibh id vitae amet. Tortor
+                          ullamcorper eleifend nisi turpis vestibulum. Mattis at
+                          proin urna egestas nunc tincidunt ligula tellus.
+                          Consequat in suscipit pellentesque tellus consectetur.
+                          Tellus eget eget lorem sed commodo interdum. Amet
+                          cursus aliquam lorem tellus elementum ac. Lectus quam
+                          adipiscing odio vel eleifend elit odio accumsan
+                          vulputate. Massa turpis nunc at nullam arcu sagittis
+                          vulputate ut. Sed commodo dapibus viverra id feugiat
+                          eu ullamcorper nullam. Aliquet felis facilisis Tags
+                          sociis morbi feugiat vestibulum. Nec turpis molestie
+                          est
+                        </p>
+                      </div>
+                    </div>
+
+                    <img
+                      src="./assets/images/section-divider.png"
+                      class="pointer-events-none mx-auto mt-5 lg:mt-10 lg:w-4/5"
+                      alt=""
+                    />
+                  </section>
+
+                  <section id="title-2">
+                    <h2 class="text-xl font-semibold text-primary lg:text-2xl">
+                      <span class="text-secondary">Title</span> Here
+                    </h2>
+
+                    <img
+                      src="./assets/images/tour-img-1.png"
+                      class="my-7 max-h-[460px] w-full rounded-2xl object-cover object-center"
+                      alt=""
+                    />
+
+                    <div class="space-y-6">
+                      <div>
+                        <h3
+                          class="mb-2 text-lg font-semibold text-primary lg:text-xl"
+                        >
+                          Titles
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Pulvinar
+                          tellus tempor pretium nibh id vitae amet. Tortor
+                          ullamcorper eleifend nisi turpis vestibulum. Mattis at
+                          proin urna egestas nunc tincidunt ligula tellus.
+                          Consequat in suscipit pellentesque tellus consectetur.
+                          Tellus eget eget lorem sed commodo interdum. Amet
+                          cursus aliquam lorem tellus elementum ac. Lectus quam
+                          adipiscing odio vel eleifend elit odio accumsan
+                          vulputate. Massa turpis nunc at nullam arcu sagittis
+                          vulputate ut. Sed commodo dapibus viverra id feugiat
+                          eu ullamcorper nullam. Aliquet felis facilisis Tags
+                          sociis morbi feugiat vestibulum. Nec turpis molestie
+                          est
+                        </p>
+                      </div>
+                      <div>
+                        <h3
+                          class="mb-2 text-lg font-semibold text-primary lg:text-xl"
+                        >
+                          Titles
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Pulvinar
+                          tellus tempor pretium nibh id vitae amet. Tortor
+                          ullamcorper eleifend nisi turpis vestibulum. Mattis at
+                          proin urna egestas nunc tincidunt ligula tellus.
+                          Consequat in suscipit pellentesque tellus consectetur.
+                          Tellus eget eget lorem sed commodo interdum. Amet
+                          cursus aliquam lorem tellus elementum ac. Lectus quam
+                          adipiscing odio vel eleifend elit odio accumsan
+                          vulputate. Massa turpis nunc at nullam arcu sagittis
+                          vulputate ut. Sed commodo dapibus viverra id feugiat
+                          eu ullamcorper nullam. Aliquet felis facilisis Tags
+                          sociis morbi feugiat vestibulum. Nec turpis molestie
+                          est
+                        </p>
+                      </div>
+                      <div>
+                        <h3
+                          class="mb-2 text-lg font-semibold text-primary lg:text-xl"
+                        >
+                          Titles
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Pulvinar
+                          tellus tempor pretium nibh id vitae amet. Tortor
+                          ullamcorper eleifend nisi turpis vestibulum. Mattis at
+                          proin urna egestas nunc tincidunt ligula tellus.
+                          Consequat in suscipit pellentesque tellus consectetur.
+                          Tellus eget eget lorem sed commodo interdum. Amet
+                          cursus aliquam lorem tellus elementum ac. Lectus quam
+                          adipiscing odio vel eleifend elit odio accumsan
+                          vulputate. Massa turpis nunc at nullam arcu sagittis
+                          vulputate ut. Sed commodo dapibus viverra id feugiat
+                          eu ullamcorper nullam. Aliquet felis facilisis Tags
+                          sociis morbi feugiat vestibulum. Nec turpis molestie
+                          est
+                        </p>
+                      </div>
+                    </div>
+
+                    <img
+                      src="./assets/images/section-divider.png"
+                      class="pointer-events-none mx-auto mt-5 lg:mt-10 lg:w-4/5"
+                      alt=""
+                    />
+                  </section>
+
+                  <section id="title-3">
+                    <h2 class="text-xl font-semibold text-primary lg:text-2xl">
+                      <span class="text-secondary">Title</span> Here
+                    </h2>
+
+                    <img
+                      src="./assets/images/tour-img-1.png"
+                      class="my-7 max-h-[460px] w-full rounded-2xl object-cover object-center"
+                      alt=""
+                    />
+
+                    <div class="space-y-6">
+                      <div>
+                        <h3
+                          class="mb-2 text-lg font-semibold text-primary lg:text-xl"
+                        >
+                          Titles
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Pulvinar
+                          tellus tempor pretium nibh id vitae amet. Tortor
+                          ullamcorper eleifend nisi turpis vestibulum. Mattis at
+                          proin urna egestas nunc tincidunt ligula tellus.
+                          Consequat in suscipit pellentesque tellus consectetur.
+                          Tellus eget eget lorem sed commodo interdum. Amet
+                          cursus aliquam lorem tellus elementum ac. Lectus quam
+                          adipiscing odio vel eleifend elit odio accumsan
+                          vulputate. Massa turpis nunc at nullam arcu sagittis
+                          vulputate ut. Sed commodo dapibus viverra id feugiat
+                          eu ullamcorper nullam. Aliquet felis facilisis Tags
+                          sociis morbi feugiat vestibulum. Nec turpis molestie
+                          est
+                        </p>
+                      </div>
+                      <div>
+                        <h3
+                          class="mb-2 text-lg font-semibold text-primary lg:text-xl"
+                        >
+                          Titles
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Pulvinar
+                          tellus tempor pretium nibh id vitae amet. Tortor
+                          ullamcorper eleifend nisi turpis vestibulum. Mattis at
+                          proin urna egestas nunc tincidunt ligula tellus.
+                          Consequat in suscipit pellentesque tellus consectetur.
+                          Tellus eget eget lorem sed commodo interdum. Amet
+                          cursus aliquam lorem tellus elementum ac. Lectus quam
+                          adipiscing odio vel eleifend elit odio accumsan
+                          vulputate. Massa turpis nunc at nullam arcu sagittis
+                          vulputate ut. Sed commodo dapibus viverra id feugiat
+                          eu ullamcorper nullam. Aliquet felis facilisis Tags
+                          sociis morbi feugiat vestibulum. Nec turpis molestie
+                          est
+                        </p>
+                      </div>
+                      <div>
+                        <h3
+                          class="mb-2 text-lg font-semibold text-primary lg:text-xl"
+                        >
+                          Titles
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Pulvinar
+                          tellus tempor pretium nibh id vitae amet. Tortor
+                          ullamcorper eleifend nisi turpis vestibulum. Mattis at
+                          proin urna egestas nunc tincidunt ligula tellus.
+                          Consequat in suscipit pellentesque tellus consectetur.
+                          Tellus eget eget lorem sed commodo interdum. Amet
+                          cursus aliquam lorem tellus elementum ac. Lectus quam
+                          adipiscing odio vel eleifend elit odio accumsan
+                          vulputate. Massa turpis nunc at nullam arcu sagittis
+                          vulputate ut. Sed commodo dapibus viverra id feugiat
+                          eu ullamcorper nullam. Aliquet felis facilisis Tags
+                          sociis morbi feugiat vestibulum. Nec turpis molestie
+                          est
+                        </p>
+                      </div>
+                    </div>
+
+                    <img
+                      src="./assets/images/section-divider.png"
+                      class="pointer-events-none mx-auto mt-5 lg:mt-10 lg:w-4/5"
+                      alt=""
+                    />
+                  </section>
+
+                  <section>
+                    <div
+                      class="mb-2 flex flex-col items-start gap-4 rounded-xl border border-gray px-5 py-4 md:flex-row md:items-center md:justify-between lg:mb-6"
+                    >
+                      <p class="text-xl font-semibold text-primary lg:text-2xl">
+                        Was This Article Helpful?
+                      </p>
+
+                      <div class="flex items-center gap-2">
+                        <button
+                          type="button"
+                          data-hs-overlay="#send-feedback"
+                          class="inline-flex items-center gap-1 rounded-xl bg-primary px-5 py-3 text-lg text-white shadow-md transition-colors hover:bg-secondary lg:text-xl"
+                        >
+                          <svg class="size-6 text-white">
+                            <use
+                              href="./assets/images/icons/sprite.svg#log-out"
+                            ></use>
+                          </svg>
+                          Send feedback
+                        </button>
+                        <button type="button">
+                          <img
+                            src="./assets/images/icons/share.svg"
+                            class="size-6 lg:size-8"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- comments -->
+                    <div class="overflow-hidden rounded-xl border border-gray">
+                      <div
+                        class="flex items-center justify-between border-b border-gray px-6 py-4 lg:px-8 lg:py-6"
+                      >
+                        <p class="lg:text-lg">Comments (9)</p>
+
+                        <div class="hs-dropdown relative flex">
+                          <button
+                            class="hs-dropdown inline-flex items-center gap-2 text-sm"
+                          >
+                            Top Comments
+                            <svg
+                              width="11"
+                              height="6"
+                              viewBox="0 0 11 6"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.5 1L5.5 5L9.5 1"
+                                stroke="#232323"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="h-96 space-y-5 overflow-auto px-6 py-5"
+                        data-lenis-prevent
+                      >
+                        <div>
+                          <div class="mb-3 flex items-center gap-2">
+                            <div
+                              class="size-8 shrink-0 overflow-hidden rounded-full lg:size-10"
+                            >
+                              <img
+                                src="./assets/images/avatar.jpeg"
+                                class="h-full w-full object-cover object-center"
+                                alt=""
+                              />
+                            </div>
+
+                            <div>
+                              <p class="mb-1 text-sm text-black">
+                                Mai Hussien
+                                <span class="text-gray">10 Feb 2024</span>
+                              </p>
+                              <div class="flex items-center gap-x-px">
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-gray-200">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <p
+                            class="line-clamp-4 font-normal leading-relaxed text-gray"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum lpa qui
+                            officia deserunt mollit anim id est laborum...
+                          </p>
+                        </div>
+                        <div>
+                          <div class="mb-3 flex items-center gap-2">
+                            <div
+                              class="size-8 shrink-0 overflow-hidden rounded-full lg:size-10"
+                            >
+                              <img
+                                src="./assets/images/avatar.jpeg"
+                                class="h-full w-full object-cover object-center"
+                                alt=""
+                              />
+                            </div>
+
+                            <div>
+                              <p class="mb-1 text-sm text-black">
+                                Mai Hussien
+                                <span class="text-gray">10 Feb 2024</span>
+                              </p>
+                              <div class="flex items-center gap-x-px">
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-gray-200">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <p
+                            class="line-clamp-4 font-normal leading-relaxed text-gray"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum lpa qui
+                            officia deserunt mollit anim id est laborum...
+                          </p>
+                        </div>
+                        <div>
+                          <div class="mb-3 flex items-center gap-2">
+                            <div
+                              class="size-8 shrink-0 overflow-hidden rounded-full lg:size-10"
+                            >
+                              <img
+                                src="./assets/images/avatar.jpeg"
+                                class="h-full w-full object-cover object-center"
+                                alt=""
+                              />
+                            </div>
+
+                            <div>
+                              <p class="mb-1 text-sm text-black">
+                                Mai Hussien
+                                <span class="text-gray">10 Feb 2024</span>
+                              </p>
+                              <div class="flex items-center gap-x-px">
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-gray-200">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <p
+                            class="line-clamp-4 font-normal leading-relaxed text-gray"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum lpa qui
+                            officia deserunt mollit anim id est laborum...
+                          </p>
+                        </div>
+                        <div>
+                          <div class="mb-3 flex items-center gap-2">
+                            <div
+                              class="size-8 shrink-0 overflow-hidden rounded-full lg:size-10"
+                            >
+                              <img
+                                src="./assets/images/avatar.jpeg"
+                                class="h-full w-full object-cover object-center"
+                                alt=""
+                              />
+                            </div>
+
+                            <div>
+                              <p class="mb-1 text-sm text-black">
+                                Mai Hussien
+                                <span class="text-gray">10 Feb 2024</span>
+                              </p>
+                              <div class="flex items-center gap-x-px">
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-secondary">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                                <svg class="size-3 text-gray-200">
+                                  <use
+                                    href="./assets/images/icons/sprite.svg#star"
+                                  ></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <p
+                            class="line-clamp-4 font-normal leading-relaxed text-gray"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum lpa qui
+                            officia deserunt mollit anim id est laborum...
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- <p class="flex items-center justify-center text-gray-300 px-6 py-9 gap-2.5">
+                    <svg class="text-gray-300 size-6 shrink-0">
+                      <use
+                        href="./assets/images/icons/sprite.svg#comment"
+                      ></use>
+                    </svg>
+                    No available comments yet!...
+                  </p> -->
+
+                      <div
+                        class="border-t border-gray bg-gray-50 px-6 py-6 lg:px-8"
+                      >
+                        <form
+                          class="flex items-center gap-2.5 rounded-xl border border-gray bg-white px-5 py-3"
+                        >
+                          <svg class="size-6 shrink-0 text-gray-300">
+                            <use
+                              href="./assets/images/icons/sprite.svg#comment"
+                            ></use>
+                          </svg>
+
+                          <input
+                            type="text"
+                            class="block flex-1 border-none bg-transparent text-black outline-none placeholder:text-gray-300"
+                            placeholder="Write your comment here..."
+                          />
+
+                          <button class="shrink-0">
+                            <svg class="size-6 text-primary">
+                              <use
+                                href="./assets/images/icons/sprite.svg#send"
+                              ></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </section>
                 </div>
               </div>
             </div>
@@ -4308,10 +4256,35 @@
     </div>
 
     <!-- js -->
+    <!-- https://refreshless.com/nouislider/ -->
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
+    <script>
+      function budgetSlider(el) {
+        const sliderWrapper = document.querySelector(el);
+        const slider = sliderWrapper.querySelector(".slider");
+        const minEl = sliderWrapper.querySelector(".slider-min");
+        const maxEl = sliderWrapper.querySelector(".slider-max");
+        noUiSlider.create(slider, {
+          start: [1, 10000],
+          connect: true,
+          range: {
+            min: 0,
+            max: 10000,
+          },
+        });
+        slider.noUiSlider.on("update", (values) => {
+          minEl.textContent = Math.round(values[0]);
+          maxEl.textContent = Math.round(values[1]);
+        });
+      }
+      budgetSlider("#slider-1");
+      budgetSlider("#slider-2");
+      budgetSlider("#slider-3");
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       // gallery-2
-      new Swiper(".swiper.thumbs", {
+      new Swiper(".swiper.thumbs-2", {
         direction: "vertical",
         slidesPerView: 1,
         spaceBetween: 24,
@@ -4329,14 +4302,14 @@
           },
         },
       });
-      new Swiper(".swiper.gallery", {
+      new Swiper(".swiper.gallery-2", {
         direction: "vertical",
         slidesPerView: 1,
         spaceBetween: 32,
         mousewheel: false,
         grabCursor: false,
         thumbs: {
-          swiper: ".swiper.thumbs",
+          swiper: ".swiper.thumbs-2",
         },
         breakpoints: {
           0: {
