@@ -164,11 +164,7 @@
           </nav>
 
           <div class="navbar_desktop">
-            <img
-              src="./assets/images/logo.png"
-              class="w-48 shrink-0 lg:w-60"
-              alt=""
-            />
+            <img src="./assets/images/logo.png" class="logo" alt="" />
           </div>
 
           <div class="navbar_mobile static">
@@ -1035,7 +1031,7 @@
                                   class="inline-flex min-h-7 w-full min-w-7 items-center align-middle text-xs"
                                 >
                                   <span
-                                    class="flex size-7 flex-shrink-0 items-center justify-center rounded-full border border-gray-100 font-medium text-gray group-[.active]:text-white group-[.active]:bg-secondary group-[.active]:border-secondary"
+                                    class="flex size-7 flex-shrink-0 items-center justify-center rounded-full border border-gray-100 font-medium text-gray group-[.active]:border-secondary group-[.active]:bg-secondary group-[.active]:text-white"
                                   >
                                     <span
                                       class="hs-stepper-success:hidden hs-stepper-completed:hidden"
@@ -1314,7 +1310,7 @@
                                   data-hs-stepper-finish-btn
                                   data-hs-overlay="#success-model"
                                   style="display: none"
-                                  >
+                                >
                                   Submit
                                 </button>
                               </div>
@@ -2745,14 +2741,16 @@
                           </svg>
                         </button>
 
-                          <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-40 bg-white shadow-md rounded-lg p-2 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full">
-                            <button
-                              type="button"
-                              class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
-                            >
-                              Most recent
-                            </button>
-                          </div>
+                        <div
+                          class="hs-dropdown-menu duration mt-2 hidden min-w-40 rounded-lg bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                        >
+                          <button
+                            type="button"
+                            class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                          >
+                            Most recent
+                          </button>
+                        </div>
                       </div>
                     </div>
 
@@ -4820,11 +4818,6 @@
           class="w-full"
           alt=""
         />
-        <button type="button" id="toTop" onclick="lenis.scrollTo('body')">
-          <svg>
-            <use href="./assets/images/icons/sprite.svg#back-to-top"></use>
-          </svg>
-        </button>
 
         <footer class="footer">
           <div class="container">
@@ -4987,6 +4980,17 @@
           </div>
         </footer>
       </div>
+
+      <button
+        type="button"
+        id="BackToTop"
+        class="back-to-top"
+        onclick="lenis.scrollTo('body')"
+      >
+        <svg>
+          <use href="./assets/images/icons/sprite.svg#back-to-top"></use>
+        </svg>
+      </button>
     </div>
 
     <!-- modals -->

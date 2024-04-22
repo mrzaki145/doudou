@@ -171,11 +171,7 @@
           </nav>
 
           <div class="navbar_desktop">
-            <img
-              src="./assets/images/logo.png"
-              class="w-48 shrink-0 lg:w-60"
-              alt=""
-            />
+            <img src="./assets/images/logo.png" class="logo" alt="" />
           </div>
 
           <div class="navbar_mobile static">
@@ -884,7 +880,7 @@
                         >
                         <input
                           type="file"
-                          class="w-full cursor-pointer rounded-xl border border-primary bg-transparent text-gray file:mr-4 file:cursor-pointer file:border-0 file:bg-primary file:px-4 file:py-3 file:font-poppins file:text-white file:hover:bg-secondary"
+                          class="w-full cursor-pointer rounded-xl border border-primary bg-transparent text-gray"
                         />
                       </div>
 
@@ -1504,11 +1500,6 @@
           class="w-full"
           alt=""
         />
-        <button type="button" id="toTop" onclick="lenis.scrollTo('body')">
-          <svg>
-            <use href="./assets/images/icons/sprite.svg#back-to-top"></use>
-          </svg>
-        </button>
 
         <footer class="footer">
           <div class="container">
@@ -1671,6 +1662,17 @@
           </div>
         </footer>
       </div>
+
+      <button
+        type="button"
+        id="BackToTop"
+        class="back-to-top"
+        onclick="lenis.scrollTo('body')"
+      >
+        <svg>
+          <use href="./assets/images/icons/sprite.svg#back-to-top"></use>
+        </svg>
+      </button>
     </div>
 
     <!-- modals -->

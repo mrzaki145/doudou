@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 @import "./flatpickr.css";
 
 @tailwind base;
@@ -7,31 +8,28 @@
 
 @layer base {
   body {
-    @apply w-screen bg-white font-poppins font-medium text-black;
-  }
-  body {
-    --sb-size: 10px;
-    --sb-track-color: #fff;
-    --sb-thumb-color: theme(colors.primary.DEFAULT);
-    @apply relative h-full overflow-x-hidden bg-white text-black;
+    @apply font-oxygen relative h-full overflow-x-hidden bg-white font-medium text-black;
   }
 
-  body::-webkit-scrollbar {
+  .custom-scrollbar {
+    --sb-size: 6px;
+    --sb-track-color: #fff;
+    --sb-thumb-color: theme(colors.primary.DEFAULT);
+  }
+  .custom-scrollbar::-webkit-scrollbar {
     width: var(--sb-size);
   }
 
-  body::-webkit-scrollbar-track {
+  .custom-scrollbar::-webkit-scrollbar-track {
     background: var(--sb-track-color);
-    border-radius: 3px;
   }
 
-  body::-webkit-scrollbar-thumb {
+  .custom-scrollbar::-webkit-scrollbar-thumb {
     background: var(--sb-thumb-color);
-    border-radius: 3px;
   }
 
   @supports not selector(::-webkit-scrollbar) {
-    body {
+    .custom-scrollbar {
       scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
     }
   }
@@ -107,6 +105,10 @@
 
   .navbar_desktop {
     @apply container flex items-center justify-between gap-6 py-4 max-lg:hidden;
+  }
+  .navbar_desktop .logo {
+    @apply w-48 shrink-0;
+    filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.75));
   }
   .navbar_mobile {
     position: fixed !important;
@@ -294,7 +296,7 @@
     @apply text-black;
   }
   .tour-card__link {
-    @apply flex h-10 items-center justify-center rounded-xl  bg-primary px-5 text-center text-white transition-colors hover:bg-opacity-80 max-lg:order-2;
+    @apply flex min-h-10 items-center justify-center text-nowrap rounded-xl  bg-primary px-5 text-center text-white transition-colors hover:bg-opacity-80 max-lg:order-2;
   }
 
   .tour-card.mega {
@@ -533,10 +535,22 @@
   }
 }
 
-#toTop {
-  @apply absolute -top-12 end-4 z-50 lg:-top-20 lg:end-10;
+.back-to-top {
+  @apply fixed bottom-10 end-10 z-50 rounded-full shadow-2xl transition-[transform,opacity] hover:opacity-100;
 }
-#toTop svg {
+.back-to-top.start {
+  @apply end-auto start-10;
+}
+.back-to-top.back-to-top-top {
+  @apply opacity-0 !important;
+}
+.back-to-top.back-to-top-pinned {
+  @apply opacity-100;
+}
+.back-to-top.back-to-top-unpinned {
+  @apply opacity-50;
+}
+.back-to-top svg {
   @apply size-8 text-secondary lg:size-10;
 }
 
@@ -578,8 +592,11 @@ textarea select {
   @apply placeholder:text-gray-400 !important;
 }
 
-input[type='date'] {
+input[type="date"] {
   @apply bg-transparent;
+}
+input[type="file"] {
+  @apply file:font-inherit file:mr-4 file:cursor-pointer file:border-0 file:bg-primary file:px-4 file:py-3 file:text-white file:hover:bg-secondary;
 }
 
 select:not([size]) {

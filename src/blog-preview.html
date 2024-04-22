@@ -167,21 +167,17 @@
           </nav>
 
           <div class="navbar_desktop">
-            <img
-              src="./assets/images/logo.png"
-              class="w-48 shrink-0 lg:w-60"
-              alt=""
-            />
+            <img src="./assets/images/logo.png" class="logo" alt="" />
 
-            <div class="flex flex-1 rounded-xl border border-primary bg-white">
+            <div class="flex rounded-xl border border-primary bg-primary">
               <div class="flex flex-1 divide-x divide-primary">
-                <div class="flex-1">
+                <div class="shrink-0 rounded-bl-xl rounded-tl-xl bg-white">
                   <div
                     class="hs-dropdown relative flex h-full [--strategy:absolute]"
                   >
                     <button
                       type="button"
-                      class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap px-4 text-black"
+                      class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap px-4 text-sm text-black"
                     >
                       <svg class="size-6 text-primary">
                         <use
@@ -254,14 +250,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="flex flex-1 items-center gap-3 px-4">
+                <div class="flex shrink-0 items-center gap-3 bg-white px-4">
                   <svg class="size-6 text-primary">
                     <use href="./assets/images/icons/sprite.svg#calender"></use>
                   </svg>
                   <input
                     id="range"
                     type="text"
-                    class="flatpickr flatpickr-input flex-1 bg-transparent text-black outline-none placeholder:text-black"
+                    class="flatpickr flatpickr-input flex-1 bg-transparent text-sm text-black outline-none placeholder:text-black"
                     placeholder="Check in date - Check out date"
                   />
                   <svg
@@ -279,13 +275,13 @@
                     <path d="m6 9 6 6 6-6" />
                   </svg>
                 </div>
-                <div class="flex-1">
+                <div class="shrink-0 bg-white">
                   <div
                     class="hs-dropdown relative flex h-full [--strategy:absolute] [--auto-close:inside]"
                   >
                     <button
                       type="button"
-                      class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap px-4 text-black"
+                      class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap px-4 text-sm text-black"
                     >
                       <svg class="size-6 text-primary">
                         <use
@@ -324,6 +320,7 @@
                   </div>
                 </div>
               </div>
+
               <button
                 type="button"
                 class="rounded-br-xl rounded-tr-xl bg-primary px-5 py-3 text-white transition-colors hover:bg-opacity-80"
@@ -335,9 +332,9 @@
             <button
               type="button"
               data-hs-overlay="#customize-tour"
-              class="flex items-center gap-2 rounded-lg bg-primary px-4 py-3 text-white transition-colors hover:bg-opacity-75"
+              class="flex shrink-0 items-center gap-2 rounded-lg bg-primary px-4 py-4 text-sm text-white transition-colors hover:bg-opacity-75"
             >
-              <svg class="size-5 text-white">
+              <svg class="size-5 shrink-0 text-white">
                 <use href="./assets/images/icons/sprite.svg#settings"></use>
               </svg>
 
@@ -345,7 +342,7 @@
             </button>
           </div>
 
-          <div class="navbar_mobile" style="position: static !important;">
+          <div class="navbar_mobile" style="position: static !important">
             <div class="flex items-center gap-2">
               <div class="hs-dropdown relative inline-flex">
                 <button type="button">
@@ -721,6 +718,166 @@
               <li aria-current="page">How to Plan A Trip to Egypt</li>
             </ol>
 
+            <div class="mb-8">
+              <div
+                class="mb-3 flex flex-col items-start gap-x-4 gap-y-2 md:flex-row md:items-center md:justify-between"
+              >
+                <p class="text-xl font-semibold text-primary lg:text-2xl">
+                  <span class="text-secondary">How</span> to Plan A Trip to
+                  Egypt
+                </p>
+
+                <div class="flex items-center gap-4">
+                  <button
+                    type="button"
+                    data-hs-overlay="#send-feedback"
+                    class="inline-flex items-center gap-1 rounded-xl bg-primary px-3.5 py-2.5 text-white shadow-md transition-colors hover:bg-secondary lg:px-5 lg:py-3 lg:text-xl"
+                  >
+                    <svg class="size-6 text-white">
+                      <use
+                        href="./assets/images/icons/sprite.svg#log-out"
+                      ></use>
+                    </svg>
+                    Send feedback
+                  </button>
+                  <!-- <button type="button" data-hs-overlay="#share-article">
+                    <img
+                      src="./assets/images/icons/share.svg"
+                      class="size-6 lg:size-8"
+                      alt=""
+                    />
+                  </button> -->
+
+                  <ul class="social-list primary justify-center">
+                    <li>
+                      <a href="#">
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p class="mb-4 text-lg">
+                Lorem ipsum dolor sit amet consectetur. Pulvinar tellus tempor
+                pretium nibh id vitae amet. Tortor ullamcorper eleifend nisi
+                turpis vestibulum.
+              </p>
+
+              <div class="mb-6 flex flex-wrap gap-x-6 gap-y-2 lg:mb-8">
+                <div class="inline-flex items-center gap-1 text-sm font-medium">
+                  <svg class="size-5 text-secondary">
+                    <use href="./assets/images/icons/sprite.svg#write"></use>
+                  </svg>
+                  <p><span class="text-primary">By:</span> Doudou Team</p>
+                </div>
+                <div class="inline-flex items-center gap-1 text-sm font-medium">
+                  <svg class="size-5 text-secondary">
+                    <use href="./assets/images/icons/sprite.svg#publish"></use>
+                  </svg>
+                  <p>
+                    <span class="text-primary">Published:</span> 06 Jun 2022
+                  </p>
+                </div>
+                <div class="inline-flex items-center gap-1 text-sm font-medium">
+                  <svg class="size-5 text-secondary">
+                    <use href="./assets/images/icons/sprite.svg#update"></use>
+                  </svg>
+                  <p><span class="text-primary">Updated:</span> 13 Jan 2023</p>
+                </div>
+              </div>
+
+              <div class="items-start lg:grid lg:grid-cols-8 lg:gap-8">
+                <div class="h-[450px] max-lg:mb-8 lg:col-span-6">
+                  <div class="swiper gallery-2 h-full w-full">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide h-full">
+                        <div class="h-full overflow-hidden rounded-xl">
+                          <img
+                            src="./assets/images/tour-img-1.png"
+                            class="h-full w-full object-cover object-center"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide h-full">
+                        <div class="h-full overflow-hidden rounded-xl">
+                          <img
+                            src="./assets/images/tour-img-1.png"
+                            class="h-full w-full object-cover object-center"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide h-full">
+                        <div class="h-full overflow-hidden rounded-xl">
+                          <img
+                            src="./assets/images/tour-img-1.png"
+                            class="h-full w-full object-cover object-center"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="h-[100px] lg:col-span-2 lg:h-[450px]">
+                  <div class="swiper thumbs-2 h-full w-full flex-1">
+                    <div class="swiper-wrapper h-full">
+                      <div
+                        class="swiper-slide group h-full cursor-pointer rounded-2xl"
+                      >
+                        <img
+                          src="./assets/images/tour-img-1.png"
+                          class="h-full w-full rounded-2xl border-2 border-transparent object-cover object-center transition-colors hover:border-primary lg:border-4"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide group h-full cursor-pointer rounded-2xl"
+                      >
+                        <img
+                          src="./assets/images/tour-img-1.png"
+                          class="h-full w-full rounded-2xl border-2 border-transparent object-cover object-center transition-colors hover:border-primary lg:border-4"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide group h-full cursor-pointer rounded-2xl"
+                      >
+                        <img
+                          src="./assets/images/tour-img-1.png"
+                          class="h-full w-full rounded-2xl border-2 border-transparent object-cover object-center transition-colors hover:border-primary lg:border-4"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- article cover image -->
+              <!-- <img
+                src="./assets/images/tour-img-1.png"
+                class="h-[450px] w-full rounded-xl object-cover object-center"
+                alt=""
+              /> -->
+            </div>
+
             <div class="flex flex-col gap-10 lg:flex-row lg:items-start">
               <div
                 class="w-full shrink-0 max-lg:order-2 lg:sticky lg:top-8 lg:max-w-[420px]"
@@ -738,7 +895,7 @@
                           href="./assets/images/icons/sprite.svg#articles"
                         ></use>
                       </svg>
-                      Content of This Article
+                      Table of Content
                     </button>
                     <div class="hs-accordion-content accordion-content-wrapper">
                       <div
@@ -909,7 +1066,7 @@
                       </div>
 
                       <div
-                        class="max-h-[640px] space-y-4 overflow-auto p-4 pt-0 lg:p-6 lg:pt-0"
+                        class="custom-scrollbar max-h-[640px] space-y-4 overflow-auto p-4 pt-0 lg:p-6 lg:pt-0"
                         data-lenis-prevent
                       >
                         <div class="flex gap-4.5 rounded-xl p-4 shadow-xl">
@@ -1200,125 +1357,10 @@
                 </div>
               </div>
 
-              <div class="flex-1 max-lg:order-1">
-                <div
-                  class="mb-3 flex flex-col items-start gap-x-4 gap-y-2 md:flex-row md:items-center md:justify-between lg:mb-6"
-                >
-                  <p class="text-xl font-semibold text-primary lg:text-2xl">
-                    <span class="text-secondary">How</span> to Plan A Trip to
-                    Egypt
-                  </p>
-
-                  <div class="flex items-center gap-2">
-                    <button
-                      type="button"
-                      data-hs-overlay="#send-feedback"
-                      class="inline-flex items-center gap-1 rounded-xl bg-primary px-3.5 py-2.5 text-white shadow-md transition-colors hover:bg-secondary lg:px-5 lg:py-3 lg:text-xl"
-                    >
-                      <svg class="size-6 text-white">
-                        <use
-                          href="./assets/images/icons/sprite.svg#log-out"
-                        ></use>
-                      </svg>
-                      Send feedback
-                    </button>
-                    <button type="button" data-hs-overlay="#share-article">
-                      <img
-                        src="./assets/images/icons/share.svg"
-                        class="size-6 lg:size-8"
-                        alt=""
-                      />
-                    </button>
-                  </div>
-                </div>
-
-                <div class="mb-5 flex flex-wrap gap-x-6 gap-y-2">
-                  <span class="text-sm font-medium"
-                    ><span class="text-primary">By:</span> Doudou Team</span
-                  >
-                  <span class="text-sm font-medium"
-                    ><span class="text-primary">Published:</span> 06 Jun
-                    2022</span
-                  >
-                  <span class="text-sm font-medium"
-                    ><span class="text-primary">Updated:</span> 13 Jan
-                    2023</span
-                  >
-                </div>
-
+              <div class="min-w-0 flex-1 max-lg:order-1">
                 <div id="scrollspy-1" class="space-y-8">
                   <section id="intro">
-                    <div class="mb-6">
-                      <div class="items-start lg:grid lg:grid-cols-8 lg:gap-8">
-                        <div class="h-[400px] max-lg:mb-8 lg:col-span-6">
-                          <div class="swiper gallery-2 h-full w-full">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide h-full">
-                                <div class="h-full overflow-hidden rounded-xl">
-                                  <img
-                                    src="./assets/images/tour-img-1.png"
-                                    class="h-full w-full object-cover object-center"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                              <div class="swiper-slide h-full">
-                                <div class="h-full overflow-hidden rounded-xl">
-                                  <img
-                                    src="./assets/images/tour-img-1.png"
-                                    class="h-full w-full object-cover object-center"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                              <div class="swiper-slide h-full">
-                                <div class="h-full overflow-hidden rounded-xl">
-                                  <img
-                                    src="./assets/images/tour-img-1.png"
-                                    class="h-full w-full object-cover object-center"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="h-[100px] lg:col-span-2 lg:h-[400px]">
-                          <div class="swiper thumbs-2 h-full w-full flex-1">
-                            <div class="swiper-wrapper h-full">
-                              <div
-                                class="swiper-slide group h-full cursor-pointer rounded-2xl"
-                              >
-                                <img
-                                  src="./assets/images/tour-img-1.png"
-                                  class="h-full w-full rounded-2xl border-2 border-transparent object-cover object-center transition-colors hover:border-primary lg:border-4"
-                                  alt=""
-                                />
-                              </div>
-                              <div
-                                class="swiper-slide group h-full cursor-pointer rounded-2xl"
-                              >
-                                <img
-                                  src="./assets/images/tour-img-1.png"
-                                  class="h-full w-full rounded-2xl border-2 border-transparent object-cover object-center transition-colors hover:border-primary lg:border-4"
-                                  alt=""
-                                />
-                              </div>
-                              <div
-                                class="swiper-slide group h-full cursor-pointer rounded-2xl"
-                              >
-                                <img
-                                  src="./assets/images/tour-img-1.png"
-                                  class="h-full w-full rounded-2xl border-2 border-transparent object-cover object-center transition-colors hover:border-primary lg:border-4"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <!-- <div class="mb-6"></div> -->
 
                     <p class="mb-4 text-lg font-normal lg:text-xl">
                       <span class="font-semibold text-primary">Head</span>
@@ -1644,7 +1686,7 @@
                         Was This Article Helpful?
                       </p>
 
-                      <div class="flex items-center gap-2">
+                      <div class="flex items-center gap-4">
                         <button
                           type="button"
                           data-hs-overlay="#send-feedback"
@@ -1657,13 +1699,33 @@
                           </svg>
                           Send feedback
                         </button>
-                        <button type="button">
+                        <!-- <button type="button">
                           <img
                             src="./assets/images/icons/share.svg"
                             class="size-6 lg:size-8"
                             alt=""
                           />
-                        </button>
+                        </button> -->
+                        <ul class="social-list primary justify-center">
+                          <li>
+                            <a href="#">
+                              <svg>
+                                <use
+                                  href="./assets/images/icons/sprite.svg#facebook"
+                                ></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg>
+                                <use
+                                  href="./assets/images/icons/sprite.svg#instagram"
+                                ></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
 
@@ -1676,7 +1738,7 @@
 
                         <div class="hs-dropdown relative flex">
                           <button
-                            class="hs-dropdown inline-flex items-center gap-2 text-sm"
+                            class="hs-dropdown-toggle inline-flex items-center gap-2 text-sm"
                           >
                             Top Comments
                             <svg
@@ -1695,11 +1757,22 @@
                               />
                             </svg>
                           </button>
+
+                          <div
+                            class="hs-dropdown-menu duration mt-2 hidden min-w-40 rounded-lg bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                          >
+                            <button
+                              type="button"
+                              class="block font-normal text-black hover:text-primary aria-pressed:text-primary"
+                            >
+                              Most recent
+                            </button>
+                          </div>
                         </div>
                       </div>
 
                       <div
-                        class="h-96 space-y-5 overflow-auto px-6 py-5"
+                        class="custom-scrollbar h-96 space-y-5 overflow-auto px-6 py-5"
                         data-lenis-prevent
                       >
                         <div>
@@ -1978,740 +2051,683 @@
                       </div>
                     </div>
                   </section>
+
+                  <section class="w-full" id="recommended-tours">
+                    <header
+                      class="section_header flex flex-col justify-between gap-6 lg:flex-row lg:items-center"
+                    >
+                      <h2 class="section_heading text-primary">
+                        <span>Explore</span> Recommended Tours Based on Your
+                        Read
+                      </h2>
+
+                      <div class="flex items-center gap-4 max-lg:ms-auto">
+                        <a href="#" class="text-secondary lg:text-lg"
+                          >View All</a
+                        >
+
+                        <menu class="flex items-center gap-2">
+                          <li>
+                            <button type="button" class="swiper-btn prev">
+                              <svg>
+                                <use
+                                  href="./assets/images/icons/sprite.svg#arrow-left"
+                                ></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="swiper-btn next">
+                              <svg>
+                                <use
+                                  href="./assets/images/icons/sprite.svg#arrow-right"
+                                ></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </menu>
+                      </div>
+                    </header>
+
+                    <!-- overflow-visible -->
+                    <div class="swiper swiper-lg w-full">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <article class="tour-card">
+                            <div class="tour-card__thumbnail-wrapper">
+                              <div class="swiper swiper-sm">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <img
+                                      src="./assets/images/tour-1.jpeg"
+                                      class="tour-card__thumbnail"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img
+                                      src="./assets/images/tour-1.jpeg"
+                                      class="tour-card__thumbnail"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img
+                                      src="./assets/images/tour-1.jpeg"
+                                      class="tour-card__thumbnail"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+
+                                <menu
+                                  class="absolute inset-0 z-50 mx-auto flex h-full items-center justify-between px-6"
+                                >
+                                  <li class="rounded-full bg-white/70">
+                                    <button
+                                      type="button"
+                                      class="swiper-btn prev"
+                                    >
+                                      <svg>
+                                        <use
+                                          href="./assets/images/icons/sprite.svg#arrow-left"
+                                        ></use>
+                                      </svg>
+                                    </button>
+                                  </li>
+                                  <li class="rounded-full bg-white/70">
+                                    <button
+                                      type="button"
+                                      class="swiper-btn next"
+                                    >
+                                      <svg>
+                                        <use
+                                          href="./assets/images/icons/sprite.svg#arrow-right"
+                                        ></use>
+                                      </svg>
+                                    </button>
+                                  </li>
+                                </menu>
+                              </div>
+                            </div>
+
+                            <div class="tour-card__content">
+                              <h3>Cairo, Luxor Tour</h3>
+                              <div class="tour-card__review">
+                                <div class="flex items-center gap-x-px">
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-gray-200">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                </div>
+                                <p>4.5, Wonderful <span>(330 Reviews)</span></p>
+                              </div>
+
+                              <ul class="tour-card__features">
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#location"
+                                    ></use>
+                                  </svg>
+                                  Cairo, Luxor
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#clipboard-text-time"
+                                    ></use>
+                                  </svg>
+                                  5 Days / 4 Nights
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#travel-card"
+                                    ></use>
+                                  </svg>
+                                  Classic Tour
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#event-available"
+                                    ></use>
+                                  </svg>
+                                  Everyday
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#group-3"
+                                    ></use>
+                                  </svg>
+                                  Private Tour
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#cancel"
+                                    ></use>
+                                  </svg>
+                                  Free Cancellation
+                                </li>
+                              </ul>
+
+                              <div class="tour-card__footer">
+                                <a href="#" class="tour-card__link"
+                                  >View Tour</a
+                                >
+                                <p>
+                                  Starting from
+                                  <span class="price">550$</span>
+                                </p>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide">
+                          <article class="tour-card">
+                            <div class="tour-card__thumbnail-wrapper">
+                              <div class="swiper swiper-sm">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <img
+                                      src="./assets/images/tour-2.jpeg"
+                                      class="tour-card__thumbnail"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img
+                                      src="./assets/images/tour-1.jpeg"
+                                      class="tour-card__thumbnail"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img
+                                      src="./assets/images/tour-1.jpeg"
+                                      class="tour-card__thumbnail"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+
+                                <menu
+                                  class="absolute inset-0 z-50 mx-auto flex h-full items-center justify-between px-6"
+                                >
+                                  <li class="rounded-full bg-white/70">
+                                    <button
+                                      type="button"
+                                      class="swiper-btn prev"
+                                    >
+                                      <svg>
+                                        <use
+                                          href="./assets/images/icons/sprite.svg#arrow-left"
+                                        ></use>
+                                      </svg>
+                                    </button>
+                                  </li>
+                                  <li class="rounded-full bg-white/70">
+                                    <button
+                                      type="button"
+                                      class="swiper-btn next"
+                                    >
+                                      <svg>
+                                        <use
+                                          href="./assets/images/icons/sprite.svg#arrow-right"
+                                        ></use>
+                                      </svg>
+                                    </button>
+                                  </li>
+                                </menu>
+                              </div>
+                            </div>
+
+                            <div class="tour-card__content">
+                              <h3>Cairo, Luxor Tour</h3>
+                              <div class="tour-card__review">
+                                <div class="flex items-center gap-x-px">
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-gray-200">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                </div>
+                                <p>4.5, Wonderful <span>(330 Reviews)</span></p>
+                              </div>
+
+                              <ul class="tour-card__features">
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#location"
+                                    ></use>
+                                  </svg>
+                                  Cairo, Luxor
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#clipboard-text-time"
+                                    ></use>
+                                  </svg>
+                                  5 Days / 4 Nights
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#travel-card"
+                                    ></use>
+                                  </svg>
+                                  Classic Tour
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#event-available"
+                                    ></use>
+                                  </svg>
+                                  Everyday
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#group-3"
+                                    ></use>
+                                  </svg>
+                                  Private Tour
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#cancel"
+                                    ></use>
+                                  </svg>
+                                  Free Cancellation
+                                </li>
+                              </ul>
+
+                              <div class="tour-card__footer">
+                                <a href="#" class="tour-card__link"
+                                  >View Tour</a
+                                >
+                                <p>
+                                  Starting from
+                                  <span class="price">550$</span>
+                                </p>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide">
+                          <article class="tour-card">
+                            <div class="tour-card__thumbnail-wrapper">
+                              <div class="swiper swiper-sm">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <img
+                                      src="./assets/images/tour-3.jpeg"
+                                      class="tour-card__thumbnail"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img
+                                      src="./assets/images/tour-1.jpeg"
+                                      class="tour-card__thumbnail"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img
+                                      src="./assets/images/tour-1.jpeg"
+                                      class="tour-card__thumbnail"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+
+                                <menu
+                                  class="absolute inset-0 z-50 mx-auto flex h-full items-center justify-between px-6"
+                                >
+                                  <li class="rounded-full bg-white/70">
+                                    <button
+                                      type="button"
+                                      class="swiper-btn prev"
+                                    >
+                                      <svg>
+                                        <use
+                                          href="./assets/images/icons/sprite.svg#arrow-left"
+                                        ></use>
+                                      </svg>
+                                    </button>
+                                  </li>
+                                  <li class="rounded-full bg-white/70">
+                                    <button
+                                      type="button"
+                                      class="swiper-btn next"
+                                    >
+                                      <svg>
+                                        <use
+                                          href="./assets/images/icons/sprite.svg#arrow-right"
+                                        ></use>
+                                      </svg>
+                                    </button>
+                                  </li>
+                                </menu>
+                              </div>
+                            </div>
+
+                            <div class="tour-card__content">
+                              <h3>Cairo, Luxor Tour</h3>
+                              <div class="tour-card__review">
+                                <div class="flex items-center gap-x-px">
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-gray-200">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                </div>
+                                <p>4.5, Wonderful <span>(330 Reviews)</span></p>
+                              </div>
+
+                              <ul class="tour-card__features">
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#location"
+                                    ></use>
+                                  </svg>
+                                  Cairo, Luxor
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#clipboard-text-time"
+                                    ></use>
+                                  </svg>
+                                  5 Days / 4 Nights
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#travel-card"
+                                    ></use>
+                                  </svg>
+                                  Classic Tour
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#event-available"
+                                    ></use>
+                                  </svg>
+                                  Everyday
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#group-3"
+                                    ></use>
+                                  </svg>
+                                  Private Tour
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#cancel"
+                                    ></use>
+                                  </svg>
+                                  Free Cancellation
+                                </li>
+                              </ul>
+
+                              <div class="tour-card__footer">
+                                <a href="#" class="tour-card__link"
+                                  >View Tour</a
+                                >
+                                <p>
+                                  Starting from
+                                  <span class="price">550$</span>
+                                </p>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide">
+                          <article class="tour-card">
+                            <div class="tour-card__thumbnail-wrapper">
+                              <div class="swiper swiper-sm">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <img
+                                      src="./assets/images/tour-4.jpeg"
+                                      class="tour-card__thumbnail"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img
+                                      src="./assets/images/tour-1.jpeg"
+                                      class="tour-card__thumbnail"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img
+                                      src="./assets/images/tour-1.jpeg"
+                                      class="tour-card__thumbnail"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+
+                                <menu
+                                  class="absolute inset-0 z-50 mx-auto flex h-full items-center justify-between px-6"
+                                >
+                                  <li class="rounded-full bg-white/70">
+                                    <button
+                                      type="button"
+                                      class="swiper-btn prev"
+                                    >
+                                      <svg>
+                                        <use
+                                          href="./assets/images/icons/sprite.svg#arrow-left"
+                                        ></use>
+                                      </svg>
+                                    </button>
+                                  </li>
+                                  <li class="rounded-full bg-white/70">
+                                    <button
+                                      type="button"
+                                      class="swiper-btn next"
+                                    >
+                                      <svg>
+                                        <use
+                                          href="./assets/images/icons/sprite.svg#arrow-right"
+                                        ></use>
+                                      </svg>
+                                    </button>
+                                  </li>
+                                </menu>
+                              </div>
+                            </div>
+
+                            <div class="tour-card__content">
+                              <h3>Cairo, Luxor Tour</h3>
+                              <div class="tour-card__review">
+                                <div class="flex items-center gap-x-px">
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-secondary">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                  <svg class="star text-gray-200">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#star"
+                                    ></use>
+                                  </svg>
+                                </div>
+                                <p>4.5, Wonderful <span>(330 Reviews)</span></p>
+                              </div>
+
+                              <ul class="tour-card__features">
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#location"
+                                    ></use>
+                                  </svg>
+                                  Cairo, Luxor
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#clipboard-text-time"
+                                    ></use>
+                                  </svg>
+                                  5 Days / 4 Nights
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#travel-card"
+                                    ></use>
+                                  </svg>
+                                  Classic Tour
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#event-available"
+                                    ></use>
+                                  </svg>
+                                  Everyday
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#group-3"
+                                    ></use>
+                                  </svg>
+                                  Private Tour
+                                </li>
+                                <li>
+                                  <svg class="icon">
+                                    <use
+                                      href="./assets/images/icons/sprite.svg#cancel"
+                                    ></use>
+                                  </svg>
+                                  Free Cancellation
+                                </li>
+                              </ul>
+
+                              <div class="tour-card__footer">
+                                <a href="#" class="tour-card__link"
+                                  >View Tour</a
+                                >
+                                <p>
+                                  Starting from
+                                  <span class="price">550$</span>
+                                </p>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
               </div>
             </div>
+
+            <img
+              src="./assets/images/section-divider.png"
+              class="pointer-events-none mx-auto mt-5 lg:mt-10 lg:w-4/5"
+              alt=""
+            />
           </div>
         </section>
 
         <!-- ---------- -->
-
-        <section class="bg-primary py-12 text-white lg:py-16">
-          <div class="container">
-            <header class="section_header text-center">
-              <h2 class="section_heading">
-                Private Quality Guided Tours to Egypt Include Pyramids
-              </h2>
-            </header>
-
-            <div
-              class="grid gap-5 text-center md:grid-cols-2 lg:grid-cols-5 lg:gap-10"
-            >
-              <div>
-                <div>
-                  <img
-                    src="./assets/images/icons/map-signs.svg"
-                    class="mx-auto mb-2 size-10"
-                    alt=""
-                  />
-                  <h3 class="mb-4 text-2xl font-semibold text-secondary">
-                    Tour Guide
-                  </h3>
-                </div>
-
-                <p class="line-clamp-3 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do tation 
-                </p>
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="./assets/images/icons/safety-certificate.svg"
-                    class="mx-auto mb-2 size-10"
-                    alt=""
-                  />
-                  <h3 class="mb-4 text-2xl font-semibold text-secondary">
-                    Safety
-                  </h3>
-                </div>
-
-                <p class="line-clamp-3 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do tation 
-                </p>
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="./assets/images/icons/smile-beam.svg"
-                    class="mx-auto mb-2 size-10"
-                    alt=""
-                  />
-                  <h3 class="mb-4 text-2xl font-semibold text-secondary">
-                    Luxury
-                  </h3>
-                </div>
-                <p class="line-clamp-3 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do tation 
-                </p>
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="./assets/images/icons/take-my-money.svg"
-                    class="mx-auto mb-2 size-10"
-                    alt=""
-                  />
-                  <h3 class="mb-4 text-2xl font-semibold text-secondary">
-                    Affordable Prices
-                  </h3>
-                </div>
-                <p class="line-clamp-3 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do tation 
-                </p>
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="./assets/images/icons/map-cancel.svg"
-                    class="mx-auto mb-2 size-10"
-                    alt=""
-                  />
-                  <h3 class="mb-4 text-2xl font-semibold text-secondary">
-                    Fair Cancellation
-                  </h3>
-                </div>
-                <p class="line-clamp-3 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do tation 
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="recommended-tours">
-          <div class="container">
-            <header
-              class="section_header flex flex-col justify-between gap-6 lg:flex-row lg:items-center"
-            >
-              <h2 class="section_heading text-primary">
-                <span>Recommended</span> Egypt Tours
-              </h2>
-
-              <div class="flex items-center gap-4 max-lg:ms-auto">
-                <a href="#" class="text-secondary lg:text-lg">View All</a>
-
-                <menu class="flex items-center gap-2">
-                  <li>
-                    <button type="button" class="swiper-btn prev">
-                      <svg>
-                        <use
-                          href="./assets/images/icons/sprite.svg#arrow-left"
-                        ></use>
-                      </svg>
-                    </button>
-                  </li>
-                  <li>
-                    <button type="button" class="swiper-btn next">
-                      <svg>
-                        <use
-                          href="./assets/images/icons/sprite.svg#arrow-right"
-                        ></use>
-                      </svg>
-                    </button>
-                  </li>
-                </menu>
-              </div>
-            </header>
-
-            <div class="swiper swiper-lg overflow-visible">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <article class="tour-card">
-                    <div class="tour-card__thumbnail-wrapper">
-                      <div class="swiper swiper-sm">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img
-                              src="./assets/images/tour-1.jpeg"
-                              class="tour-card__thumbnail"
-                              alt=""
-                            />
-                          </div>
-                          <div class="swiper-slide">
-                            <img
-                              src="./assets/images/tour-1.jpeg"
-                              class="tour-card__thumbnail"
-                              alt=""
-                            />
-                          </div>
-                          <div class="swiper-slide">
-                            <img
-                              src="./assets/images/tour-1.jpeg"
-                              class="tour-card__thumbnail"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-
-                        <menu
-                          class="absolute inset-0 z-50 mx-auto flex h-full items-center justify-between px-6"
-                        >
-                          <li class="rounded-full bg-white/70">
-                            <button type="button" class="swiper-btn prev">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#arrow-left"
-                                ></use>
-                              </svg>
-                            </button>
-                          </li>
-                          <li class="rounded-full bg-white/70">
-                            <button type="button" class="swiper-btn next">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#arrow-right"
-                                ></use>
-                              </svg>
-                            </button>
-                          </li>
-                        </menu>
-                      </div>
-                    </div>
-
-                    <div class="tour-card__content">
-                      <h3>Cairo, Luxor Tour</h3>
-                      <div class="tour-card__review">
-                        <div class="flex items-center gap-x-px">
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-gray-200">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                        </div>
-                        <p>4.5, Wonderful <span>(330 Reviews)</span></p>
-                      </div>
-
-                      <ul class="tour-card__features">
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#location"
-                            ></use>
-                          </svg>
-                          Cairo, Luxor
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#clipboard-text-time"
-                            ></use>
-                          </svg>
-                          5 Days / 4 Nights
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#travel-card"
-                            ></use>
-                          </svg>
-                          Classic Tour
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#event-available"
-                            ></use>
-                          </svg>
-                          Everyday
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#group-3"
-                            ></use>
-                          </svg>
-                          Private Tour
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#cancel"
-                            ></use>
-                          </svg>
-                          Free Cancellation
-                        </li>
-                      </ul>
-
-                      <div class="tour-card__footer">
-                        <a href="#" class="tour-card__link">View Tour</a>
-                        <p>
-                          Starting from
-                          <span class="price">550$</span>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="swiper-slide">
-                  <article class="tour-card">
-                    <div class="tour-card__thumbnail-wrapper">
-                      <div class="swiper swiper-sm">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img
-                              src="./assets/images/tour-2.jpeg"
-                              class="tour-card__thumbnail"
-                              alt=""
-                            />
-                          </div>
-                          <div class="swiper-slide">
-                            <img
-                              src="./assets/images/tour-1.jpeg"
-                              class="tour-card__thumbnail"
-                              alt=""
-                            />
-                          </div>
-                          <div class="swiper-slide">
-                            <img
-                              src="./assets/images/tour-1.jpeg"
-                              class="tour-card__thumbnail"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-
-                        <menu
-                          class="absolute inset-0 z-50 mx-auto flex h-full items-center justify-between px-6"
-                        >
-                          <li class="rounded-full bg-white/70">
-                            <button type="button" class="swiper-btn prev">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#arrow-left"
-                                ></use>
-                              </svg>
-                            </button>
-                          </li>
-                          <li class="rounded-full bg-white/70">
-                            <button type="button" class="swiper-btn next">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#arrow-right"
-                                ></use>
-                              </svg>
-                            </button>
-                          </li>
-                        </menu>
-                      </div>
-                    </div>
-
-                    <div class="tour-card__content">
-                      <h3>Cairo, Luxor Tour</h3>
-                      <div class="tour-card__review">
-                        <div class="flex items-center gap-x-px">
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-gray-200">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                        </div>
-                        <p>4.5, Wonderful <span>(330 Reviews)</span></p>
-                      </div>
-
-                      <ul class="tour-card__features">
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#location"
-                            ></use>
-                          </svg>
-                          Cairo, Luxor
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#clipboard-text-time"
-                            ></use>
-                          </svg>
-                          5 Days / 4 Nights
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#travel-card"
-                            ></use>
-                          </svg>
-                          Classic Tour
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#event-available"
-                            ></use>
-                          </svg>
-                          Everyday
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#group-3"
-                            ></use>
-                          </svg>
-                          Private Tour
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#cancel"
-                            ></use>
-                          </svg>
-                          Free Cancellation
-                        </li>
-                      </ul>
-
-                      <div class="tour-card__footer">
-                        <a href="#" class="tour-card__link">View Tour</a>
-                        <p>
-                          Starting from
-                          <span class="price">550$</span>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="swiper-slide">
-                  <article class="tour-card">
-                    <div class="tour-card__thumbnail-wrapper">
-                      <div class="swiper swiper-sm">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img
-                              src="./assets/images/tour-3.jpeg"
-                              class="tour-card__thumbnail"
-                              alt=""
-                            />
-                          </div>
-                          <div class="swiper-slide">
-                            <img
-                              src="./assets/images/tour-1.jpeg"
-                              class="tour-card__thumbnail"
-                              alt=""
-                            />
-                          </div>
-                          <div class="swiper-slide">
-                            <img
-                              src="./assets/images/tour-1.jpeg"
-                              class="tour-card__thumbnail"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-
-                        <menu
-                          class="absolute inset-0 z-50 mx-auto flex h-full items-center justify-between px-6"
-                        >
-                          <li class="rounded-full bg-white/70">
-                            <button type="button" class="swiper-btn prev">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#arrow-left"
-                                ></use>
-                              </svg>
-                            </button>
-                          </li>
-                          <li class="rounded-full bg-white/70">
-                            <button type="button" class="swiper-btn next">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#arrow-right"
-                                ></use>
-                              </svg>
-                            </button>
-                          </li>
-                        </menu>
-                      </div>
-                    </div>
-
-                    <div class="tour-card__content">
-                      <h3>Cairo, Luxor Tour</h3>
-                      <div class="tour-card__review">
-                        <div class="flex items-center gap-x-px">
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-gray-200">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                        </div>
-                        <p>4.5, Wonderful <span>(330 Reviews)</span></p>
-                      </div>
-
-                      <ul class="tour-card__features">
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#location"
-                            ></use>
-                          </svg>
-                          Cairo, Luxor
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#clipboard-text-time"
-                            ></use>
-                          </svg>
-                          5 Days / 4 Nights
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#travel-card"
-                            ></use>
-                          </svg>
-                          Classic Tour
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#event-available"
-                            ></use>
-                          </svg>
-                          Everyday
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#group-3"
-                            ></use>
-                          </svg>
-                          Private Tour
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#cancel"
-                            ></use>
-                          </svg>
-                          Free Cancellation
-                        </li>
-                      </ul>
-
-                      <div class="tour-card__footer">
-                        <a href="#" class="tour-card__link">View Tour</a>
-                        <p>
-                          Starting from
-                          <span class="price">550$</span>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="swiper-slide">
-                  <article class="tour-card">
-                    <div class="tour-card__thumbnail-wrapper">
-                      <div class="swiper swiper-sm">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img
-                              src="./assets/images/tour-4.jpeg"
-                              class="tour-card__thumbnail"
-                              alt=""
-                            />
-                          </div>
-                          <div class="swiper-slide">
-                            <img
-                              src="./assets/images/tour-1.jpeg"
-                              class="tour-card__thumbnail"
-                              alt=""
-                            />
-                          </div>
-                          <div class="swiper-slide">
-                            <img
-                              src="./assets/images/tour-1.jpeg"
-                              class="tour-card__thumbnail"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-
-                        <menu
-                          class="absolute inset-0 z-50 mx-auto flex h-full items-center justify-between px-6"
-                        >
-                          <li class="rounded-full bg-white/70">
-                            <button type="button" class="swiper-btn prev">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#arrow-left"
-                                ></use>
-                              </svg>
-                            </button>
-                          </li>
-                          <li class="rounded-full bg-white/70">
-                            <button type="button" class="swiper-btn next">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#arrow-right"
-                                ></use>
-                              </svg>
-                            </button>
-                          </li>
-                        </menu>
-                      </div>
-                    </div>
-
-                    <div class="tour-card__content">
-                      <h3>Cairo, Luxor Tour</h3>
-                      <div class="tour-card__review">
-                        <div class="flex items-center gap-x-px">
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-secondary">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                          <svg class="star text-gray-200">
-                            <use
-                              href="./assets/images/icons/sprite.svg#star"
-                            ></use>
-                          </svg>
-                        </div>
-                        <p>4.5, Wonderful <span>(330 Reviews)</span></p>
-                      </div>
-
-                      <ul class="tour-card__features">
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#location"
-                            ></use>
-                          </svg>
-                          Cairo, Luxor
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#clipboard-text-time"
-                            ></use>
-                          </svg>
-                          5 Days / 4 Nights
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#travel-card"
-                            ></use>
-                          </svg>
-                          Classic Tour
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#event-available"
-                            ></use>
-                          </svg>
-                          Everyday
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#group-3"
-                            ></use>
-                          </svg>
-                          Private Tour
-                        </li>
-                        <li>
-                          <svg class="icon">
-                            <use
-                              href="./assets/images/icons/sprite.svg#cancel"
-                            ></use>
-                          </svg>
-                          Free Cancellation
-                        </li>
-                      </ul>
-
-                      <div class="tour-card__footer">
-                        <a href="#" class="tour-card__link">View Tour</a>
-                        <p>
-                          Starting from
-                          <span class="price">550$</span>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section id="blog">
           <div class="container">
@@ -3507,11 +3523,6 @@
           class="w-full"
           alt=""
         />
-        <button type="button" id="toTop" onclick="lenis.scrollTo('body')">
-          <svg>
-            <use href="./assets/images/icons/sprite.svg#back-to-top"></use>
-          </svg>
-        </button>
 
         <footer class="footer">
           <div class="container">
@@ -3674,6 +3685,17 @@
           </div>
         </footer>
       </div>
+
+      <button
+        type="button"
+        id="BackToTop"
+        class="back-to-top"
+        onclick="lenis.scrollTo('body')"
+      >
+        <svg>
+          <use href="./assets/images/icons/sprite.svg#back-to-top"></use>
+        </svg>
+      </button>
     </div>
 
     <!-- modals -->
@@ -4329,10 +4351,6 @@
           768: {
             slidesPerView: 2.25,
             spaceBetween: 15,
-          },
-          1024: {
-            slidesPerView: 3.15,
-            spaceBetween: 25,
           },
         },
         navigation: {

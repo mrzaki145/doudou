@@ -8,7 +8,7 @@ requestAnimationFrame(raf);
 
 try {
   const headroomEl = document.querySelector("#headroom");
-  const headroom = new Headroom(headroomEl, {
+  const navHeadroom = new Headroom(headroomEl, {
     tolerance: 5,
     offset: 200,
     classes: {
@@ -17,12 +17,24 @@ try {
       unpinned: "headroom-unpinned",
     },
   });
-  headroom.init();
-  
+  navHeadroom.init();
+
+  const backToTopBtn = document.querySelector("#BackToTop");
+  const BackToTopHeadroom = new Headroom(backToTopBtn, {
+    tolerance: 5,
+    offset: 1000,
+    classes: {
+      initial: "back-to-top",
+      pinned: "back-to-top-pinned",
+      unpinned: "back-to-top-unpinned",
+      top: "back-to-top-top",
+    },
+  });
+  BackToTopHeadroom.init();
+
   setTimeout(() => {
     headroomEl.classList.remove("hidden");
   }, 100);
-
 } catch (e) {
   // console.log(e);
 }

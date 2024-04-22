@@ -180,21 +180,17 @@
           </div>
 
           <div class="navbar_desktop">
-            <img
-              src="./assets/images/logo.png"
-              class="w-48 shrink-0 lg:w-60"
-              alt=""
-            />
+            <img src="./assets/images/logo.png" class="logo" alt="" />
 
-            <div class="flex flex-1 rounded-xl border border-primary bg-white">
+            <div class="flex rounded-xl border border-primary bg-primary">
               <div class="flex flex-1 divide-x divide-primary">
-                <div class="flex-1">
+                <div class="shrink-0 rounded-bl-xl rounded-tl-xl bg-white">
                   <div
                     class="hs-dropdown relative flex h-full [--strategy:absolute]"
                   >
                     <button
                       type="button"
-                      class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap px-4 text-black"
+                      class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap px-4 text-sm text-black"
                     >
                       <svg class="size-6 text-primary">
                         <use
@@ -267,14 +263,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="flex flex-1 items-center gap-3 px-4">
+                <div class="flex shrink-0 items-center gap-3 bg-white px-4">
                   <svg class="size-6 text-primary">
                     <use href="./assets/images/icons/sprite.svg#calender"></use>
                   </svg>
                   <input
                     id="range"
                     type="text"
-                    class="flatpickr flatpickr-input flex-1 bg-transparent text-black outline-none placeholder:text-black"
+                    class="flatpickr flatpickr-input flex-1 bg-transparent text-sm text-black outline-none placeholder:text-black"
                     placeholder="Check in date - Check out date"
                   />
                   <svg
@@ -292,13 +288,13 @@
                     <path d="m6 9 6 6 6-6" />
                   </svg>
                 </div>
-                <div class="flex-1">
+                <div class="shrink-0 bg-white">
                   <div
                     class="hs-dropdown relative flex h-full [--strategy:absolute] [--auto-close:inside]"
                   >
                     <button
                       type="button"
-                      class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap px-4 text-black"
+                      class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap px-4 text-sm text-black"
                     >
                       <svg class="size-6 text-primary">
                         <use
@@ -337,6 +333,7 @@
                   </div>
                 </div>
               </div>
+
               <button
                 type="button"
                 class="rounded-br-xl rounded-tr-xl bg-primary px-5 py-3 text-white transition-colors hover:bg-opacity-80"
@@ -348,9 +345,9 @@
             <button
               type="button"
               data-hs-overlay="#customize-tour"
-              class="flex items-center gap-2 rounded-lg bg-primary px-4 py-3 text-white transition-colors hover:bg-opacity-75"
+              class="flex shrink-0 items-center gap-2 rounded-lg bg-primary px-4 py-4 text-sm text-white transition-colors hover:bg-opacity-75"
             >
-              <svg class="size-5 text-white">
+              <svg class="size-5 shrink-0 text-white">
                 <use href="./assets/images/icons/sprite.svg#settings"></use>
               </svg>
 
@@ -385,7 +382,10 @@
                         />
                         Egypt Tour
                       </a>
-                      <a href="./events.html" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./events.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/egyptian-urns.png"
                           class="size-6"
@@ -393,7 +393,10 @@
                         />
                         Event
                       </a>
-                      <a href="./services.html" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./services.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/symbols_travel.png"
                           class="size-6"
@@ -401,7 +404,10 @@
                         />
                         Services
                       </a>
-                      <a href="./blogs.html" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./blogs.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/egyptian-temple.png"
                           class="size-6"
@@ -417,7 +423,10 @@
                         />
                         Reviews
                       </a>
-                      <a href="./loyalty-program.html" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./loyalty-program.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/egyptian-bird.png"
                           class="size-6"
@@ -425,7 +434,10 @@
                         />
                         Loyalty Program
                       </a>
-                      <a href="./careers.html" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./careers.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/egyptian-profile.png"
                           class="size-6"
@@ -433,7 +445,10 @@
                         />
                         Careers
                       </a>
-                      <a href="./how-it-works.html" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./how-it-works.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/egyptian-pyramids.png"
                           class="size-6"
@@ -441,7 +456,10 @@
                         />
                         How it works
                       </a>
-                      <a href="./partner.html" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./partner.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/deal.png"
                           class="size-6"
@@ -829,7 +847,7 @@
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="600"
-              class="txt-shadow max-w-3xl text-3xl text-white lg:text-5xl lg:leading-normal"
+              class="txt-shadow max-w-3xl text-3xl text-white font-bold lg:text-5xl lg:leading-normal"
             >
               Experience A Spectacular And A Memorable Egypt Guided Tour
             </h2>
@@ -3168,11 +3186,6 @@
           class="w-full"
           alt=""
         />
-        <button type="button" id="toTop" onclick="lenis.scrollTo('body')">
-          <svg>
-            <use href="./assets/images/icons/sprite.svg#back-to-top"></use>
-          </svg>
-        </button>
 
         <footer class="footer">
           <div class="container">
@@ -3222,10 +3235,14 @@
                       <a href="./egypt-tours.html">Egypt Shore Excursions</a>
                     </li>
                     <li>
-                      <a href="./egypt-tours.html">Egypt Nile Cruises Package</a>
+                      <a href="./egypt-tours.html"
+                        >Egypt Nile Cruises Package</a
+                      >
                     </li>
                     <li>
-                      <a href="./egypt-tours.html">Egypt Family Holiday Package</a>
+                      <a href="./egypt-tours.html"
+                        >Egypt Family Holiday Package</a
+                      >
                     </li>
                     <li>
                       <a href="./egypt-tours.html">Group Tours to Egypt</a>
@@ -3276,7 +3293,9 @@
                       <a href="./partner.html">Become Our Partner</a>
                     </li>
                     <li>
-                      <a href="./services-tour-guidance.html">Egypt Travel Guide</a>
+                      <a href="./services-tour-guidance.html"
+                        >Egypt Travel Guide</a
+                      >
                     </li>
                     <li>
                       <a href="./services.html">Services</a>
@@ -3377,6 +3396,12 @@
           </span>
         </div>
       </div>
+
+      <button type="button" id="BackToTop" class="back-to-top start" onclick="lenis.scrollTo('body')">
+        <svg>
+          <use href="./assets/images/icons/sprite.svg#back-to-top"></use>
+        </svg>
+      </button>
     </div>
 
     <!-- modals -->
@@ -3889,81 +3914,75 @@
               </svg>
             </button>
           </div>
-<div class="py-8 px-6">
-              <div>
-                        <p class="mb-2 text-center text-sm">
-                          Do you face any issue sending a Request?
-                          <span class="text-primary"
-                            >Please contact directly by</span
-                          >
-                        </p>
-                        <div
-                          class="mb-6 flex flex-col items-center justify-center gap-x-4 gap-y-2 lg:flex-row"
-                        >
-                          <a
-                            href="tel:010993322110"
-                            class="flex items-center gap-1 text-sm"
-                          >
-                            <svg class="size-5 text-primary">
-                              <use
-                                href="./assets/images/icons/sprite.svg#whatsapp"
-                              ></use>
-                            </svg>
-                            010993322110
-                          </a>
-                          <a
-                            href="mailto:sherif2024@gmail.com"
-                            class="flex items-center gap-1 text-sm"
-                          >
-                            <svg class="size-5 text-primary">
-                              <use
-                                href="./assets/images/icons/sprite.svg#mail"
-                              ></use>
-                            </svg>
-                            sherif2024@gmail.com
-                          </a>
-                        </div>
+          <div class="px-6 py-8">
+            <div>
+              <p class="mb-2 text-center text-sm">
+                Do you face any issue sending a Request?
+                <span class="text-primary">Please contact directly by</span>
+              </p>
+              <div
+                class="mb-6 flex flex-col items-center justify-center gap-x-4 gap-y-2 lg:flex-row"
+              >
+                <a
+                  href="tel:010993322110"
+                  class="flex items-center gap-1 text-sm"
+                >
+                  <svg class="size-5 text-primary">
+                    <use href="./assets/images/icons/sprite.svg#whatsapp"></use>
+                  </svg>
+                  010993322110
+                </a>
+                <a
+                  href="mailto:sherif2024@gmail.com"
+                  class="flex items-center gap-1 text-sm"
+                >
+                  <svg class="size-5 text-primary">
+                    <use href="./assets/images/icons/sprite.svg#mail"></use>
+                  </svg>
+                  sherif2024@gmail.com
+                </a>
+              </div>
 
-                        <ul class="social-list primary justify-center">
-                          <li>
-                            <a href="#">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#facebook"
-                                ></use>
-                              </svg>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#linkedin"
-                                ></use>
-                              </svg>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#youtube"
-                                ></use>
-                              </svg>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <svg>
-                                <use
-                                  href="./assets/images/icons/sprite.svg#instagram"
-                                ></use>
-                              </svg>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+              <ul class="social-list primary justify-center">
+                <li>
+                  <a href="#">
+                    <svg>
+                      <use
+                        href="./assets/images/icons/sprite.svg#facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg>
+                      <use
+                        href="./assets/images/icons/sprite.svg#linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg>
+                      <use
+                        href="./assets/images/icons/sprite.svg#youtube"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg>
+                      <use
+                        href="./assets/images/icons/sprite.svg#instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
 
           <img
             src="./assets/images/icons/model-decoration.png"

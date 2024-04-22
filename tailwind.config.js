@@ -10,7 +10,9 @@ module.exports = {
     },
 
     fontFamily: {
+      inherit: "inherit",
       poppins: ["Poppins", "sans-serif"],
+      oxygen: ["Oxygen", "sans-serif"],
     },
 
     colors: {

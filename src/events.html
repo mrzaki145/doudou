@@ -171,11 +171,7 @@
           </nav>
 
           <div class="navbar_desktop">
-            <img
-              src="./assets/images/logo.png"
-              class="w-48 shrink-0 lg:w-60"
-              alt=""
-            />
+            <img src="./assets/images/logo.png" class="logo" alt="" />
           </div>
 
           <div class="navbar_mobile static">
@@ -2227,11 +2223,6 @@
           class="w-full"
           alt=""
         />
-        <button type="button" id="toTop" onclick="lenis.scrollTo('body')">
-          <svg>
-            <use href="./assets/images/icons/sprite.svg#back-to-top"></use>
-          </svg>
-        </button>
 
         <footer class="footer">
           <div class="container">
@@ -2394,6 +2385,17 @@
           </div>
         </footer>
       </div>
+
+      <button
+        type="button"
+        id="BackToTop"
+        class="back-to-top"
+        onclick="lenis.scrollTo('body')"
+      >
+        <svg>
+          <use href="./assets/images/icons/sprite.svg#back-to-top"></use>
+        </svg>
+      </button>
     </div>
 
     <!-- js -->
