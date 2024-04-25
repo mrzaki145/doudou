@@ -75,7 +75,7 @@
       </nav>
 
       <header class="page-header">
-        <div class="navbar static">
+        <div class="navbar" style="position: static !important">
           <div class="container">
             <div class="navbar_top">
               <div class="flex items-center gap-3">
@@ -166,7 +166,7 @@
               <div class="flex flex-1 divide-x divide-primary">
                 <div class="shrink-0 rounded-bl-xl rounded-tl-xl bg-white">
                   <div
-                    class="hs-dropdown relative flex h-full [--strategy:absolute]"
+                    class="hs-dropdown relative isolate z-30 flex h-full [--strategy:absolute]"
                   >
                     <button
                       type="button"
@@ -179,7 +179,7 @@
                       </svg>
                       Accommodation
                       <svg
-                        class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                        class="accordion-arrow ms-auto text-black hs-dropdown-open:rotate-180"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -251,10 +251,10 @@
                     id="range"
                     type="text"
                     class="flatpickr flatpickr-input flex-1 bg-transparent text-sm text-black outline-none placeholder:text-black"
-                    placeholder="Check in date - Check out date"
+                    placeholder="Check in - Check out date"
                   />
                   <svg
-                    class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                    class="accordion-arrow ms-auto shrink-0 text-black hs-dropdown-open:rotate-180"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -283,7 +283,7 @@
                       </svg>
                       Budget From - to
                       <svg
-                        class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                        class="accordion-arrow ms-auto text-black hs-dropdown-open:rotate-180"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -352,7 +352,7 @@
                   >
                     <nav class="space-y-4">
                       <a
-                        href="./index.html"
+                        href="./egypt-tours.html"
                         class="flex items-center gap-4 text-white"
                       >
                         <img
@@ -362,7 +362,10 @@
                         />
                         Egypt Tour
                       </a>
-                      <a href="#" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./events.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/egyptian-urns.png"
                           class="size-6"
@@ -370,7 +373,10 @@
                         />
                         Event
                       </a>
-                      <a href="#" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./services.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/symbols_travel.png"
                           class="size-6"
@@ -378,7 +384,10 @@
                         />
                         Services
                       </a>
-                      <a href="#" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./blogs.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/egyptian-temple.png"
                           class="size-6"
@@ -394,7 +403,10 @@
                         />
                         Reviews
                       </a>
-                      <a href="#" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./loyalty-program.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/egyptian-bird.png"
                           class="size-6"
@@ -402,7 +414,10 @@
                         />
                         Loyalty Program
                       </a>
-                      <a href="#" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./careers.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/egyptian-profile.png"
                           class="size-6"
@@ -410,7 +425,10 @@
                         />
                         Careers
                       </a>
-                      <a href="#" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./how-it-works.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/egyptian-pyramids.png"
                           class="size-6"
@@ -418,7 +436,10 @@
                         />
                         How it works
                       </a>
-                      <a href="#" class="flex items-center gap-4 text-white">
+                      <a
+                        href="./partner.html"
+                        class="flex items-center gap-4 text-white"
+                      >
                         <img
                           src="./assets/images/icons/deal.png"
                           class="size-6"
@@ -493,11 +514,11 @@
                     <div class="divide-y divide-primary">
                       <div class="px-4 py-3">
                         <div
-                          class="hs-dropdown relative flex h-full [--strategy:absolute] [--auto-close:outside] [--offset:5]"
+                          class="hs-dropdown relative flex h-full [--strategy:absolute] [--offset:5]"
                         >
                           <button
                             type="button"
-                            class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap text-start"
+                            class="hs-dropdown-toggle flex w-full items-center gap-3 text-nowrap text-start text-black"
                           >
                             <svg class="size-6 shrink-0 text-primary">
                               <use
@@ -603,7 +624,7 @@
                         >
                           <button
                             type="button"
-                            class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap text-start"
+                            class="hs-dropdown-toggle flex h-full w-full items-center gap-3 text-nowrap text-start text-black"
                           >
                             <svg class="size-6 shrink-0 text-primary">
                               <use
@@ -628,7 +649,7 @@
                           </button>
 
                           <div
-                            class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden rounded-lg bg-white p-6 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                            class="hs-dropdown-menu duration inset-x-0 top-0 z-10 mt-2 hidden rounded-lg bg-white p-6 text-black opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
                           >
                             <p class="mb-4 text-sm">Your Budget</p>
                             <div id="slider-3">
@@ -653,7 +674,7 @@
                   </div>
                 </div>
               </div>
-              <button type="button">
+              <button type="button" data-hs-overlay="#customer-service">
                 <svg class="size-5.5 text-white">
                   <use
                     href="./assets/images/icons/sprite.svg#customer-service-2"
@@ -673,7 +694,7 @@
       <main class="relative space-y-12 lg:space-y-16">
         <section class="pt-8">
           <div class="relative">
-            <div class="sticky top-0 z-40 mb-8 bg-white py-4">
+            <div class="sticky top-0 z-20 mb-8 bg-white py-4">
               <div class="container">
                 <menu class="tabs mb-0">
                   <li>
@@ -739,7 +760,7 @@
 
               <div class="mb-8">
                 <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-                  <a href="#" class="card">
+                  <a href="./blog-preview.html" class="card">
                     <figure>
                       <img src="./assets/images/tip-1.jpeg" alt="" />
                     </figure>
@@ -748,7 +769,7 @@
                       <h3>How to Plan a Trip To Egypt</h3>
                     </figcaption>
                   </a>
-                  <a href="#" class="card">
+                  <a href="./blog-preview.html" class="card">
                     <figure>
                       <img src="./assets/images/tip-2.jpeg" alt="" />
                     </figure>
@@ -757,7 +778,7 @@
                       <h3>Best Time to Visit Egypt 2024/2025</h3>
                     </figcaption>
                   </a>
-                  <a href="#" class="card">
+                  <a href="./blog-preview.html" class="card">
                     <figure>
                       <img src="./assets/images/tip-3.jpeg" alt="" />
                     </figure>
@@ -766,7 +787,7 @@
                       <h3>Egypt Travel Tips 2024</h3>
                     </figcaption>
                   </a>
-                  <a href="#" class="card">
+                  <a href="./blog-preview.html" class="card">
                     <figure>
                       <img src="./assets/images/tip-4.jpeg" alt="" />
                     </figure>
@@ -775,7 +796,7 @@
                       <h3>List of what to Pack for Egypt Trip</h3>
                     </figcaption>
                   </a>
-                  <a href="#" class="card">
+                  <a href="./blog-preview.html" class="card">
                     <figure>
                       <img src="./assets/images/tip-5.jpeg" alt="" />
                     </figure>
@@ -784,7 +805,7 @@
                       <h3>List of what to Pack for Egypt Trip</h3>
                     </figcaption>
                   </a>
-                  <a href="#" class="card">
+                  <a href="./blog-preview.html" class="card">
                     <figure>
                       <img src="./assets/images/tip-6.jpeg" alt="" />
                     </figure>
@@ -793,7 +814,7 @@
                       <h3>Best Places to Visit in Egypt</h3>
                     </figcaption>
                   </a>
-                  <a href="#" class="card">
+                  <a href="./blog-preview.html" class="card">
                     <figure>
                       <img src="./assets/images/tip-3.jpeg" alt="" />
                     </figure>
@@ -802,7 +823,7 @@
                       <h3>Essential Trip information 2024</h3>
                     </figcaption>
                   </a>
-                  <a href="#" class="card">
+                  <a href="./blog-preview.html" class="card">
                     <figure>
                       <img src="./assets/images/tip-6.jpeg" alt="" />
                     </figure>
@@ -1514,57 +1535,61 @@
                       </div>
                     </article>
                   </div>
+
+                  <!-- Pagination -->
+                  <nav class="pagination">
+                    <button type="button" class="pagination__arrow" disabled>
+                      <svg
+                        class="pagination__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m15 18-6-6 6-6" />
+                      </svg>
+                      <span aria-hidden="true" class="sr-only">Previous</span>
+                    </button>
+                    <div class="pagination__numbers">
+                      <button
+                        type="button"
+                        class="pagination__number"
+                        aria-pressed="true"
+                      >
+                        1
+                      </button>
+                      <button type="button" class="pagination__number">
+                        2
+                      </button>
+                      <button type="button" class="pagination__number">
+                        3
+                      </button>
+                    </div>
+                    <button type="button" class="pagination__arrow">
+                      <span aria-hidden="true" class="sr-only">Next</span>
+                      <svg
+                        class="pagination__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m9 18 6-6-6-6" />
+                      </svg>
+                    </button>
+                  </nav>
                 </div>
               </div>
-
-              <!-- Pagination -->
-              <nav class="pagination">
-                <button type="button" class="pagination__arrow" disabled>
-                  <svg
-                    class="pagination__icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m15 18-6-6 6-6" />
-                  </svg>
-                  <span aria-hidden="true" class="sr-only">Previous</span>
-                </button>
-                <div class="pagination__numbers">
-                  <button
-                    type="button"
-                    class="pagination__number"
-                    aria-pressed="true"
-                  >
-                    1
-                  </button>
-                  <button type="button" class="pagination__number">2</button>
-                  <button type="button" class="pagination__number">3</button>
-                </div>
-                <button type="button" class="pagination__arrow">
-                  <span aria-hidden="true" class="sr-only">Next</span>
-                  <svg
-                    class="pagination__icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m9 18 6-6-6-6" />
-                  </svg>
-                </button>
-              </nav>
 
               <img
                 src="./assets/images/section-divider.png"
@@ -1960,19 +1985,23 @@
 
                   <ul>
                     <li>
-                      <a href="#">Egypt Travel Package</a>
+                      <a href="./egypt-tours.html">Egypt Travel Package</a>
                     </li>
                     <li>
-                      <a href="#">Egypt Shore Excursions</a>
+                      <a href="./egypt-tours.html">Egypt Shore Excursions</a>
                     </li>
                     <li>
-                      <a href="#">Egypt Nile Cruises Package</a>
+                      <a href="./egypt-tours.html"
+                        >Egypt Nile Cruises Package</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Egypt Family Holiday Package</a>
+                      <a href="./egypt-tours.html"
+                        >Egypt Family Holiday Package</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Group Tours to Egypt</a>
+                      <a href="./egypt-tours.html">Group Tours to Egypt</a>
                     </li>
                   </ul>
                 </div>
@@ -1981,25 +2010,25 @@
 
                   <ul>
                     <li>
-                      <a href="#">About Us</a>
+                      <a href="./about.html">About Us</a>
                     </li>
                     <li>
-                      <a href="#">Contact Us</a>
+                      <a href="./contact.html">Contact Us</a>
                     </li>
                     <li>
-                      <a href="#">Careers</a>
+                      <a href="./careers.html">Careers</a>
                     </li>
                     <li>
-                      <a href="#">Blogs</a>
+                      <a href="./blogs.html">Blogs</a>
                     </li>
                     <li>
-                      <a href="#">FAQs</a>
+                      <a href="./faq.html">FAQs</a>
                     </li>
                     <li>
-                      <a href="#">Privacy Policy</a>
+                      <a href="./privacy.html">Privacy Policy</a>
                     </li>
                     <li>
-                      <a href="#">Terms & Conditions</a>
+                      <a href="./privacy.html">Terms & Conditions</a>
                     </li>
                   </ul>
                 </div>
@@ -2008,22 +2037,24 @@
 
                   <ul>
                     <li>
-                      <a href="#">How it Works</a>
+                      <a href="./how-it-works.html">How it Works</a>
                     </li>
                     <li>
-                      <a href="#">Loyalty program</a>
+                      <a href="./loyalty-program.html">Loyalty program</a>
                     </li>
                     <li>
-                      <a href="#">Events</a>
+                      <a href="./events.html">Events</a>
                     </li>
                     <li>
-                      <a href="#">Become Our Partner</a>
+                      <a href="./partner.html">Become Our Partner</a>
                     </li>
                     <li>
-                      <a href="#">Egypt Travel Guide</a>
+                      <a href="./services-tour-guidance.html"
+                        >Egypt Travel Guide</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Services</a>
+                      <a href="./services.html">Services</a>
                     </li>
                   </ul>
                 </div>
@@ -2037,41 +2068,41 @@
                 2024
               </p>
 
-              <ul class="flex items-center gap-x-3 max-lg:order-1">
+              <ul class="social-list white">
                 <li>
                   <a href="#">
-                    <img
-                      src="./assets/images/icons/facebook.png"
-                      class="size-8"
-                      alt=""
-                    />
+                    <svg>
+                      <use
+                        href="./assets/images/icons/sprite.svg#facebook"
+                      ></use>
+                    </svg>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img
-                      src="./assets/images/icons/linkedin.png"
-                      class="size-8"
-                      alt=""
-                    />
+                    <svg>
+                      <use
+                        href="./assets/images/icons/sprite.svg#linkedin"
+                      ></use>
+                    </svg>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img
-                      src="./assets/images/icons/youtube.png"
-                      class="size-8"
-                      alt=""
-                    />
+                    <svg>
+                      <use
+                        href="./assets/images/icons/sprite.svg#youtube"
+                      ></use>
+                    </svg>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img
-                      src="./assets/images/icons/instagram.png"
-                      class="size-8"
-                      alt=""
-                    />
+                    <svg>
+                      <use
+                        href="./assets/images/icons/sprite.svg#instagram"
+                      ></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
@@ -2193,6 +2224,20 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <!-- https://flatpickr.js.org/getting-started/ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      flatpickr("#range", {
+        mode: "range",
+        minDate: "today",
+        dateFormat: "Y-m-d",
+        disable: [
+          function (date) {
+            return !(date.getDate() % 8);
+          },
+        ],
+      });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>

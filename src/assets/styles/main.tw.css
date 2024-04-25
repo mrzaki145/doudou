@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-    @apply font-oxygen relative h-full overflow-x-hidden bg-white font-medium text-black;
+    @apply relative h-full overflow-x-hidden bg-white font-oxygen font-medium text-black;
   }
 
   .custom-scrollbar {
@@ -138,17 +138,20 @@
     @apply relative;
   }
   .page-header__bg {
-    @apply absolute inset-0 -z-10 h-full w-full object-cover object-center;
+    @apply absolute inset-0 -z-10 h-full w-full object-cover object-center max-lg:hidden;
   }
 
   .hero {
-    @apply relative z-10 flex min-h-dvh flex-col items-start justify-end pb-10 lg:pb-40;
+    @apply relative z-10 flex min-h-[calc(100vh_/_2)] flex-col items-start justify-end pb-10 pt-40 lg:min-h-dvh lg:pb-40 lg:pt-0;
+  }
+  .hero__bg {
+    @apply absolute inset-0 -z-10 h-full w-full object-cover object-center lg:hidden;
   }
   .hero_content {
     @apply lg:max-w-3xl;
   }
   .hero h1 {
-    @apply mb-6 text-3xl font-semibold  text-white lg:text-5xl lg:leading-[72px];
+    @apply mb-6 text-4xl font-semibold leading-snug  text-white lg:text-5xl lg:leading-[72px];
   }
   .hero p {
     @apply text-xl font-semibold text-white lg:text-2xl lg:leading-[36px];
@@ -428,16 +431,20 @@
 /* Breadcrumb */
 @layer components {
   .breadcrumb {
-    @apply flex items-center gap-1 overflow-auto whitespace-nowrap max-lg:pb-2;
+    @apply flex flex-wrap items-center gap-1 whitespace-nowrap max-lg:pb-2;
+  }
+  .breadcrumb li,
+  .breadcrumb a {
+    @apply text-sm md:text-lg lg:text-xl;
   }
   .breadcrumb li {
-    @apply inline-flex items-center gap-1 text-lg aria-[current]:text-primary lg:text-xl;
+    @apply inline-flex items-center gap-1 aria-[current]:text-primary;
   }
   .breadcrumb a {
-    @apply flex items-center  text-gray/70 hover:text-primary;
+    @apply flex items-center text-gray/70  hover:text-primary;
   }
   .breadcrumb svg {
-    @apply mx-2 size-4 flex-shrink-0 overflow-visible text-gray/70 lg:size-6;
+    @apply mx-1 size-4 flex-shrink-0 overflow-visible text-gray/70 lg:mx-2 lg:size-6;
   }
 }
 
@@ -596,7 +603,7 @@ input[type="date"] {
   @apply bg-transparent;
 }
 input[type="file"] {
-  @apply file:font-inherit file:mr-4 file:cursor-pointer file:border-0 file:bg-primary file:px-4 file:py-3 file:text-white file:hover:bg-secondary;
+  @apply file:mr-4 file:cursor-pointer file:border-0 file:bg-primary file:px-4 file:py-3 file:font-inherit file:text-white file:hover:bg-secondary;
 }
 
 select:not([size]) {

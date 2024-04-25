@@ -199,7 +199,7 @@
                       </svg>
                       Accommodation
                       <svg
-                        class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                        class="accordion-arrow ms-auto text-black hs-dropdown-open:rotate-180"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -271,10 +271,10 @@
                     id="range"
                     type="text"
                     class="flatpickr flatpickr-input flex-1 bg-transparent text-sm text-black outline-none placeholder:text-black"
-                    placeholder="Check in date - Check out date"
+                    placeholder="Check in - Check out date"
                   />
                   <svg
-                    class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                    class="accordion-arrow ms-auto shrink-0 text-black hs-dropdown-open:rotate-180"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -303,7 +303,7 @@
                       </svg>
                       Budget From - to
                       <svg
-                        class="accordion-arrow ms-auto hs-dropdown-open:rotate-180"
+                        class="accordion-arrow ms-auto text-black hs-dropdown-open:rotate-180"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -723,11 +723,19 @@
               </h1>
             </div>
           </div>
+
+          <img
+            data-aos="fade"
+            data-aos-delay="100"
+            src="./assets/images/hero-bg.jpeg"
+            class="hero__bg"
+            alt=""
+          />
         </div>
 
         <section
-          class="bg-primary/75 py-12 text-white lg:py-16"
           data-aos="fade"
+          class="bg-primary py-12 text-white lg:bg-opacity-75 lg:py-16"
         >
           <div class="container">
             <header class="section_header text-center">
@@ -847,7 +855,7 @@
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="600"
-              class="txt-shadow max-w-3xl text-3xl text-white font-bold lg:text-5xl lg:leading-normal"
+              class="txt-shadow max-w-3xl text-3xl font-bold text-white lg:text-5xl lg:leading-normal"
             >
               Experience A Spectacular And A Memorable Egypt Guided Tour
             </h2>
@@ -3397,7 +3405,12 @@
         </div>
       </div>
 
-      <button type="button" id="BackToTop" class="back-to-top start" onclick="lenis.scrollTo('body')">
+      <button
+        type="button"
+        id="BackToTop"
+        class="back-to-top start"
+        onclick="lenis.scrollTo('body')"
+      >
         <svg>
           <use href="./assets/images/icons/sprite.svg#back-to-top"></use>
         </svg>
