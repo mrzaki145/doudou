@@ -108,7 +108,7 @@
   }
   .navbar_desktop .logo {
     @apply w-48 shrink-0;
-    filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.75));
+    /* filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.75)); */
   }
   .navbar_mobile {
     position: fixed !important;
@@ -151,7 +151,7 @@
     @apply lg:max-w-3xl;
   }
   .hero h1 {
-    @apply mb-6 text-4xl font-semibold leading-snug  text-white lg:text-5xl lg:leading-[72px];
+    @apply mb-6 text-3xl font-semibold leading-snug  text-white lg:text-5xl lg:leading-[72px];
   }
   .hero p {
     @apply text-xl font-semibold text-white lg:text-2xl lg:leading-[36px];
@@ -645,4 +645,19 @@ select:not([size]) {
 /* spotlight */
 #spotlight {
   @apply bg-black/60;
+}
+
+.up-down {
+  animation: MoveUpDown 2s linear infinite;
+  position: absolute;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 40px;
+  }
 }

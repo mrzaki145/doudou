@@ -821,6 +821,51 @@
                 </div>
               </div>
 
+              <div class="mb-6 rounded-lg border border-primary lg:hidden">
+                <button class="hs-accordion-toggle accordion-btn font-medium">
+                  <svg class="accordion-icon size-4.5">
+                    <use href="./assets/images/icons/sprite.svg#articles"></use>
+                  </svg>
+                  Table of Content
+                </button>
+
+                <div
+                  data-hs-scrollspy="#scrollspy-1"
+                  class="accordion-content space-y-3 ps-11.5 [--scrollspy-offset:100]"
+                >
+                  <a
+                    href="#intro"
+                    onclick="lenis.scrollTo('#intro', {offset: -100})"
+                    class="inline-flex w-full items-center justify-between gap-x-3 text-start text-black hs-scrollspy-active:text-primary"
+                  >
+                    1. How to plan a trip to Egypt
+                  </a>
+                  <a
+                    href="#title-1"
+                    onclick="lenis.scrollTo('#title-1', {offset: -100})"
+                    class="inline-flex w-full items-center justify-between gap-x-3 text-start text-black hs-scrollspy-active:text-primary"
+                  >
+                    1. Title
+                  </a>
+                  <a
+                    href="#title-2"
+                    onclick="lenis.scrollTo('#title-2', {offset: -100})"
+                    class="inline-flex w-full items-center justify-between gap-x-3 text-start text-black hs-scrollspy-active:text-primary"
+                  >
+                    2. Title
+                  </a>
+                  <a
+                    href="#title-3"
+                    onclick="lenis.scrollTo('#title-3', {offset: -100})"
+                    class="inline-flex w-full items-center justify-between gap-x-3 text-start text-black hs-scrollspy-active:text-primary"
+                  >
+                    3. Title
+                  </a>
+                </div>
+                <!-- <div class="hs-accordion-content accordion-content-wrapper">
+                </div> -->
+              </div>
+
               <div class="items-start lg:grid lg:grid-cols-8 lg:gap-8">
                 <div class="h-[450px] max-lg:mb-8 lg:col-span-6">
                   <div class="swiper gallery-2 h-full w-full">
@@ -1429,7 +1474,7 @@
 
                     <img
                       src="./assets/images/tour-img-1.png"
-                      class="my-7 max-h-[460px] w-full rounded-2xl object-cover object-center"
+                      class="my-7 w-full rounded-2xl object-cover object-center"
                       alt=""
                     />
 
@@ -1516,7 +1561,7 @@
 
                     <img
                       src="./assets/images/tour-img-1.png"
-                      class="my-7 max-h-[460px] w-full rounded-2xl object-cover object-center"
+                      class="my-7 w-full rounded-2xl object-cover object-center"
                       alt=""
                     />
 
@@ -1603,7 +1648,7 @@
 
                     <img
                       src="./assets/images/tour-img-1.png"
-                      class="my-7 max-h-[460px] w-full rounded-2xl object-cover object-center"
+                      class="my-7 w-full rounded-2xl object-cover object-center"
                       alt=""
                     />
 
@@ -2353,6 +2398,243 @@
                             </article>
                           </div>
                         </div>
+                      </div>
+                    </section>
+
+                    <section class="mb-8 w-full">
+                      <header class="section_header">
+                        <h2 class="section_heading text-primary">
+                          <span>Frequently</span> Asked Questions
+                        </h2>
+                      </header>
+
+                      <div class="hs-accordion-group space-y-2">
+                        <div
+                          class="hs-accordion border-transparent hs-accordion-active:border-gray"
+                          id="faq-1"
+                        >
+                          <button
+                            class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white"
+                            aria-controls="faq-content-1"
+                          >
+                            <span class="flex items-center gap-3">
+                              <svg class="size-4 text-secondary lg:size-6">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#question"
+                                ></use>
+                              </svg>
+
+                              Question Title Here?
+                            </span>
+
+                            <svg
+                              class="block size-4 hs-accordion-active:hidden"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path d="M5 12h14" />
+                              <path d="M12 5v14" />
+                            </svg>
+                            <svg
+                              class="hidden size-4 hs-accordion-active:block"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path d="M5 12h14" />
+                            </svg>
+                          </button>
+                          <div
+                            id="faq-content-1"
+                            class="hs-accordion-content accordion-content-wrapper hidden"
+                            aria-labelledby="faq-1"
+                          >
+                            <div class="px-5 pb-5">
+                              <div
+                                class="rounded-bl-xl rounded-br-xl bg-white p-8 shadow-lg"
+                              >
+                                <p class="text-black">
+                                  <em
+                                    >This is the third item's accordion
+                                    body.</em
+                                  >
+                                  It is hidden by default, until the collapse
+                                  plugin adds the appropriate classes that we
+                                  use to style each element. These classes
+                                  control the overall appearance, as well as the
+                                  showing and hiding via CSS transitions.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="hs-accordion border-transparent hs-accordion-active:border-gray"
+                          id="faq-2"
+                        >
+                          <button
+                            class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white"
+                            aria-controls="faq-content-2"
+                          >
+                            <span class="flex items-center gap-3">
+                              <svg class="size-4 text-secondary lg:size-6">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#question"
+                                ></use>
+                              </svg>
+
+                              Question Title Here?
+                            </span>
+
+                            <svg
+                              class="block size-4 hs-accordion-active:hidden"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path d="M5 12h14" />
+                              <path d="M12 5v14" />
+                            </svg>
+                            <svg
+                              class="hidden size-4 hs-accordion-active:block"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path d="M5 12h14" />
+                            </svg>
+                          </button>
+                          <div
+                            id="faq-content-2"
+                            class="hs-accordion-content accordion-content-wrapper hidden"
+                            aria-labelledby="faq-2"
+                          >
+                            <div class="px-5 pb-5">
+                              <div
+                                class="rounded-bl-xl rounded-br-xl bg-white p-8 shadow-lg"
+                              >
+                                <p class="text-black">
+                                  <em
+                                    >This is the third item's accordion
+                                    body.</em
+                                  >
+                                  It is hidden by default, until the collapse
+                                  plugin adds the appropriate classes that we
+                                  use to style each element. These classes
+                                  control the overall appearance, as well as the
+                                  showing and hiding via CSS transitions.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="hs-accordion border-transparent hs-accordion-active:border-gray"
+                          id="faq-3"
+                        >
+                          <button
+                            class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white"
+                            aria-controls="faq-content-3"
+                          >
+                            <span class="flex items-center gap-3">
+                              <svg class="size-4 text-secondary lg:size-6">
+                                <use
+                                  href="./assets/images/icons/sprite.svg#question"
+                                ></use>
+                              </svg>
+
+                              Question Title Here?
+                            </span>
+
+                            <svg
+                              class="block size-4 hs-accordion-active:hidden"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path d="M5 12h14" />
+                              <path d="M12 5v14" />
+                            </svg>
+                            <svg
+                              class="hidden size-4 hs-accordion-active:block"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path d="M5 12h14" />
+                            </svg>
+                          </button>
+                          <div
+                            id="faq-content-3"
+                            class="hs-accordion-content accordion-content-wrapper hidden"
+                            aria-labelledby="faq-3"
+                          >
+                            <div class="px-5 pb-5">
+                              <div
+                                class="rounded-bl-xl rounded-br-xl bg-white p-8 shadow-lg"
+                              >
+                                <p class="text-black">
+                                  <em
+                                    >This is the third item's accordion
+                                    body.</em
+                                  >
+                                  It is hidden by default, until the collapse
+                                  plugin adds the appropriate classes that we
+                                  use to style each element. These classes
+                                  control the overall appearance, as well as the
+                                  showing and hiding via CSS transitions.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mt-6 text-center">
+                        <a
+                          href="./faq.html"
+                          class="text-lg text-secondary underline"
+                          >Show More</a
+                        >
                       </div>
                     </section>
 
@@ -3194,229 +3476,6 @@
             class="mt-6 w-full lg:mt-14"
             alt=""
           />
-        </section>
-
-        <section>
-          <div class="container">
-            <header class="section_header">
-              <h2 class="section_heading text-primary">
-                <span>Frequently</span> Asked Questions
-              </h2>
-            </header>
-
-            <div class="hs-accordion-group space-y-2">
-              <div
-                class="hs-accordion border-transparent hs-accordion-active:border-gray"
-                id="faq-1"
-              >
-                <button
-                  class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white"
-                  aria-controls="faq-content-1"
-                >
-                  <span class="flex items-center gap-3">
-                    <svg class="size-4 text-secondary lg:size-6">
-                      <use
-                        href="./assets/images/icons/sprite.svg#question"
-                      ></use>
-                    </svg>
-
-                    Question Title Here?
-                  </span>
-
-                  <svg
-                    class="block size-4 hs-accordion-active:hidden"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="M12 5v14" />
-                  </svg>
-                  <svg
-                    class="hidden size-4 hs-accordion-active:block"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M5 12h14" />
-                  </svg>
-                </button>
-                <div
-                  id="faq-content-1"
-                  class="hs-accordion-content accordion-content-wrapper hidden"
-                  aria-labelledby="faq-1"
-                >
-                  <div class="px-5 pb-5">
-                    <div
-                      class="rounded-bl-xl rounded-br-xl bg-white p-8 shadow-lg"
-                    >
-                      <p class="text-black">
-                        <em>This is the third item's accordion body.</em> It is
-                        hidden by default, until the collapse plugin adds the
-                        appropriate classes that we use to style each element.
-                        These classes control the overall appearance, as well as
-                        the showing and hiding via CSS transitions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="hs-accordion border-transparent hs-accordion-active:border-gray"
-                id="faq-2"
-              >
-                <button
-                  class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white"
-                  aria-controls="faq-content-2"
-                >
-                  <span class="flex items-center gap-3">
-                    <svg class="size-4 text-secondary lg:size-6">
-                      <use
-                        href="./assets/images/icons/sprite.svg#question"
-                      ></use>
-                    </svg>
-
-                    Question Title Here?
-                  </span>
-
-                  <svg
-                    class="block size-4 hs-accordion-active:hidden"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="M12 5v14" />
-                  </svg>
-                  <svg
-                    class="hidden size-4 hs-accordion-active:block"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M5 12h14" />
-                  </svg>
-                </button>
-                <div
-                  id="faq-content-2"
-                  class="hs-accordion-content accordion-content-wrapper hidden"
-                  aria-labelledby="faq-2"
-                >
-                  <div class="px-5 pb-5">
-                    <div
-                      class="rounded-bl-xl rounded-br-xl bg-white p-8 shadow-lg"
-                    >
-                      <p class="text-black">
-                        <em>This is the third item's accordion body.</em> It is
-                        hidden by default, until the collapse plugin adds the
-                        appropriate classes that we use to style each element.
-                        These classes control the overall appearance, as well as
-                        the showing and hiding via CSS transitions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="hs-accordion border-transparent hs-accordion-active:border-gray"
-                id="faq-3"
-              >
-                <button
-                  class="hs-accordion-toggle flex w-full items-center justify-between gap-x-3 rounded-xl bg-primary px-6 py-4 text-start font-semibold text-white"
-                  aria-controls="faq-content-3"
-                >
-                  <span class="flex items-center gap-3">
-                    <svg class="size-4 text-secondary lg:size-6">
-                      <use
-                        href="./assets/images/icons/sprite.svg#question"
-                      ></use>
-                    </svg>
-
-                    Question Title Here?
-                  </span>
-
-                  <svg
-                    class="block size-4 hs-accordion-active:hidden"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="M12 5v14" />
-                  </svg>
-                  <svg
-                    class="hidden size-4 hs-accordion-active:block"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M5 12h14" />
-                  </svg>
-                </button>
-                <div
-                  id="faq-content-3"
-                  class="hs-accordion-content accordion-content-wrapper hidden"
-                  aria-labelledby="faq-3"
-                >
-                  <div class="px-5 pb-5">
-                    <div
-                      class="rounded-bl-xl rounded-br-xl bg-white p-8 shadow-lg"
-                    >
-                      <p class="text-black">
-                        <em>This is the third item's accordion body.</em> It is
-                        hidden by default, until the collapse plugin adds the
-                        appropriate classes that we use to style each element.
-                        These classes control the overall appearance, as well as
-                        the showing and hiding via CSS transitions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="mt-6 text-center">
-              <a href="#" class="text-lg text-secondary underline">Show More</a>
-            </div>
-          </div>
         </section>
 
         <section id="partners" class="pb-20 pt-12 lg:pb-32">
